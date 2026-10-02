@@ -7,12 +7,24 @@ Progetto: `jngwqahyfmrmcfenmfhj` (https://supabase.com/dashboard/project/jngwqah
 1. Dashboard → **SQL Editor** → **New query**.
 2. Apri `supabase/migrations/0001_schema.sql`, copia tutto il contenuto, incollalo e premi **Run**.
    Risultato atteso: `Success. No rows returned`.
+   Su un progetto nuovo esegui allo stesso modo anche le migrazioni successive (`0002…`, `0003…`), in ordine (vedi la tabella più sotto).
 3. Nuova query: apri `supabase/seed.sql`, copia tutto, incolla, **Run**.
 4. Controllo: **Table Editor** → `teams` deve avere 30 righe, `players` 535, `roster_entries` 810,
    `fixtures` 120, `matchdays` 17.
 
 Se devi rifare tutto da zero: SQL Editor →
 `drop schema public cascade; create schema public;` poi ripeti i passi 2 e 3 (cancella tutti i dati!).
+
+### Aggiornare un progetto già creato
+
+Quando compare una nuova migrazione, basta eseguirla (una volta sola) nello **SQL Editor**, nell'ordine dei numeri:
+
+| File | Cosa aggiunge |
+|---|---|
+| `0002_lineups_logged_only.sql` | formazioni e voti visibili solo agli utenti registrati |
+| `0003_lineup_module.sql` | il **modulo** (es. `4-3-1-2`) accanto al nome squadra nel dettaglio partita |
+
+**Esegui la migrazione prima di pubblicare la versione del sito che la usa**, altrimenti l'importazione delle formazioni dà errore ("column module does not exist").
 
 ## 2. Creare i 30 utenti
 

@@ -4,6 +4,7 @@ import {
   buildLineup,
   hasVotes,
   importRows,
+  parseModule,
   parseFormazioni,
   playersByName,
   type FileTeam,
@@ -309,5 +310,32 @@ describe('importRows', () => {
     t.starters[2] = { ...t.starters[2], name: 'Nessuno' }
     const rows = importRows(1, 1, buildLineup(t, byName, { mode: 'initial', maxSubs: 3 }), [])
     expect(rows[2]).toMatchObject({ player_id: null, player_name: null, out_of_position: false })
+  })
+})
+
+describe('module', () => {
+  it('reads the module from the file and keeps it in the imported rows', () => {
+    const built = buildLineup(team([], []), byName, { mode: 'initial', maxSubs: 3 })
+    expect(built.module).toBe('3-4-3') // the test file writes 3-4-3
+    const rows = importRows(1, 1, built, [])
+    expect(rows.every((r) => 'module' in r && r.module === '3-4-3')).toBe(true)
+  })
+
+  it('accepts valid modules and ignores anything else', () => {
+    expect(parseModule('4-3-1-2')).toBe('4-3-1-2')
+    expect(parseModule(' 3 - 5 - 2 ')).toBe('3-5-2')
+    expect(parseModule('3-4-2-1')).toBe('3-4-2-1')
+    for (const bad of ['', null, undefined, 'abc', '4', '4-3-x', '433']) {
+      expect(parseModule(bad)).toBeNull()
+    }
+  })
+
+  it('does not send a module column when the file has none', () => {
+    const built = {
+      ...buildLineup(team([], []), byName, { mode: 'initial', maxSubs: 3 }),
+      module: null,
+    }
+    const rows = importRows(1, 1, built, [])
+    expect(rows.some((r) => 'module' in r)).toBe(false)
   })
 })

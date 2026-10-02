@@ -61,6 +61,8 @@ export interface LineupRow {
   player_id: number | null
   player_name: string | null
   out_of_position: boolean
+  /** Module of the team's lineup, e.g. "4-3-1-2" (same on the 11 slots; optional). */
+  module?: string | null
   vote: number | null
   fantavoto: number | null
   counted: boolean | null

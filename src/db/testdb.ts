@@ -21,6 +21,7 @@ export async function createTestDb() {
   `)
   await db.exec(readFileSync('supabase/migrations/0001_schema.sql', 'utf8'))
   await db.exec(readFileSync('supabase/migrations/0002_lineups_logged_only.sql', 'utf8'))
+  await db.exec(readFileSync('supabase/migrations/0003_lineup_module.sql', 'utf8'))
   await db.exec(readFileSync('supabase/seed.sql', 'utf8'))
   await db.exec(`
     insert into auth.users (id) values ('${ADMIN}'), ('${USER1}'), ('${USER2}');

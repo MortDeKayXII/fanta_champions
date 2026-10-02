@@ -58,7 +58,7 @@ Qui aggiorni la tua rosa dopo uno scambio:
 Attenzione: cambiare la rosa **non modifica le giornate già calcolate**. In uno scambio, chi cede il giocatore lo rimuove e chi lo riceve lo aggiunge.
 
 ### Dettaglio partita
-Mostra le due formazioni e, per le partite giocate, il voto e il fantavoto di ogni giocatore. Prima della partita vedi lo schieramento inserito finora, che può cambiare fino al calcolo finale (sostituzioni comprese). Le icone indicano gol ⚽, assist 🅰️, rigore parato 🧤, rigore segnato 🎯, gol subito 🥅, rigore sbagliato ❌, autogol ↩️, ammonizione 🟨, espulsione 🟥. Un giocatore in grigio non ha preso voto e vale 0. "fuori ruolo" indica il malus di −1.
+Mostra le due formazioni, con accanto a ogni giocatore i suoi **ruoli** (le stesse etichette colorate della pagina Rose) e, tra parentesi grigie accanto al nome della squadra, il **modulo** (ad esempio *(4-3-1-2)*) quando è noto. Per le partite giocate mostra anche per le partite giocate, il voto e il fantavoto di ogni giocatore. Prima della partita vedi lo schieramento inserito finora, che può cambiare fino al calcolo finale (sostituzioni comprese). Le icone indicano gol ⚽, assist 🅰️, rigore parato 🧤, rigore segnato 🎯, gol subito 🥅, rigore sbagliato ❌, autogol ↩️, ammonizione 🟨, espulsione 🟥. Un giocatore in grigio non ha preso voto e vale 0. "fuori ruolo" indica il malus di −1.
 
 ### Tabellone
 Compare nel menu **a fine fase a gironi**, quando la classifica è definitiva. L'eliminazione diretta: playoff, ottavi, quarti, semifinali e finale. Ogni turno è di andata e ritorno; la finale è una gara secca. Passa chi segna più gol in totale; se sono pari passa chi ha più punti fanta in totale; se è ancora parità decide l'amministratore.

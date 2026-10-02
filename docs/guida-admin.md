@@ -68,6 +68,9 @@ Premi **Incolla elenco**, incolla i nomi uno per riga (o separati da virgola) e 
 - Se un nome ha più corrispondenze vince il giocatore della rosa; se resta ambiguo o non si trova, lo slot resta vuoto e sotto compare l'elenco **Da controllare** da sistemare a mano.
 - Un **`*` dopo il nome** mette il giocatore "fuori ruolo" (−1), come nel vecchio foglio.
 
+### Modulo
+Sopra gli slot c'è il campo **Modulo** (es. `4-3-1-2`): facoltativo, compare tra parentesi grigie accanto al nome della squadra nel dettaglio partita. Con l'importazione da file viene letto in automatico dal file; se la formazione è inserita a mano lo scrivi tu. Il formato è numeri separati da trattini (`3-5-2`, `4-3-1-2`, `3-4-2-1`).
+
 ### Fuori ruolo e buchi
 - La casella **−1** accanto al giocatore applica il malus di fuori ruolo: la decidi tu.
 - Puoi lasciare slot **vuoti** (per esempio se non ci sono abbastanza giocatori con voto): valgono 0.

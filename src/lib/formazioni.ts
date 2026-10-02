@@ -119,12 +119,20 @@ export interface Substitution {
 
 export interface BuiltLineup {
   teamName: string
+  /** Module written in the file, e.g. "4-3-1-2", or null if it is not a valid module. */
+  module: string | null
   /** 11 slots in file order; a replaced starter's slot holds the player who came in. */
   slots: Array<{ fileName: string; player: Player | null }>
   substitutions: Substitution[]
   /** Substitutions made by the original app but ignored because of the cap. */
   ignored: string[]
   warnings: string[]
+}
+
+/** A module such as "4-3-1-2" or "3-5-2"; anything else is ignored. */
+export function parseModule(text: string | null | undefined): string | null {
+  const m = (text ?? '').replace(/\s+/g, '')
+  return /^[0-9](-[0-9]){1,4}$/.test(m) ? m : null
 }
 
 export const playersByName = (players: readonly Player[]): Map<string, Player> =>
@@ -186,7 +194,14 @@ export function buildLineup(
   const built = slots.map((s) => ({ fileName: s.fileName, player: find(s.src) }))
   if (built.length !== 11)
     warnings.push(`${team.teamName}: ${built.length} titolari nel file (attesi 11).`)
-  return { teamName: team.teamName, slots: built, substitutions, ignored, warnings }
+  return {
+    teamName: team.teamName,
+    module: parseModule(team.module),
+    slots: built,
+    substitutions,
+    ignored,
+    warnings,
+  }
 }
 
 export interface SavedFlag {
@@ -218,6 +233,8 @@ export function importRows(
     player_id: s.player?.id ?? null,
     player_name: s.player?.name ?? null,
     out_of_position: s.player ? flagged.has(s.player.id) : false,
+    // Only sent when known, so lineups without a module keep working on their own.
+    ...(built.module ? { module: built.module } : {}),
     vote: null,
     fantavoto: null,
     counted: null,

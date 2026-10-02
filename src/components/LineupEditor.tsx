@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { parseModule } from '../lib/formazioni'
 import { matchPlayerNames } from '../lib/lineupText'
 import { supabase } from '../lib/supabase'
 import type { LineupRow, Player, Team } from '../lib/types'
@@ -53,6 +54,10 @@ export default function LineupEditor({
   const [pasteText, setPasteText] = useState('')
   const [problems, setProblems] = useState<string[]>([])
   const [dirty, setDirty] = useState(false)
+  const [moduleText, setModuleText] = useState(saved[0]?.module ?? '')
+  const moduleValue = parseModule(moduleText)
+  const moduleInvalid = moduleText.trim() !== '' && moduleValue === null
+  const hadModule = Boolean(saved[0]?.module)
 
   const update = (i: number, patch: Partial<Slot>) => {
     setSlots((s) => s.map((slot, j) => (j === i ? { ...slot, ...patch } : slot)))
@@ -88,6 +93,8 @@ export default function LineupEditor({
         fantavoto: null,
         counted: null,
         stats: null,
+        // Sent only when there is something to say, so lineups work even without a module.
+        ...(moduleValue ? { module: moduleValue } : hadModule ? { module: null } : {}),
       }))
       const { error } = await supabase
         .from('lineups')
@@ -111,6 +118,21 @@ export default function LineupEditor({
           {saved.length > 0 && !dirty ? 'salvata' : dirty ? 'modificata' : 'non inserita'}
         </span>
       </div>
+
+      <label className="flex items-center gap-2 text-xs text-slate-600">
+        Modulo
+        <input
+          className={`w-24 rounded border px-1.5 py-0.5 text-sm ${moduleInvalid ? 'border-red-400' : 'border-slate-300'}`}
+          placeholder="es. 4-3-1-2"
+          value={moduleText}
+          maxLength={9}
+          onChange={(e) => {
+            setModuleText(e.target.value)
+            setDirty(true)
+          }}
+        />
+        {moduleInvalid && <span className="text-red-700">formato non valido (es. 4-3-1-2)</span>}
+      </label>
 
       <ol className="space-y-1">
         {slots.map((s, i) => (
@@ -196,7 +218,7 @@ export default function LineupEditor({
           <button
             type="button"
             className={buttonClass}
-            disabled={save.isPending || !dirty}
+            disabled={save.isPending || !dirty || moduleInvalid}
             onClick={() => save.mutate()}
           >
             {save.isPending ? 'Salvo…' : 'Salva formazione'}

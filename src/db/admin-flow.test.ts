@@ -199,6 +199,7 @@ describe('importing lineups twice for the same matchday', () => {
     const slotsOf = (ps: typeof pool) => ps.map((p) => ({ fileName: p.name, player: p }))
     const build = (ps: typeof pool): BuiltLineup => ({
       teamName: 'X',
+      module: '4-3-1-2',
       slots: slotsOf(ps),
       substitutions: [],
       ignored: [],
@@ -233,6 +234,21 @@ describe('importing lineups twice for the same matchday', () => {
     expect(after).toHaveLength(11) // overwritten, not duplicated
     expect(after[5].player_id).toBe(pool[11].id)
     expect(after.find((r) => r.out_of_position)?.slot).toBe(9) // flag survived the re-import
+    // the module from the file is stored on every slot and the format is checked by the database
+    const modules = await as<{ module: string | null }>(
+      ADMIN,
+      'select distinct module from lineups where matchday = 2 and team_id = 5',
+    )
+    expect(modules).toEqual([{ module: '4-3-1-2' }])
+    await expect(
+      as(ADMIN, "update lineups set module = 'abc' where matchday = 2 and team_id = 5"),
+    ).rejects.toThrow()
+    expect(
+      await as(
+        ADMIN,
+        "update lineups set module = '3-5-2' where matchday = 2 and team_id = 5 returning 1",
+      ),
+    ).toHaveLength(11)
   })
 })
 

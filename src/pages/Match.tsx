@@ -3,14 +3,15 @@ import {
   Card,
   ErrorBox,
   Loading,
+  MantraRoles,
   Notice,
   PageTitle,
   TeamLink,
   secondaryButtonClass,
 } from '../components/ui'
 import { formatPoints, matchdayTitle } from '../lib/labels'
-import { useCompetition, useLineups } from '../lib/queries'
-import type { LineupRow } from '../lib/types'
+import { useCompetition, useLineups, usePlayers } from '../lib/queries'
+import type { LineupRow, Player, Team } from '../lib/types'
 
 const STAT_ICONS: Array<[keyof NonNullable<LineupRow['stats']>, string, string]> = [
   ['gf', '⚽', 'Gol'],
@@ -38,7 +39,13 @@ function Stats({ row }: { row: LineupRow }) {
   )
 }
 
-function LineupTable({ rows }: { rows: LineupRow[] }) {
+export function LineupTable({
+  rows,
+  playerById,
+}: {
+  rows: LineupRow[]
+  playerById: Map<number, Player>
+}) {
   return (
     <table className="w-full text-sm">
       <tbody>
@@ -46,6 +53,11 @@ function LineupTable({ rows }: { rows: LineupRow[] }) {
           <tr key={r.slot} className="border-b border-blue-50 last:border-0">
             <td className={`py-1.5 pr-2 ${r.counted === false ? 'text-slate-400' : ''}`}>
               {r.player_name ?? <span className="italic text-slate-400">—</span>}
+              {r.player_id !== null && playerById.get(r.player_id) && (
+                <span className="ml-1.5">
+                  <MantraRoles roles={playerById.get(r.player_id)!.mantra_roles} />
+                </span>
+              )}
               {r.out_of_position && (
                 <span className="ml-1 text-xs text-amber-700" title="Fuori ruolo (−1)">
                   (fuori ruolo)
@@ -66,19 +78,35 @@ function LineupTable({ rows }: { rows: LineupRow[] }) {
   )
 }
 
+/** Team name (opens the roster) with the lineup module in grey: a visible but secondary detail. */
+export function TeamTitle({ team, module }: { team: Team | undefined; module?: string | null }) {
+  return (
+    <>
+      <TeamLink team={team} />
+      {module && (
+        <span className="ml-1.5 text-sm font-normal text-slate-500" title="Modulo">
+          ({module})
+        </span>
+      )}
+    </>
+  )
+}
+
 export default function Match() {
   const { fixtureId } = useParams()
   const comp = useCompetition()
   const fixture = comp.fixtureById.get(Number(fixtureId))
   const lineups = useLineups(fixture?.matchday)
+  const players = usePlayers()
 
-  if (comp.isLoading || lineups.isLoading) return <Loading />
+  if (comp.isLoading || lineups.isLoading || players.isLoading) return <Loading />
   if (!fixture) return <ErrorBox>Partita non trovata.</ErrorBox>
 
   const home = comp.teamById.get(fixture.home_team)
   const away = comp.teamById.get(fixture.away_team)
   const result = comp.resultByFixture.get(fixture.id)
   const md = comp.matchdayByNumber.get(fixture.matchday)
+  const playerById = new Map((players.data ?? []).map((p) => [p.id, p]))
   const rowsOf = (teamId: number) => (lineups.data ?? []).filter((l) => l.team_id === teamId)
 
   return (
@@ -106,9 +134,12 @@ export default function Match() {
       )}
       <div className="grid gap-4 md:grid-cols-2">
         {[home, away].map((team) => (
-          <Card key={team?.id} title={<TeamLink team={team} />}>
+          <Card
+            key={team?.id}
+            title={<TeamTitle team={team} module={team ? rowsOf(team.id)[0]?.module : null} />}
+          >
             {team && rowsOf(team.id).length > 0 ? (
-              <LineupTable rows={rowsOf(team.id)} />
+              <LineupTable rows={rowsOf(team.id)} playerById={playerById} />
             ) : (
               <p className="text-sm text-slate-500">Formazione non ancora inserita.</p>
             )}
