@@ -17,6 +17,7 @@ import Rosters from './pages/Rosters'
 
 // Admin pages (and the xlsx reader) are only downloaded when the admin opens them.
 const Admin = lazy(() => import('./pages/admin/Admin'))
+const AdminBackup = lazy(() => import('./pages/admin/AdminBackup'))
 const AdminCompute = lazy(() => import('./pages/admin/AdminCompute'))
 const AdminKnockout = lazy(() => import('./pages/admin/AdminKnockout'))
 const AdminLineups = lazy(() => import('./pages/admin/AdminLineups'))
@@ -105,6 +106,7 @@ export default function App() {
           <Route path="rose" element={<AdminRosters />} />
           <Route path="segnalazioni" element={<AdminReports />} />
           <Route path="squadre" element={<AdminTeams />} />
+          <Route path="backup" element={<AdminBackup />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>

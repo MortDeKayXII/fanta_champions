@@ -53,6 +53,9 @@ export default function Admin() {
         <NavLink to="/admin/squadre" className={tab}>
           Squadre
         </NavLink>
+        <NavLink to="/admin/backup" className={tab}>
+          Backup
+        </NavLink>
       </nav>
       <Outlet />
     </div>

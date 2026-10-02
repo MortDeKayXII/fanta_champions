@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { VoteRow } from '../engine'
+import { backupFileName, fetchAllPages } from './backup'
 import { computeMatchday } from './computeMatchday'
 import { matchPlayerNames } from './lineupText'
 import type { Fixture, LineupRow, Player } from './types'
@@ -198,5 +199,39 @@ describe('findItaliaSheet', () => {
 
   it('returns undefined when there is no such sheet', () => {
     expect(findItaliaSheet(['Fantacalcio', 'Statistico'])).toBeUndefined()
+  })
+})
+
+describe('backup paging', () => {
+  it('keeps asking for pages until one is not full', async () => {
+    const all = Array.from({ length: 2300 }, (_, i) => i)
+    const calls: Array<[number, number]> = []
+    const rows = await fetchAllPages(async (from, to) => {
+      calls.push([from, to])
+      return all.slice(from, to + 1)
+    })
+    expect(rows).toEqual(all)
+    expect(calls).toEqual([
+      [0, 999],
+      [1000, 1999],
+      [2000, 2999],
+    ])
+  })
+
+  it('needs an extra (empty) request when the total is an exact multiple of the page size', async () => {
+    const all = Array.from({ length: 1000 }, (_, i) => i)
+    let calls = 0
+    const rows = await fetchAllPages(async (from, to) => {
+      calls++
+      return all.slice(from, to + 1)
+    })
+    expect(rows).toHaveLength(1000)
+    expect(calls).toBe(2)
+  })
+
+  it('names files with the date and time', () => {
+    expect(backupFileName(new Date('2026-10-03T14:05:59Z'))).toBe(
+      'fanta-champions-backup-2026-10-03-14-05.json',
+    )
   })
 })

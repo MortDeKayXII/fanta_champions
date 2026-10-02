@@ -2,7 +2,7 @@
 
 Questa guida è per chi gestisce la competizione (account con permessi di amministratore). Le regole e le pagine viste dai partecipanti sono nella [guida utente](guida-utente.md).
 
-L'area admin è nel menu **Admin** (visibile solo a te) e ha sei sezioni: Formazioni, Voti e calcolo, Eliminazione, Rose, Segnalazioni, Squadre.
+L'area admin è nel menu **Admin** (visibile solo a te) e ha sette sezioni: Formazioni, Voti e calcolo, Eliminazione, Rose, Segnalazioni, Squadre, Backup.
 
 ---
 
@@ -156,7 +156,7 @@ values (9999, 'Cognome N.', 'C', 'C;T', 'Milan');
 `id` è il codice Fantacalcio (lo stesso della colonna `Cod.` del file voti), `role` è P/D/C/A, `mantra_roles` i ruoli Mantra separati da `;`.
 
 ### Copia di sicurezza
-Il piano gratuito non ha backup automatici. Ogni tanto, da **Table Editor** di Supabase, esporta in CSV almeno `lineups`, `results`, `votes` e `roster_entries`.
+Il piano gratuito non ha backup automatici. In **Admin → Backup** premi **Scarica backup**: ottieni un file `.json` con rose (e storico), formazioni, voti, risultati, tabellone, decisioni e segnalazioni. Conviene farlo dopo ogni giornata calcolata e conservare il file **fuori dal repository** (contiene i voti dei giocatori; il nome `fanta-champions-backup-*.json` è comunque escluso da git). Il ripristino da un backup richiede un intervento sul database: chiedi uno script di ripristino quando serve.
 
 ### Nuovi utenti o password
 Gli account si creano con `scripts/create_users.mjs` (vedi `supabase/README.md`); lo script salta le squadre già collegate. La chiave `service_role` resta solo sul tuo computer, nel file `.env.scripts` che non va mai committato.

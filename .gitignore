@@ -14,3 +14,6 @@ new_version_settings/matchday_*.xlsx
 
 # Local script credentials
 .env.scripts
+
+# Backups downloaded from the admin page (contain votes)
+fanta-champions-backup-*.json
