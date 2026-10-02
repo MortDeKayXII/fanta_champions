@@ -38,6 +38,7 @@ beforeAll(async () => {
       $$ select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
   `)
   await db.exec(readFileSync('supabase/migrations/0001_schema.sql', 'utf8'))
+  await db.exec(readFileSync('supabase/migrations/0002_lineups_logged_only.sql', 'utf8'))
   await db.exec(readFileSync('supabase/seed.sql', 'utf8'))
   await db.exec(`
     insert into auth.users (id) values ('${ADMIN}'), ('${USER1}'), ('${USER2}');
@@ -71,6 +72,7 @@ describe('public access', () => {
     expect(await as(null, 'select id from teams')).toHaveLength(30)
     expect(await as(null, 'select id from fixtures')).toHaveLength(120)
     await expect(as(null, 'select * from votes')).rejects.toThrow()
+    await expect(as(null, 'select * from lineups')).rejects.toThrow()
     await expect(as(null, 'select * from profiles')).rejects.toThrow()
     await expect(as(null, 'select * from error_reports')).rejects.toThrow()
   })
@@ -119,7 +121,7 @@ describe('competition data', () => {
     const insertLineup = `insert into lineups (matchday, team_id, slot, player_id) values (1, 1, 1, null)`
     await expect(as(USER1, insertLineup)).rejects.toThrow()
     expect(await as(ADMIN, `${insertLineup} returning 1`)).toHaveLength(1)
-    expect(await as(USER1, 'select * from lineups')).toHaveLength(1) // public read
+    expect(await as(USER1, 'select * from lineups')).toHaveLength(1) // logged users read
 
     await as(ADMIN, 'insert into votes (matchday, player_id, vote) values (1, 4431, 6.5)')
     expect(await as(USER1, 'select * from votes')).toHaveLength(0) // RLS hides the rows
