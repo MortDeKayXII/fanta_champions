@@ -31,7 +31,7 @@ Non c'è il recupero via email: scrivi all'amministratore, che te ne imposta una
 
 ## 2. Cosa trovi nel sito
 
-I colori dei nomi indicano la lega: **verde** = Fanta Montelparo, **arancione** = Fanta Pepe, **viola** = Fanta Ortezzano.
+I colori dei nomi indicano la lega: **azzurro petrolio** = Fanta Montelparo, **ocra** = Fanta Pepe, **viola** = Fanta Ortezzano.
 
 ### Home (Dashboard)
 La tua posizione, i punti, le partite giocate e il totale dei punti fanta. Sotto trovi la **tua** prossima partita e l'ultima giocata, più la classifica (prime 10, la tua riga è evidenziata).
@@ -41,9 +41,9 @@ Tutte le giornate. Scegli il numero in alto. Le partite già giocate mostrano i 
 
 ### Classifica
 Punti (3 per la vittoria, 1 per il pareggio). A parità di punti conta il **totale dei punti fanta**. La barra colorata a sinistra indica dove finirai:
-- **1°–8°**: passi direttamente agli ottavi di finale;
-- **9°–24°**: giochi i playoff;
-- **25°–30°**: sei eliminato.
+- **verde**, 1°–8°: passi direttamente agli ottavi di finale;
+- **sfumatura di blu**, 9°–24°: giochi i playoff (più la barra è scura, più sei vicino agli ottavi);
+- **rosso**, 25°–30°: sei eliminato.
 
 ### Rose
 Le rose di tutte le squadre. Scegli una squadra dall'elenco. I giocatori sono divisi in **Portieri** e **Giocatori di movimento**, questi ultimi nell'ordine della legenda dei ruoli Mantra (DS, DC, DD, B, E, M, C, W, T, A, PC); i ruoli sono le etichette colorate accanto al nome (passandoci sopra vedi il nome esteso). Le rose sono indicative: la formazione di ogni giornata la inserisce l'amministratore.

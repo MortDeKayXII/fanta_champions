@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import type { StandingRow } from '../engine'
 import { formatPoints } from '../lib/labels'
+import { zoneColor } from '../lib/zones'
 import type { Team } from '../lib/types'
 import { TeamLink } from './ui'
 
@@ -19,8 +20,6 @@ export default function Standings({
   full?: boolean
 }) {
   const shown = limit ? rows.slice(0, limit) : rows
-  const zone = (pos: number) =>
-    pos <= 8 ? 'border-l-blue-600' : pos <= 24 ? 'border-l-sky-300' : 'border-l-slate-300'
 
   return (
     <div className="overflow-x-auto">
@@ -69,7 +68,8 @@ export default function Standings({
             return (
               <tr
                 key={row.team}
-                className={`border-l-4 ${zone(i + 1)} ${mine ? 'bg-blue-100' : 'odd:bg-blue-50/40'}`}
+                style={{ borderLeftColor: zoneColor(i + 1) }}
+                className={`border-l-4 ${mine ? 'bg-blue-100' : 'odd:bg-blue-50/40'}`}
               >
                 <td className="py-1.5 pl-2 pr-1 text-slate-500">{i + 1}</td>
                 <td className="pr-2">
