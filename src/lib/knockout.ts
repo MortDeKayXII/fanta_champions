@@ -202,6 +202,20 @@ export function pendingLabel(tieId: string | undefined): string {
   return 'Da definire'
 }
 
+/** Short version of {@link pendingLabel} for the bracket drawing, e.g. "V. 9°–24°". */
+export function pendingShort(tieId: string | undefined): string {
+  if (!tieId) return 'Da definire'
+  const po = /^PO-(\d+)-(\d+)$/.exec(tieId)
+  if (po) return `V. ${po[1]}°–${po[2]}°`
+  const r16 = /^R16-(\d+)$/.exec(tieId)
+  if (r16) return `V. ottavi ${r16[1]}ª TdS`
+  const qf = /^QF-(\d+)$/.exec(tieId)
+  if (qf) return `V. quarto ${qf[1]}`
+  const sf = /^SF-(\d+)$/.exec(tieId)
+  if (sf) return `V. semifinale ${sf[1]}`
+  return 'Da definire'
+}
+
 /** True when every group fixture has a result. */
 export function groupStageComplete(
   fixtures: readonly Fixture[],

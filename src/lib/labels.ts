@@ -16,18 +16,14 @@ export const LEAGUE_NAME: Record<League, string> = {
 }
 
 /**
- * Subtle colours used only for team names and small badges. Cyan, amber and purple are kept away
- * from the green / blue / red of the table zones and from the role chips.
+ * One colour per league, used both for team names and for the legend dots so they always match.
+ * Cyan, amber and purple are kept away from the green / blue / red of the table zones and from
+ * the role chips. Dark enough to read as text on white.
  */
-export const LEAGUE_TEXT: Record<League, string> = {
-  A: 'text-cyan-700',
-  B: 'text-amber-700',
-  C: 'text-purple-700',
-}
-export const LEAGUE_DOT: Record<League, string> = {
-  A: 'bg-cyan-500',
-  B: 'bg-amber-500',
-  C: 'bg-purple-500',
+export const LEAGUE_COLOR: Record<League, string> = {
+  A: '#0e7490', // cyan
+  B: '#b45309', // amber / ocra
+  C: '#7e22ce', // purple
 }
 
 export function matchdayTitle(m: Matchday): string {

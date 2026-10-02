@@ -2,9 +2,8 @@ import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../lib/auth'
 import {
-  LEAGUE_DOT,
+  LEAGUE_COLOR,
   LEAGUE_NAME,
-  LEAGUE_TEXT,
   MANTRA_NAME,
   mantraColor,
   mantraLabel,
@@ -74,7 +73,8 @@ export function TeamName({
   if (!team) return <span className={className}>?</span>
   return (
     <span
-      className={`${LEAGUE_TEXT[team.league]} ${bold ? 'font-semibold' : ''} ${className}`}
+      style={{ color: LEAGUE_COLOR[team.league] }}
+      className={`${bold ? 'font-semibold' : ''} ${className}`}
       title={LEAGUE_NAME[team.league]}
     >
       {team.name}
@@ -90,8 +90,11 @@ export function LeagueLegend() {
     >
       {(['A', 'B', 'C'] as League[]).map((l) => (
         <li key={l} className="flex items-center gap-1.5">
-          <span className={`inline-block h-2.5 w-2.5 rounded-full ${LEAGUE_DOT[l]}`} />
-          <span className={LEAGUE_TEXT[l]}>{LEAGUE_NAME[l]}</span>
+          <span
+            className="inline-block h-2.5 w-2.5 rounded-full"
+            style={{ backgroundColor: LEAGUE_COLOR[l] }}
+          />
+          <span style={{ color: LEAGUE_COLOR[l] }}>{LEAGUE_NAME[l]}</span>
         </li>
       ))}
     </ul>

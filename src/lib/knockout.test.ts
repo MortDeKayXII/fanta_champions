@@ -4,6 +4,7 @@ import {
   groupStageComplete,
   nextRound,
   pendingLabel,
+  pendingShort,
   resolveKnockout,
   type KnockoutInput,
 } from './knockout'
@@ -170,6 +171,14 @@ describe('helpers', () => {
     expect(pendingLabel('PO-9-24')).toBe('Vincente playoff 9°–24°')
     expect(pendingLabel('QF-2')).toBe('Vincente quarto 2')
     expect(pendingLabel(undefined)).toBe('Da definire')
+  })
+
+  it('has short labels for the bracket drawing', () => {
+    expect(pendingShort('PO-9-24')).toBe('V. 9°–24°')
+    expect(pendingShort('R16-1')).toBe('V. ottavi 1ª TdS')
+    expect(pendingShort('QF-3')).toBe('V. quarto 3')
+    expect(pendingShort('SF-2')).toBe('V. semifinale 2')
+    expect(pendingShort(undefined)).toBe('Da definire')
   })
 
   it('detects the end of the group stage', () => {

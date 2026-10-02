@@ -1,8 +1,8 @@
 import { renderToStaticMarkup } from 'react-dom/server'
 import { createElement } from 'react'
 import { describe, expect, it } from 'vitest'
-import { MantraRoles } from '../components/ui'
-import { MANTRA_ORDER, mantraColor, mantraLabel } from './labels'
+import { LeagueLegend, MantraRoles, TeamName } from '../components/ui'
+import { LEAGUE_COLOR, MANTRA_ORDER, mantraColor, mantraLabel } from './labels'
 import { groupRoster, mantraRank } from './roster'
 import type { Player, Role } from './types'
 
@@ -94,5 +94,23 @@ describe('groupRoster', () => {
     expect(mantraRank({ mantra_roles: '' })).toBe(MANTRA_ORDER.length)
     const groups = groupRoster([p('Senza', 'D', ''), p('Con', 'D', 'Dc')])
     expect(groups[1].items.map((i) => i.player.name)).toEqual(['Con', 'Senza'])
+  })
+})
+
+describe('league colours', () => {
+  it('team names and the legend use exactly the same colour for each league', () => {
+    for (const league of ['A', 'B', 'C'] as const) {
+      const color = LEAGUE_COLOR[league]
+      const name = renderToStaticMarkup(createElement(TeamName, { team: { name: 'X', league } }))
+      expect(name).toContain(`color:${color}`)
+      const legend = renderToStaticMarkup(createElement(LeagueLegend))
+      // dot (background) and label (text) of this league both use the same colour
+      expect(legend).toContain(`background-color:${color}`)
+      expect(legend).toContain(`color:${color}`)
+    }
+  })
+
+  it('the three leagues have three different colours', () => {
+    expect(new Set(Object.values(LEAGUE_COLOR)).size).toBe(3)
   })
 })

@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { LEGS } from '../engine'
+import BracketTree from '../components/BracketTree'
 import { Card, ErrorBox, Loading, Notice, PageTitle, TeamLink } from '../components/ui'
 import { useAuth } from '../lib/auth'
 import { ROUND_NAME, ROUND_ORDER, pendingLabel, type TieView } from '../lib/knockout'
@@ -106,6 +108,10 @@ function TieCard({ tie, teamById }: { tie: TieView; teamById: Map<number, Team> 
 
 export default function Bracket() {
   const k = useKnockout()
+  // The tree needs room: start on the list view on small screens.
+  const [view, setView] = useState<'tree' | 'list'>(() =>
+    window.matchMedia('(min-width: 1000px)').matches ? 'tree' : 'list',
+  )
   if (k.isLoading) return <Loading />
   if (k.error) return <ErrorBox>Impossibile caricare il tabellone.</ErrorBox>
 
@@ -113,6 +119,8 @@ export default function Bracket() {
   const anyGroupPlayed = k.ranking.some((r) => r.played > 0)
   const teamByName = new Map(k.teams.map((t) => [t.name, t]))
   const eliminated = k.ranking.slice(24).map((r) => teamByName.get(r.team)!)
+  const finalWinner = k.views.find((t) => t.id === 'F')?.winner
+  const champion = finalWinner == null ? undefined : k.teamById.get(finalWinner)
 
   return (
     <div>
@@ -132,7 +140,48 @@ export default function Bracket() {
 
       {k.views.length === 0 && <Notice>Tabellone non ancora disponibile.</Notice>}
 
-      <div className="space-y-6">
+      {champion && (
+        <div className="mb-4 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-500 p-4 text-center text-white shadow-sm">
+          <p className="text-xs uppercase tracking-wide text-blue-100">Campione</p>
+          <p className="text-2xl font-extrabold">🏆 {champion.name}</p>
+        </div>
+      )}
+
+      <div className="mb-3 flex gap-2" role="group" aria-label="Vista del tabellone">
+        {(
+          [
+            ['tree', 'Schema'],
+            ['list', 'Elenco'],
+          ] as const
+        ).map(([key, label]) => (
+          <button
+            key={key}
+            aria-pressed={view === key}
+            onClick={() => setView(key)}
+            className={`rounded-lg px-3 py-1.5 text-sm font-medium ring-1 ${
+              view === key
+                ? 'bg-blue-600 text-white ring-blue-600'
+                : 'bg-white text-blue-800 ring-blue-200 hover:bg-blue-50'
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {view === 'tree' && k.views.length > 0 && (
+        // Wider than the page column so the whole tree fits on large screens.
+        <div className="relative left-1/2 w-[min(calc(100vw-3rem),1700px)] -translate-x-1/2">
+          <BracketTree ties={k.views} teamById={k.teamById} />
+          <p className="mt-2 text-xs text-slate-500">
+            Nei due turni a doppia gara i piccoli numeri sono i gol di andata e ritorno, il numero
+            in grassetto è il totale. Le linee blu scure mostrano il percorso dei turni già decisi.
+            Su schermi piccoli scorri lo schema in orizzontale o passa a «Elenco».
+          </p>
+        </div>
+      )}
+
+      <div className={`space-y-6 ${view === 'tree' ? 'hidden' : ''}`}>
         {ROUND_ORDER.map((round) => {
           const ties = k.views.filter((t) => t.round === round)
           if (ties.length === 0) return null
