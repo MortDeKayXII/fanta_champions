@@ -73,6 +73,9 @@ Premi **Incolla elenco**, incolla i nomi uno per riga (o separati da virgola) e 
 - Puoi lasciare slot **vuoti** (per esempio se non ci sono abbastanza giocatori con voto): valgono 0.
 - Nessun controllo su moduli o ruoli.
 
+### Eliminare tutte le formazioni di una giornata
+Il bottone rosso **Elimina tutte le formazioni della giornata**, accanto al contatore, cancella in un colpo solo le formazioni di tutte le squadre per la giornata scelta e i **risultati** calcolati da esse. I **voti** già caricati restano, così puoi reinserire le formazioni senza ricaricare il file. Ti viene chiesta conferma e l'azione non si può annullare. Non tocca le altre giornate. (Per cancellare solo risultati e voti tenendo le formazioni c'è **Azzera giornata** in «Voti e calcolo».)
+
 ### Salvare
 **Salva formazione** (per ciascuna squadra). Modificare una formazione già calcolata azzera i suoi punteggi finché non ricalcoli la giornata.
 
@@ -115,6 +118,8 @@ Cancella risultati, voti e punteggi calcolati della giornata, lasciando le forma
 4. Prosegui allo stesso modo con quarti (giornate 13–14), semifinali (15–16) e finale (17, gara singola).
 
 Nel tabellone la 1ª e la 2ª si possono incontrare solo in finale.
+
+**Quando è visibile.** Il tabellone pubblico (menu e pagina) compare ai partecipanti solo quando la fase a gironi è conclusa, cioè tutte le 120 partite dei gironi hanno un risultato, oppure appena crei un turno a eliminazione. Prima, la voce **Tabellone** è nascosta dal menu e la pagina mostra solo un avviso. Tu la vedi sempre, come **anteprima** con gli accoppiamenti provvisori.
 
 ### Chi passa il turno
 Passa chi ha più **gol totali**, poi più **punti fanta totali**. Se c'è ancora parità, in **Parità da decidere** compaiono due bottoni "Passa <squadra>": scegli tu il vincitore. Puoi annullare la decisione dall'elenco "Decisioni prese".

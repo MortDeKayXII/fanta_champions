@@ -31,7 +31,7 @@ Non c'è il recupero via email: scrivi all'amministratore, che te ne imposta una
 
 ## 2. Cosa trovi nel sito
 
-I colori dei nomi indicano la lega: **azzurro petrolio** = Fanta Montelparo, **ocra** = Fanta Pepe, **viola** = Fanta Ortezzano.
+I colori dei nomi indicano la lega: **verde** = Fanta Montelparo, **rosso** = Fanta Pepe, **blu** = Fanta Ortezzano.
 
 ### Home (Dashboard)
 La tua posizione, i punti, le partite giocate e il totale dei punti fanta. Sotto trovi la **tua** prossima partita e l'ultima giocata, più la classifica (prime 10, la tua riga è evidenziata).
@@ -61,7 +61,7 @@ Attenzione: cambiare la rosa **non modifica le giornate già calcolate**. In uno
 Mostra le due formazioni e, per le partite giocate, il voto e il fantavoto di ogni giocatore. Prima della partita vedi lo schieramento inserito finora, che può cambiare fino al calcolo finale (sostituzioni comprese). Le icone indicano gol ⚽, assist 🅰️, rigore parato 🧤, rigore segnato 🎯, gol subito 🥅, rigore sbagliato ❌, autogol ↩️, ammonizione 🟨, espulsione 🟥. Un giocatore in grigio non ha preso voto e vale 0. "fuori ruolo" indica il malus di −1.
 
 ### Tabellone
-L'eliminazione diretta: playoff, ottavi, quarti, semifinali e finale. Ogni turno è di andata e ritorno; la finale è una gara secca. Passa chi segna più gol in totale; se sono pari passa chi ha più punti fanta in totale; se è ancora parità decide l'amministratore.
+Compare nel menu **a fine fase a gironi**, quando la classifica è definitiva. L'eliminazione diretta: playoff, ottavi, quarti, semifinali e finale. Ogni turno è di andata e ritorno; la finale è una gara secca. Passa chi segna più gol in totale; se sono pari passa chi ha più punti fanta in totale; se è ancora parità decide l'amministratore.
 
 ### Segnala errore
 Hai visto un voto, un bonus o una formazione sbagliati? Scegli la partita (e, se vuoi, il giocatore), descrivi il problema e invia. Sotto vedi le tue segnalazioni con lo stato (**Aperta**, **Risolta**, **Respinta**) e l'eventuale risposta dell'amministratore. Dal dettaglio di una partita trovi anche il bottone diretto "Segnala un errore in questa partita".

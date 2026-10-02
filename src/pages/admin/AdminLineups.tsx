@@ -1,11 +1,13 @@
 import { useSearchParams } from 'react-router-dom'
 import { useState } from 'react'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import LineupEditor from '../../components/LineupEditor'
 import LineupImport from '../../components/LineupImport'
-import { Card, ErrorBox, Loading, Notice } from '../../components/ui'
+import { Card, ErrorBox, Loading, Notice, secondaryButtonClass } from '../../components/ui'
 import { matchdayTitle } from '../../lib/labels'
 import { findProgress } from '../../lib/progress'
 import { useCompetition, useLineups, usePlayers, useRosterEntries } from '../../lib/queries'
+import { supabase } from '../../lib/supabase'
 
 export default function AdminLineups() {
   const comp = useCompetition()
@@ -20,6 +22,23 @@ export default function AdminLineups() {
   const requested = Number(params.get('g'))
   const matchday = withFixtures.includes(requested) ? requested : (next ?? last ?? 1)
   const lineups = useLineups(matchday)
+  const queryClient = useQueryClient()
+
+  // Deletes every lineup of the matchday and the results computed from them. Uploaded votes stay.
+  const clearAll = useMutation({
+    mutationFn: async () => {
+      const fixtureIds = comp.fixtures.filter((f) => f.matchday === matchday).map((f) => f.id)
+      const res = await supabase.from('results').delete().in('fixture_id', fixtureIds)
+      if (res.error) throw res.error
+      const del = await supabase.from('lineups').delete().eq('matchday', matchday)
+      if (del.error) throw del.error
+    },
+    onSuccess: () => {
+      setImportVersion((v) => v + 1)
+      void queryClient.invalidateQueries({ queryKey: ['lineups', matchday] })
+      void queryClient.invalidateQueries({ queryKey: ['results'] })
+    },
+  })
 
   if (comp.isLoading || players.isLoading || entries.isLoading || lineups.isLoading)
     return <Loading />
@@ -32,6 +51,7 @@ export default function AdminLineups() {
     new Set((entries.data ?? []).filter((e) => e.team_id === teamId).map((e) => e.player_id))
   const savedOf = (teamId: number) => (lineups.data ?? []).filter((l) => l.team_id === teamId)
   const done = new Set((lineups.data ?? []).map((l) => l.team_id)).size
+  const results = fixtures.filter((f) => comp.resultByFixture.has(f.id)).length
 
   return (
     <div className="space-y-4">
@@ -56,7 +76,24 @@ export default function AdminLineups() {
         <span className="text-sm text-slate-600">
           Formazioni inserite: {done}/{fixtures.length * 2}
         </span>
+        <button
+          className={`${secondaryButtonClass} !text-red-700 !ring-red-200 hover:!bg-red-50`}
+          disabled={clearAll.isPending || (done === 0 && results === 0)}
+          onClick={() => {
+            const what = `tutte le formazioni (${done} squadre)${results > 0 ? ` e i ${results} risultati calcolati` : ''}`
+            if (
+              window.confirm(
+                `Eliminare ${what} della giornata ${matchday}? I voti caricati restano. L'azione non si può annullare.`,
+              )
+            ) {
+              clearAll.mutate()
+            }
+          }}
+        >
+          {clearAll.isPending ? 'Elimino…' : 'Elimina tutte le formazioni della giornata'}
+        </button>
       </div>
+      {clearAll.error && <ErrorBox>Eliminazione non riuscita: {clearAll.error.message}</ErrorBox>}
       <Notice>
         Le formazioni non sono vincolate alla rosa: puoi scegliere qualsiasi giocatore. Dopo aver
         salvato o modificato una formazione vai su «Voti e calcolo» e premi «Calcola giornata». Con

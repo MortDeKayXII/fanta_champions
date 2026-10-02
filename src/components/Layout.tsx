@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useAuth } from '../lib/auth'
-import { useTeams } from '../lib/queries'
+import { useBracketPublished, useTeams } from '../lib/queries'
 import ErrorBoundary from './ErrorBoundary'
 import { Loading, TeamName } from './ui'
 
@@ -14,6 +14,7 @@ export default function Layout() {
   const { session, profile } = useAuth()
   const { data: teams } = useTeams()
   const location = useLocation()
+  const bracket = useBracketPublished()
   const myTeam = teams?.find((t) => t.id === profile?.team_id)
 
   return (
@@ -47,9 +48,11 @@ export default function Layout() {
           <NavLink to="/classifica" className={link}>
             Classifica
           </NavLink>
-          <NavLink to="/tabellone" className={link}>
-            Tabellone
-          </NavLink>
+          {(bracket.published || profile?.is_admin) && (
+            <NavLink to="/tabellone" className={link}>
+              Tabellone
+            </NavLink>
+          )}
           {session && (
             <NavLink to="/la-mia-rosa" className={link}>
               La mia rosa

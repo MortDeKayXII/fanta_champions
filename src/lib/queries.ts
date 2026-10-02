@@ -181,3 +181,14 @@ export function useKnockout() {
     isLoading: comp.isLoading || standingsLoading || decisions.isLoading,
   }
 }
+
+/**
+ * The bracket is published when the group stage is over, or as soon as a knockout round has been
+ * created. Until then only the admin can see it (as a preview).
+ */
+export function useBracketPublished() {
+  const comp = useCompetition()
+  const started = comp.fixtures.some((f) => f.tie_id !== null)
+  const groupComplete = groupStageComplete(comp.fixtures, comp.results, comp.matchdays)
+  return { published: groupComplete || started, isLoading: comp.isLoading }
+}

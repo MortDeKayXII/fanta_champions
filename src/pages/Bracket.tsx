@@ -108,14 +108,31 @@ function TieCard({ tie, teamById }: { tie: TieView; teamById: Map<number, Team> 
 
 export default function Bracket() {
   const k = useKnockout()
+  const { profile, profileLoading } = useAuth()
   // The tree needs room: start on the list view on small screens.
   const [view, setView] = useState<'tree' | 'list'>(() =>
     window.matchMedia('(min-width: 1000px)').matches ? 'tree' : 'list',
   )
-  if (k.isLoading) return <Loading />
+  if (k.isLoading || profileLoading) return <Loading />
   if (k.error) return <ErrorBox>Impossibile caricare il tabellone.</ErrorBox>
 
   const started = k.views.some((t) => t.generated)
+  // The bracket is published when the group stage is over (or a knockout round already exists);
+  // until then only the admin can preview it.
+  const published = k.groupComplete || started
+  if (!published && !profile?.is_admin) {
+    return (
+      <div>
+        <PageTitle>Tabellone</PageTitle>
+        <Card>
+          <Notice>
+            Il tabellone sarà pubblicato al termine della fase a gironi, quando la classifica sarà
+            definitiva.
+          </Notice>
+        </Card>
+      </div>
+    )
+  }
   const anyGroupPlayed = k.ranking.some((r) => r.played > 0)
   const teamByName = new Map(k.teams.map((t) => [t.name, t]))
   const eliminated = k.ranking.slice(24).map((r) => teamByName.get(r.team)!)
@@ -128,12 +145,14 @@ export default function Bracket() {
         Tabellone
       </PageTitle>
 
-      {!k.groupComplete && (
+      {!published && (
         <div className="mb-4">
           <Notice>
+            Anteprima riservata all'amministratore: il tabellone non è ancora pubblico, lo sarà a
+            fine fase a gironi (o quando crei i playoff).{' '}
             {anyGroupPlayed
-              ? 'La fase a gironi non è conclusa: gli accoppiamenti dei playoff sono provvisori e seguono la classifica attuale.'
-              : 'La fase a gironi non è ancora iniziata: gli accoppiamenti dei playoff seguono la classifica provvisoria.'}
+              ? 'Gli accoppiamenti seguono la classifica attuale e sono provvisori.'
+              : 'La fase a gironi non è ancora iniziata: gli accoppiamenti seguono la classifica provvisoria.'}
           </Notice>
         </div>
       )}

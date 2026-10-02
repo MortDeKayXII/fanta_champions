@@ -235,3 +235,60 @@ describe('importing lineups twice for the same matchday', () => {
     expect(after.find((r) => r.out_of_position)?.slot).toBe(9) // flag survived the re-import
   })
 })
+
+describe('deleting all lineups of a matchday', () => {
+  const lineupRow = (matchday: number, team: number, slot: number, player: number) => ({
+    matchday,
+    team_id: team,
+    slot,
+    player_id: player,
+    player_name: `P${player}`,
+    out_of_position: false,
+    vote: null,
+    fantavoto: null,
+    counted: null,
+    stats: null,
+  })
+
+  it('removes lineups and results of that matchday only, keeps votes, and only for the admin', async () => {
+    const fx = await as<Fixture>(
+      ADMIN,
+      'select * from fixtures where matchday = 3 order by id limit 1',
+    )
+    const other = await as<Fixture>(
+      ADMIN,
+      'select * from fixtures where matchday = 4 order by id limit 1',
+    )
+    const ps = await as<{ id: number }>(ADMIN, 'select id from players order by id limit 3')
+    // lineups on matchday 3 (both teams) and 4 (one team), one result on 3, votes on 3
+    await upsertLineups([
+      lineupRow(3, fx[0].home_team, 1, ps[0].id),
+      lineupRow(3, fx[0].away_team, 1, ps[1].id),
+      lineupRow(4, other[0].home_team, 1, ps[2].id),
+    ])
+    await as(
+      ADMIN,
+      'insert into results (fixture_id, home_goals, away_goals, home_points, away_points) values ($1, 1, 0, 70, 60)',
+      [fx[0].id],
+    )
+    await as(ADMIN, 'insert into votes (matchday, player_id, vote) values (3, $1, 6)', [ps[0].id])
+
+    // a normal user cannot delete anything (row level security hides the rows)
+    expect(await as(USER1, 'delete from lineups where matchday = 3 returning 1')).toHaveLength(0)
+    expect(await as(USER1, 'delete from results returning 1')).toHaveLength(0)
+
+    // the admin: results first, then lineups, exactly as the admin page does
+    const fixtureIds = (
+      await as<{ id: number }>(ADMIN, 'select id from fixtures where matchday = 3')
+    ).map((f) => f.id)
+    await as(ADMIN, 'delete from results where fixture_id = any($1)', [fixtureIds])
+    await as(ADMIN, 'delete from lineups where matchday = 3')
+
+    expect(await as(ADMIN, 'select * from lineups where matchday = 3')).toHaveLength(0)
+    expect(await as(ADMIN, 'select * from results where fixture_id = $1', [fx[0].id])).toHaveLength(
+      0,
+    )
+    expect(await as(ADMIN, 'select * from votes where matchday = 3')).toHaveLength(1) // votes stay
+    expect(await as(ADMIN, 'select * from lineups where matchday = 4')).toHaveLength(1) // other matchday untouched
+  })
+})
