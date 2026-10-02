@@ -5,7 +5,7 @@ import {
   Loading,
   Notice,
   PageTitle,
-  TeamName,
+  TeamLink,
   secondaryButtonClass,
 } from '../components/ui'
 import { formatPoints, matchdayTitle } from '../lib/labels'
@@ -84,7 +84,7 @@ export default function Match() {
   return (
     <div>
       <PageTitle sub={md ? matchdayTitle(md) : undefined}>
-        <TeamName team={home} /> vs <TeamName team={away} />
+        <TeamLink team={home} /> vs <TeamLink team={away} />
       </PageTitle>
       {result ? (
         <Card className="mb-4 text-center">
@@ -103,7 +103,7 @@ export default function Match() {
       )}
       <div className="grid gap-4 md:grid-cols-2">
         {[home, away].map((team) => (
-          <Card key={team?.id} title={<TeamName team={team} />}>
+          <Card key={team?.id} title={<TeamLink team={team} />}>
             {team && rowsOf(team.id).length > 0 ? (
               <LineupTable rows={rowsOf(team.id)} />
             ) : (

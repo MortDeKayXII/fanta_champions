@@ -4,6 +4,12 @@ import Layout from './components/Layout'
 import { ErrorBox, Loading } from './components/ui'
 import { useAuth } from './lib/auth'
 import { isConfigured } from './lib/supabase'
+import Admin from './pages/admin/Admin'
+import AdminCompute from './pages/admin/AdminCompute'
+import AdminLineups from './pages/admin/AdminLineups'
+import AdminReports from './pages/admin/AdminReports'
+import AdminRosters from './pages/admin/AdminRosters'
+import AdminTeams from './pages/admin/AdminTeams'
 import Bracket from './pages/Bracket'
 import Calendar from './pages/Calendar'
 import Home from './pages/Home'
@@ -81,6 +87,21 @@ export default function App() {
             </RequireAuth>
           }
         />
+        <Route
+          path="admin"
+          element={
+            <RequireAuth>
+              <Admin />
+            </RequireAuth>
+          }
+        >
+          <Route index element={<Navigate to="formazioni" replace />} />
+          <Route path="formazioni" element={<AdminLineups />} />
+          <Route path="calcolo" element={<AdminCompute />} />
+          <Route path="rose" element={<AdminRosters />} />
+          <Route path="segnalazioni" element={<AdminReports />} />
+          <Route path="squadre" element={<AdminTeams />} />
+        </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

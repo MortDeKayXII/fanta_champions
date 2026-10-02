@@ -52,3 +52,21 @@ export const ITALIAN_NUMBER = new Intl.NumberFormat('it-IT', {
 })
 
 export const formatPoints = (n: number) => ITALIAN_NUMBER.format(n)
+
+/** Mantra position abbreviations, as used in the Fantacalcio player list. */
+export const MANTRA_NAME: Record<string, string> = {
+  Por: 'Portiere',
+  Dd: 'Difensore destro',
+  Ds: 'Difensore sinistro',
+  Dc: 'Difensore centrale',
+  B: 'Braccetto',
+  E: 'Esterno',
+  M: 'Mediano',
+  C: 'Centrocampista',
+  W: 'Ala',
+  T: 'Trequartista',
+  A: 'Attaccante',
+  Pc: 'Punta centrale',
+}
+
+export const splitMantraRoles = (roles: string): string[] => roles.split(';').filter(Boolean)

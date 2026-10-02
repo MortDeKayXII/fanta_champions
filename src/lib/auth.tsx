@@ -10,6 +10,8 @@ interface AuthState {
   loading: boolean
   session: Session | null
   profile: Profile | null
+  /** true while the profile of a logged user is being fetched */
+  profileLoading: boolean
   signIn: (teamName: string, password: string) => Promise<string | null>
   signOut: () => Promise<void>
   changePassword: (password: string) => Promise<string | null>
@@ -32,7 +34,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const userId = session?.user.id
-  const { data: profile } = useQuery({
+  const { data: profile, isLoading: profileQueryLoading } = useQuery({
     queryKey: ['profile', userId],
     enabled: Boolean(userId),
     queryFn: async () => {
@@ -51,6 +53,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loading,
       session,
       profile: userId ? (profile ?? null) : null,
+      profileLoading: Boolean(userId) && profileQueryLoading,
       async signIn(teamName, password) {
         const { error } = await supabase.auth.signInWithPassword({
           email: teamEmail(teamName),
@@ -70,7 +73,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         return error ? 'Impossibile cambiare la password: ' + error.message : null
       },
     }),
-    [loading, session, userId, profile, queryClient],
+    [loading, session, userId, profile, profileQueryLoading, queryClient],
   )
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>

@@ -1,50 +1,12 @@
-import { readFileSync } from 'node:fs'
-import { PGlite } from '@electric-sql/pglite'
+import type { PGlite } from '@electric-sql/pglite'
 import { beforeAll, describe, expect, it } from 'vitest'
-
-/**
- * Runs the real schema + seed on an in-process Postgres and checks the access rules.
- * Supabase's `auth` schema and roles are stubbed.
- */
-
-const ADMIN = '00000000-0000-0000-0000-00000000000a'
-const USER1 = '00000000-0000-0000-0000-000000000001' // team 1
-const USER2 = '00000000-0000-0000-0000-000000000002' // team 2
+import { ADMIN, USER1, USER2, createTestDb } from './testdb'
 
 let db: PGlite
-
-/** Runs `sql` as a Supabase client would: role `anon` or `authenticated` with a given user. */
-async function as<T = Record<string, unknown>>(user: string | null, sql: string) {
-  await db.exec(
-    user
-      ? `set role authenticated; select set_config('request.jwt.claim.sub', '${user}', false);`
-      : `set role anon; select set_config('request.jwt.claim.sub', '', false);`,
-  )
-  try {
-    return (await db.query<T>(sql)).rows
-  } finally {
-    await db.exec('reset role')
-  }
-}
+let as: Awaited<ReturnType<typeof createTestDb>>['as']
 
 beforeAll(async () => {
-  db = new PGlite()
-  await db.exec(`
-    create role anon nologin;
-    create role authenticated nologin;
-    create schema auth;
-    create table auth.users (id uuid primary key);
-    create function auth.uid() returns uuid language sql stable as
-      $$ select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
-  `)
-  await db.exec(readFileSync('supabase/migrations/0001_schema.sql', 'utf8'))
-  await db.exec(readFileSync('supabase/migrations/0002_lineups_logged_only.sql', 'utf8'))
-  await db.exec(readFileSync('supabase/seed.sql', 'utf8'))
-  await db.exec(`
-    insert into auth.users (id) values ('${ADMIN}'), ('${USER1}'), ('${USER2}');
-    insert into profiles (user_id, team_id, is_admin) values
-      ('${ADMIN}', 3, true), ('${USER1}', 1, false), ('${USER2}', 2, false);
-  `)
+  ;({ db, as } = await createTestDb())
 })
 
 describe('seed', () => {

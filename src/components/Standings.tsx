@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import type { StandingRow } from '../engine'
 import { formatPoints } from '../lib/labels'
 import type { Team } from '../lib/types'
-import { TeamName } from './ui'
+import { TeamLink } from './ui'
 
 /** Group-stage table. Ranks 1-8 go straight to the knockout, 9-24 to the playoff, 25+ are out. */
 export default function Standings({
@@ -73,7 +73,7 @@ export default function Standings({
               >
                 <td className="py-1.5 pl-2 pr-1 text-slate-500">{i + 1}</td>
                 <td className="pr-2">
-                  <TeamName team={team} bold={mine} />
+                  <TeamLink team={team} bold={mine} />
                 </td>
                 {full && (
                   <>

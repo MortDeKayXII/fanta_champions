@@ -1,5 +1,13 @@
 import { useSearchParams } from 'react-router-dom'
-import { Card, ErrorBox, LeagueLegend, Loading, PageTitle, TeamName } from '../components/ui'
+import {
+  Card,
+  ErrorBox,
+  LeagueLegend,
+  Loading,
+  MantraRoles,
+  PageTitle,
+  TeamName,
+} from '../components/ui'
 import { useAuth } from '../lib/auth'
 import { LEAGUE_NAME, ROLE_NAME, ROLE_ORDER } from '../lib/labels'
 import { usePlayers, useRosterEntries, useTeams } from '../lib/queries'
@@ -78,6 +86,9 @@ export default function Rosters() {
                     {list.map((e) => (
                       <tr key={e.player_id} className="odd:bg-blue-50/40">
                         <td className="py-1 pl-2">{e.player.name}</td>
+                        <td>
+                          <MantraRoles roles={e.player.mantra_roles} />
+                        </td>
                         <td className="text-slate-500">{e.player.serie_a_team}</td>
                         <td className="pr-2 text-right tabular-nums text-slate-600">{e.cost}</td>
                       </tr>

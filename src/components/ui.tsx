@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react'
-import { LEAGUE_DOT, LEAGUE_NAME, LEAGUE_TEXT } from '../lib/labels'
+import { Link } from 'react-router-dom'
+import { useAuth } from '../lib/auth'
+import { LEAGUE_DOT, LEAGUE_NAME, LEAGUE_TEXT, MANTRA_NAME, splitMantraRoles } from '../lib/labels'
 import type { League, Team } from '../lib/types'
 
 export function Card({
@@ -94,3 +96,44 @@ export const secondaryButtonClass =
   'inline-flex items-center justify-center rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-blue-700 ring-1 ring-blue-200 hover:bg-blue-50 disabled:opacity-50'
 export const inputClass =
   'w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200'
+
+/** Mantra roles as small chips, e.g. "Dd Dc"; hover for the full name. */
+export function MantraRoles({ roles }: { roles: string }) {
+  return (
+    <span className="inline-flex gap-0.5 align-middle">
+      {splitMantraRoles(roles).map((r) => (
+        <abbr
+          key={r}
+          title={MANTRA_NAME[r] ?? r}
+          className="rounded bg-blue-100 px-1 text-[10px] font-semibold text-blue-800 no-underline"
+        >
+          {r}
+        </abbr>
+      ))}
+    </span>
+  )
+}
+
+/**
+ * Team name that opens the team's roster when the visitor is logged in (the rosters page is for
+ * logged users); otherwise it is plain text.
+ */
+export function TeamLink({
+  team,
+  bold = false,
+}: {
+  team: Pick<Team, 'id' | 'name' | 'league'> | undefined
+  bold?: boolean
+}) {
+  const { session } = useAuth()
+  if (!session || !team) return <TeamName team={team} bold={bold} />
+  return (
+    <Link
+      to={`/rose?squadra=${team.id}`}
+      className="hover:underline"
+      title={`Rosa di ${team.name}`}
+    >
+      <TeamName team={team} bold={bold} />
+    </Link>
+  )
+}
