@@ -3,6 +3,8 @@
 Competizione tra 3 leghe fantacalcio (A = Fanta Montelparo, B = Fanta Pepe, C = Fanta Ortezzano) basata sulla Serie A.
 30 squadre, fase a gironi "all'italiana" (8 giornate) + fase a eliminazione diretta.
 
+**Stato: tutte le fasi (0–6) sono completate.** Guide in [docs/](docs/).
+
 Legenda: 🧑 = azione che devi fare tu · 🤖 = lo faccio io · 🤝 = insieme.
 
 ---

@@ -1,14 +1,26 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import FixtureRow from '../components/FixtureRow'
 import Standings from '../components/Standings'
-import { Card, ErrorBox, LeagueLegend, Loading, TeamName, buttonClass } from '../components/ui'
+import {
+  Card,
+  ErrorBox,
+  LeagueLegend,
+  Loading,
+  Notice,
+  TeamName,
+  buttonClass,
+} from '../components/ui'
 import { useAuth } from '../lib/auth'
 import { formatPoints, matchdayTitle } from '../lib/labels'
 import { findProgress } from '../lib/progress'
 import { useCompetition, useStandings } from '../lib/queries'
 
 export default function Home() {
-  const { session, profile } = useAuth()
+  const { session, profile, passwordChanged } = useAuth()
+  const [hideNudge, setHideNudge] = useState(
+    () => localStorage.getItem('hide-password-nudge') === '1',
+  )
   const comp = useCompetition()
   const { rows } = useStandings()
 
@@ -59,6 +71,24 @@ export default function Home() {
   return (
     <div className="grid gap-4 md:grid-cols-[1fr_20rem]">
       <div className="space-y-4">
+        {session && !passwordChanged && !hideNudge && (
+          <Notice>
+            Stai usando la password iniziale uguale per tutti:{' '}
+            <Link to="/profilo" className="font-semibold underline">
+              cambiala dal tuo profilo
+            </Link>
+            .{' '}
+            <button
+              className="ml-2 text-xs underline"
+              onClick={() => {
+                localStorage.setItem('hide-password-nudge', '1')
+                setHideNudge(true)
+              }}
+            >
+              Nascondi
+            </button>
+          </Notice>
+        )}
         {session && myTeam ? (
           <Card className="bg-gradient-to-br from-blue-700 to-blue-500 !text-white !ring-0">
             <p className="text-sm text-blue-100">Benvenuto</p>

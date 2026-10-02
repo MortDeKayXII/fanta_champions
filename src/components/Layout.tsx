@@ -1,7 +1,9 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { Suspense } from 'react'
+import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useAuth } from '../lib/auth'
 import { useTeams } from '../lib/queries'
-import { TeamName } from './ui'
+import ErrorBoundary from './ErrorBoundary'
+import { Loading, TeamName } from './ui'
 
 const link = ({ isActive }: { isActive: boolean }) =>
   `whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-medium ${
@@ -11,6 +13,7 @@ const link = ({ isActive }: { isActive: boolean }) =>
 export default function Layout() {
   const { session, profile } = useAuth()
   const { data: teams } = useTeams()
+  const location = useLocation()
   const myTeam = teams?.find((t) => t.id === profile?.team_id)
 
   return (
@@ -70,10 +73,22 @@ export default function Layout() {
         </nav>
       </header>
       <main className="mx-auto max-w-5xl px-4 py-6">
-        <Outlet />
+        <ErrorBoundary key={location.pathname}>
+          <Suspense fallback={<Loading />}>
+            <Outlet />
+          </Suspense>
+        </ErrorBoundary>
       </main>
       <footer className="mx-auto max-w-5xl px-4 pb-8 text-center text-xs text-slate-500">
-        Fanta Champions · competizione tra Fanta Montelparo, Fanta Pepe e Fanta Ortezzano
+        Fanta Champions · competizione tra Fanta Montelparo, Fanta Pepe e Fanta Ortezzano ·{' '}
+        <a
+          className="underline hover:text-blue-700"
+          href="https://github.com/MortDeKayXII/fanta_champions/blob/main/docs/guida-utente.md"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Guida
+        </a>
       </footer>
     </div>
   )

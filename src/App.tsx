@@ -1,16 +1,9 @@
-import type { ReactNode } from 'react'
+import { lazy, type ReactNode } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import { ErrorBox, Loading } from './components/ui'
 import { useAuth } from './lib/auth'
 import { isConfigured } from './lib/supabase'
-import Admin from './pages/admin/Admin'
-import AdminCompute from './pages/admin/AdminCompute'
-import AdminKnockout from './pages/admin/AdminKnockout'
-import AdminLineups from './pages/admin/AdminLineups'
-import AdminReports from './pages/admin/AdminReports'
-import AdminRosters from './pages/admin/AdminRosters'
-import AdminTeams from './pages/admin/AdminTeams'
 import Bracket from './pages/Bracket'
 import Calendar from './pages/Calendar'
 import Home from './pages/Home'
@@ -21,6 +14,15 @@ import MyRoster from './pages/MyRoster'
 import Profile from './pages/Profile'
 import Report from './pages/Report'
 import Rosters from './pages/Rosters'
+
+// Admin pages (and the xlsx reader) are only downloaded when the admin opens them.
+const Admin = lazy(() => import('./pages/admin/Admin'))
+const AdminCompute = lazy(() => import('./pages/admin/AdminCompute'))
+const AdminKnockout = lazy(() => import('./pages/admin/AdminKnockout'))
+const AdminLineups = lazy(() => import('./pages/admin/AdminLineups'))
+const AdminReports = lazy(() => import('./pages/admin/AdminReports'))
+const AdminRosters = lazy(() => import('./pages/admin/AdminRosters'))
+const AdminTeams = lazy(() => import('./pages/admin/AdminTeams'))
 
 /** Pages reserved to logged users: others are sent to the login page. */
 function RequireAuth({ children }: { children: ReactNode }) {

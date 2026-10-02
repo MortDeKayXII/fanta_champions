@@ -17,7 +17,21 @@ export default function Admin() {
 
   return (
     <div>
-      <PageTitle sub="Formazioni, voti, calcolo delle giornate, rose e segnalazioni.">
+      <PageTitle
+        sub={
+          <>
+            Formazioni, voti, calcolo delle giornate, rose e segnalazioni.{' '}
+            <a
+              className="underline"
+              href="https://github.com/MortDeKayXII/fanta_champions/blob/main/docs/guida-admin.md"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Guida amministratore
+            </a>
+          </>
+        }
+      >
         Amministrazione
       </PageTitle>
       <nav className="mb-4 flex gap-2 overflow-x-auto" aria-label="Sezioni admin">

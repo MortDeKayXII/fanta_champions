@@ -12,6 +12,8 @@ interface AuthState {
   profile: Profile | null
   /** true while the profile of a logged user is being fetched */
   profileLoading: boolean
+  /** false until the user has replaced the shared initial password */
+  passwordChanged: boolean
   signIn: (teamName: string, password: string) => Promise<string | null>
   signOut: () => Promise<void>
   changePassword: (password: string) => Promise<string | null>
@@ -54,6 +56,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       session,
       profile: userId ? (profile ?? null) : null,
       profileLoading: Boolean(userId) && profileQueryLoading,
+      passwordChanged: session?.user.user_metadata?.password_changed === true,
       async signIn(teamName, password) {
         const { error } = await supabase.auth.signInWithPassword({
           email: teamEmail(teamName),
@@ -69,7 +72,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         queryClient.clear()
       },
       async changePassword(password) {
-        const { error } = await supabase.auth.updateUser({ password })
+        const { error } = await supabase.auth.updateUser({
+          password,
+          data: { password_changed: true },
+        })
         return error ? 'Impossibile cambiare la password: ' + error.message : null
       },
     }),
