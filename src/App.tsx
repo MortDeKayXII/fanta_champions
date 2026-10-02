@@ -6,6 +6,7 @@ import { useAuth } from './lib/auth'
 import { isConfigured } from './lib/supabase'
 import Admin from './pages/admin/Admin'
 import AdminCompute from './pages/admin/AdminCompute'
+import AdminKnockout from './pages/admin/AdminKnockout'
 import AdminLineups from './pages/admin/AdminLineups'
 import AdminReports from './pages/admin/AdminReports'
 import AdminRosters from './pages/admin/AdminRosters'
@@ -98,6 +99,7 @@ export default function App() {
           <Route index element={<Navigate to="formazioni" replace />} />
           <Route path="formazioni" element={<AdminLineups />} />
           <Route path="calcolo" element={<AdminCompute />} />
+          <Route path="eliminazione" element={<AdminKnockout />} />
           <Route path="rose" element={<AdminRosters />} />
           <Route path="segnalazioni" element={<AdminReports />} />
           <Route path="squadre" element={<AdminTeams />} />

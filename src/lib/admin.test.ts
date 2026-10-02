@@ -3,7 +3,7 @@ import type { VoteRow } from '../engine'
 import { computeMatchday } from './computeMatchday'
 import { matchPlayerNames } from './lineupText'
 import type { Fixture, LineupRow, Player } from './types'
-import { parseVotes } from './votesFile'
+import { findItaliaSheet, parseVotes } from './votesFile'
 
 describe('parseVotes', () => {
   const header = [
@@ -186,5 +186,17 @@ describe('matchPlayerNames', () => {
     expect(matchPlayerNames('Zzz Nobody', players, new Set())[0].problem).toBe(
       'Giocatore non trovato',
     )
+  })
+})
+
+describe('findItaliaSheet', () => {
+  it('picks the Italia sheet, preferring "Redazione Italia"', () => {
+    expect(findItaliaSheet(['Fantacalcio', 'Statistico', 'Italia'])).toBe('Italia')
+    expect(findItaliaSheet(['Fantacalcio', 'Italia', 'Redazione Italia'])).toBe('Redazione Italia')
+    expect(findItaliaSheet(['redazione italia'])).toBe('redazione italia')
+  })
+
+  it('returns undefined when there is no such sheet', () => {
+    expect(findItaliaSheet(['Fantacalcio', 'Statistico'])).toBeUndefined()
   })
 })

@@ -27,6 +27,9 @@ export default function Admin() {
         <NavLink to="/admin/calcolo" className={tab}>
           Voti e calcolo
         </NavLink>
+        <NavLink to="/admin/eliminazione" className={tab}>
+          Eliminazione
+        </NavLink>
         <NavLink to="/admin/rose" className={tab}>
           Rose
         </NavLink>

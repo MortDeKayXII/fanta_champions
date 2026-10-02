@@ -67,3 +67,15 @@ export function parseVotes(rows: ReadonlyArray<ReadonlyArray<unknown>>): ParsedV
   if (byId.size === 0) warnings.push('Nessun giocatore trovato: è il file dei voti giusto?')
   return { votes: [...byId.values()], noVote, coaches, warnings }
 }
+
+/**
+ * The votes workbook has several sheets (Fantacalcio, Statistico, Italia...). The competition uses
+ * the "Italia" one (the Redazione Italia votes). Returns its name, or undefined if there is none.
+ */
+export function findItaliaSheet(sheetNames: readonly string[]): string | undefined {
+  const has = (name: string, word: string) => name.toLowerCase().includes(word)
+  return (
+    sheetNames.find((n) => has(n, 'redazione') && has(n, 'italia')) ??
+    sheetNames.find((n) => has(n, 'italia'))
+  )
+}

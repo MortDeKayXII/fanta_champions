@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { computeStandings, type MatchResult, type StandingRow } from '../engine'
 import { useAuth } from './auth'
+import { groupStageComplete, resolveKnockout } from './knockout'
 import { supabase } from './supabase'
 import type {
   ErrorReport,
@@ -146,4 +147,37 @@ export function useStandings(): { rows: StandingRow[]; isLoading: boolean } {
     )
   }, [teams, fixtures, results, teamById, matchdayByNumber])
   return { rows, isLoading }
+}
+
+export const useTieDecisions = () =>
+  useQuery({
+    queryKey: ['tie_decisions'],
+    queryFn: () => fetchTable<{ tie_id: string; winner_team: number }>('tie_decisions'),
+  })
+
+/** Knockout state: every tie resolved from fixtures, results and the admin's manual decisions. */
+export function useKnockout() {
+  const comp = useCompetition()
+  const { rows, isLoading: standingsLoading } = useStandings()
+  const decisions = useTieDecisions()
+
+  const views = useMemo(() => {
+    if (rows.length !== 30) return []
+    return resolveKnockout({
+      ranking: rows.map((r) => r.team),
+      teamIdByName: new Map(comp.teams.map((t) => [t.name, t.id])),
+      fixtures: comp.fixtures,
+      results: comp.results,
+      decisions: decisions.data ?? [],
+    })
+  }, [rows, comp.teams, comp.fixtures, comp.results, decisions.data])
+
+  return {
+    ...comp,
+    ranking: rows,
+    views,
+    decisions: decisions.data ?? [],
+    groupComplete: groupStageComplete(comp.fixtures, comp.results, comp.matchdays),
+    isLoading: comp.isLoading || standingsLoading || decisions.isLoading,
+  }
 }

@@ -15,6 +15,7 @@ Legenda: 🧑 = azione che devi fare tu · 🤖 = lo faccio io · 🤝 = insieme
 
 - Voto con `*` (senza voto, "s.v.") → il giocatore non conta (0 nel totale).
 - **Malus "fuori ruolo"**: in formazione l'admin può marcare un giocatore come fuori posizione (`*` nel vecchio sistema): −1 sul fantavoto. È l'admin a decidere quando applicarlo, l'app non valida i ruoli. Il campo è salvato nella formazione (`lineups.out_of_position`), quindi resta valido nei ricalcoli.
+- **Foglio dei voti**: nel file dei voti si usa il foglio **«Italia»** (Redazione Italia). Gli altri fogli (Fantacalcio, Statistico) non vengono usati.
 - Gli allenatori (ruolo `ALL`) nel file voti vengono ignorati.
 - I voti si collegano ai giocatori per **ID** (`Cod.` del file voti = `Id` della lista giocatori; verificato).
 

@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { readSheet } from 'read-excel-file/browser'
+import readXlsxFile from 'read-excel-file/browser'
 import {
   Card,
   ErrorBox,
@@ -18,7 +18,7 @@ import { findProgress } from '../../lib/progress'
 import { useCompetition } from '../../lib/queries'
 import { supabase } from '../../lib/supabase'
 import type { LineupRow } from '../../lib/types'
-import { parseVotes, type ParsedVotes } from '../../lib/votesFile'
+import { findItaliaSheet, parseVotes } from '../../lib/votesFile'
 
 interface VoteDbRow {
   matchday: number
@@ -69,7 +69,11 @@ export default function AdminCompute() {
   const comp = useCompetition()
   const queryClient = useQueryClient()
   const [params, setParams] = useSearchParams()
-  const [parsed, setParsed] = useState<{ fileName: string; data: ParsedVotes } | null>(null)
+  const [workbook, setWorkbook] = useState<{
+    fileName: string
+    sheets: Array<{ name: string; rows: unknown[][] }>
+  } | null>(null)
+  const [sheetName, setSheetName] = useState('')
   const [readError, setReadError] = useState<string | null>(null)
   const [output, setOutput] = useState<ComputeOutput | null>(null)
 
@@ -90,13 +94,23 @@ export default function AdminCompute() {
     },
   })
 
+  // Votes come from the "Italia" sheet (Redazione Italia); the admin can pick another one.
+  const parsed = useMemo(() => {
+    const sheet = workbook?.sheets.find((x) => x.name === sheetName)
+    return workbook && sheet ? { fileName: workbook.fileName, data: parseVotes(sheet.rows) } : null
+  }, [workbook, sheetName])
+
   async function onFile(file: File | undefined) {
-    setParsed(null)
+    setWorkbook(null)
     setReadError(null)
     if (!file) return
     try {
-      const rows = await readSheet(file)
-      setParsed({ fileName: file.name, data: parseVotes(rows) })
+      const sheets = (await readXlsxFile(file)).map((x) => ({
+        name: x.sheet,
+        rows: x.data as unknown[][],
+      }))
+      setWorkbook({ fileName: file.name, sheets })
+      setSheetName(findItaliaSheet(sheets.map((x) => x.name)) ?? '')
     } catch {
       setReadError('Non riesco a leggere il file: deve essere un .xlsx dei voti Fantacalcio.')
     }
@@ -115,7 +129,7 @@ export default function AdminCompute() {
       }
     },
     onSuccess: () => {
-      setParsed(null)
+      setWorkbook(null)
       void queryClient.invalidateQueries({ queryKey: ['votes-count', matchday] })
     },
   })
@@ -197,7 +211,7 @@ export default function AdminCompute() {
           onChange={(e) => {
             setParams({ g: e.target.value })
             setOutput(null)
-            setParsed(null)
+            setWorkbook(null)
           }}
         >
           {withFixtures.map((n) => {
@@ -229,11 +243,37 @@ export default function AdminCompute() {
             <ErrorBox>{readError}</ErrorBox>
           </div>
         )}
+        {workbook && (
+          <div className="mt-3 space-y-2">
+            <label className="block text-sm font-medium">
+              Foglio da usare
+              <select
+                className="ml-2 rounded-lg border border-slate-300 bg-white px-2 py-1.5 font-normal"
+                value={sheetName}
+                onChange={(e) => setSheetName(e.target.value)}
+              >
+                {!sheetName && <option value="">— scegli un foglio —</option>}
+                {workbook.sheets.map((x) => (
+                  <option key={x.name} value={x.name}>
+                    {x.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+            {!findItaliaSheet(workbook.sheets.map((x) => x.name)) && (
+              <ErrorBox>
+                Non trovo il foglio «Italia» (Redazione Italia): controlla di aver scelto il foglio
+                giusto.
+              </ErrorBox>
+            )}
+          </div>
+        )}
         {parsed && (
           <div className="mt-3 space-y-2">
             <Notice>
-              <strong>{parsed.fileName}</strong>: {parsed.data.votes.length} giocatori, di cui{' '}
-              {parsed.data.noVote} senza voto (s.v./6*). {parsed.data.coaches} allenatori ignorati.
+              <strong>{parsed.fileName}</strong> · foglio «{sheetName}»: {parsed.data.votes.length}{' '}
+              giocatori, di cui {parsed.data.noVote} senza voto (s.v./6*). {parsed.data.coaches}{' '}
+              allenatori ignorati.
             </Notice>
             {parsed.data.warnings.map((w) => (
               <ErrorBox key={w}>{w}</ErrorBox>
@@ -252,7 +292,7 @@ export default function AdminCompute() {
             <ErrorBox>Salvataggio non riuscito: {saveVotes.error.message}</ErrorBox>
           </div>
         )}
-        {saveVotes.isSuccess && !parsed && (
+        {saveVotes.isSuccess && !workbook && (
           <p className="mt-2 text-sm text-green-700">Voti salvati.</p>
         )}
       </Card>
