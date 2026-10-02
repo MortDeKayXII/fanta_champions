@@ -86,7 +86,7 @@ export default function Layout() {
         Fanta Champions · competizione tra Fanta Montelparo, Fanta Pepe e Fanta Ortezzano ·{' '}
         <a
           className="underline hover:text-blue-700"
-          href="https://github.com/MortDeKayXII/fanta_champions/blob/main/docs/guida-utente.md"
+          href="https://docs.google.com/document/d/1DKtrNdVbzRW_mo1pVZ3mNrnEP4dRGD-xIxjfEm6s5_c/edit?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
