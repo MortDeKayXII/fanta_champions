@@ -1,0 +1,7981 @@
+{
+ "players": [
+  {
+   "id": 5841,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Svilar",
+   "team": "Roma"
+  },
+  {
+   "id": 4431,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Carnesecchi",
+   "team": "Atalanta"
+  },
+  {
+   "id": 4964,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Vicario",
+   "team": "Juventus"
+  },
+  {
+   "id": 4312,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Maignan",
+   "team": "Milan"
+  },
+  {
+   "id": 5116,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Martinez Jo.",
+   "team": "Inter"
+  },
+  {
+   "id": 4360,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Caprile",
+   "team": "Cagliari"
+  },
+  {
+   "id": 6966,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Butez",
+   "team": "Como"
+  },
+  {
+   "id": 6482,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Mandas",
+   "team": "Lazio"
+  },
+  {
+   "id": 2521,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "De Gea",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 133,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Skorupski",
+   "team": "Bologna"
+  },
+  {
+   "id": 6415,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Palmisani",
+   "team": "Frosinone"
+  },
+  {
+   "id": 572,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Meret",
+   "team": "Napoli"
+  },
+  {
+   "id": 6534,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Perri",
+   "team": "Torino"
+  },
+  {
+   "id": 6462,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Okoye",
+   "team": "Udinese"
+  },
+  {
+   "id": 6344,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Sanchez Ro.",
+   "team": "Como"
+  },
+  {
+   "id": 2134,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Falcone",
+   "team": "Lecce"
+  },
+  {
+   "id": 2170,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Milinkovic-Savic V.",
+   "team": "Napoli"
+  },
+  {
+   "id": 7332,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Bijlow",
+   "team": "Genoa"
+  },
+  {
+   "id": 7411,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Daffara",
+   "team": "Parma"
+  },
+  {
+   "id": 4236,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Muric",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 6248,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Stankovic F.",
+   "team": "Venezia"
+  },
+  {
+   "id": 6662,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Corvi",
+   "team": "Parma"
+  },
+  {
+   "id": 7301,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Tornqvist",
+   "team": "Monza"
+  },
+  {
+   "id": 4485,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Thiam",
+   "team": "Monza"
+  },
+  {
+   "id": 4,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Sportiello",
+   "team": "Atalanta"
+  },
+  {
+   "id": 7533,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Happonen",
+   "team": "Bologna"
+  },
+  {
+   "id": 7172,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Pessina Mas.",
+   "team": "Bologna"
+  },
+  {
+   "id": 6650,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Sherri",
+   "team": "Cagliari"
+  },
+  {
+   "id": 2809,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Vigorito",
+   "team": "Como"
+  },
+  {
+   "id": 6403,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Christensen O.",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 158,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Lezzerini",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 7463,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Desplanches",
+   "team": "Frosinone"
+  },
+  {
+   "id": 7466,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Lolic",
+   "team": "Frosinone"
+  },
+  {
+   "id": 219,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Sommariva",
+   "team": "Genoa"
+  },
+  {
+   "id": 6569,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Stolz",
+   "team": "Genoa"
+  },
+  {
+   "id": 1926,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Di Gennaro",
+   "team": "Inter"
+  },
+  {
+   "id": 2814,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Provedel",
+   "team": "Inter"
+  },
+  {
+   "id": 1930,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Pinsoglio",
+   "team": "Juventus"
+  },
+  {
+   "id": 7337,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Motta",
+   "team": "Lazio"
+  },
+  {
+   "id": 7534,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Renzetti",
+   "team": "Lazio"
+  },
+  {
+   "id": 2815,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Terracciano",
+   "team": "Milan"
+  },
+  {
+   "id": 6813,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Torriani",
+   "team": "Milan"
+  },
+  {
+   "id": 7475,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Strajnar",
+   "team": "Monza"
+  },
+  {
+   "id": 2845,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Contini",
+   "team": "Napoli"
+  },
+  {
+   "id": 7048,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "De Marzi",
+   "team": "Roma"
+  },
+  {
+   "id": 610,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Gollini",
+   "team": "Roma"
+  },
+  {
+   "id": 4518,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Russo A.",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 4867,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Turati",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 7457,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Mascardi",
+   "team": "Torino"
+  },
+  {
+   "id": 7363,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Siviero",
+   "team": "Torino"
+  },
+  {
+   "id": 543,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Padelli",
+   "team": "Udinese"
+  },
+  {
+   "id": 6671,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Grandi",
+   "team": "Venezia"
+  },
+  {
+   "id": 7531,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Pozzi",
+   "team": "Venezia"
+  },
+  {
+   "id": 2127,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Satalino",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 7557,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Penev",
+   "team": "Lecce"
+  },
+  {
+   "id": 7560,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Pisseri",
+   "team": "Frosinone"
+  },
+  {
+   "id": 3,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Radunovic",
+   "team": "Cagliari"
+  },
+  {
+   "id": 4957,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Montipò",
+   "team": "Venezia"
+  },
+  {
+   "id": 4468,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Bleve",
+   "team": "Lecce"
+  },
+  {
+   "id": 7603,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Grabara",
+   "team": "Juventus"
+  },
+  {
+   "id": 7611,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Mrozek",
+   "team": "Udinese"
+  },
+  {
+   "id": 2874,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Ghidotti",
+   "team": "Parma"
+  },
+  {
+   "id": 7626,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Pompei",
+   "team": "Atalanta"
+  },
+  {
+   "id": 283,
+   "role": "P",
+   "mantraRoles": "Por",
+   "name": "Neto",
+   "team": "Juventus"
+  },
+  {
+   "id": 254,
+   "role": "D",
+   "mantraRoles": "E;W",
+   "name": "Dimarco",
+   "team": "Inter"
+  },
+  {
+   "id": 7181,
+   "role": "D",
+   "mantraRoles": "E",
+   "name": "Wesley",
+   "team": "Roma"
+  },
+  {
+   "id": 2788,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Bremer",
+   "team": "Juventus"
+  },
+  {
+   "id": 4998,
+   "role": "D",
+   "mantraRoles": "E",
+   "name": "Molina N.",
+   "team": "Roma"
+  },
+  {
+   "id": 4409,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Rrahmani",
+   "team": "Napoli"
+  },
+  {
+   "id": 2296,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Mancini",
+   "team": "Roma"
+  },
+  {
+   "id": 4159,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Akanji",
+   "team": "Inter"
+  },
+  {
+   "id": 2120,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Bastoni",
+   "team": "Inter"
+  },
+  {
+   "id": 6217,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Bisseck",
+   "team": "Inter"
+  },
+  {
+   "id": 4976,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Kalulu",
+   "team": "Juventus"
+  },
+  {
+   "id": 5833,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Gila",
+   "team": "Milan"
+  },
+  {
+   "id": 5022,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Pavlovic",
+   "team": "Milan"
+  },
+  {
+   "id": 6869,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Ramon",
+   "team": "Como"
+  },
+  {
+   "id": 2816,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Di Lorenzo",
+   "team": "Napoli"
+  },
+  {
+   "id": 4807,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Hermoso",
+   "team": "Roma"
+  },
+  {
+   "id": 6956,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Solet",
+   "team": "Udinese"
+  },
+  {
+   "id": 2514,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Stones",
+   "team": "Inter"
+  },
+  {
+   "id": 4317,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "N'Dicka",
+   "team": "Roma"
+  },
+  {
+   "id": 5526,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Scalvini",
+   "team": "Atalanta"
+  },
+  {
+   "id": 4734,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Miranda J.",
+   "team": "Bologna"
+  },
+  {
+   "id": 6531,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;E",
+   "name": "Jimenez A.",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 5750,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Ostigard",
+   "team": "Genoa"
+  },
+  {
+   "id": 5877,
+   "role": "D",
+   "mantraRoles": "B;Ds;E",
+   "name": "Carlos Augusto",
+   "team": "Inter"
+  },
+  {
+   "id": 7485,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Mangas",
+   "team": "Monza"
+  },
+  {
+   "id": 5555,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Kamara H.",
+   "team": "Udinese"
+  },
+  {
+   "id": 5982,
+   "role": "D",
+   "mantraRoles": "E",
+   "name": "Spence",
+   "team": "Inter"
+  },
+  {
+   "id": 2404,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Alaba",
+   "team": "Udinese"
+  },
+  {
+   "id": 4210,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Mina",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7414,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Kaiki",
+   "team": "Como"
+  },
+  {
+   "id": 7469,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Bracaglia",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6238,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Oyono A.",
+   "team": "Frosinone"
+  },
+  {
+   "id": 5514,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Vasquez",
+   "team": "Genoa"
+  },
+  {
+   "id": 5620,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Tavares N.",
+   "team": "Lazio"
+  },
+  {
+   "id": 6989,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Tiago Gabriel",
+   "team": "Lecce"
+  },
+  {
+   "id": 5862,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Valeri",
+   "team": "Parma"
+  },
+  {
+   "id": 5641,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Chalobah T.",
+   "team": "Como"
+  },
+  {
+   "id": 6042,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Lucumì",
+   "team": "Juventus"
+  },
+  {
+   "id": 7274,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Zè Pedro",
+   "team": "Cagliari"
+  },
+  {
+   "id": 5701,
+   "role": "D",
+   "mantraRoles": "B;Ds;E",
+   "name": "Obert",
+   "team": "Cagliari"
+  },
+  {
+   "id": 6867,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Valle",
+   "team": "Como"
+  },
+  {
+   "id": 5365,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Dragusin",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 5885,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Dodò",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 7467,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Calvani",
+   "team": "Frosinone"
+  },
+  {
+   "id": 4657,
+   "role": "D",
+   "mantraRoles": "B;Dd;E",
+   "name": "Celik",
+   "team": "Juventus"
+  },
+  {
+   "id": 6320,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Doekhi",
+   "team": "Lazio"
+  },
+  {
+   "id": 1852,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Spinazzola",
+   "team": "Napoli"
+  },
+  {
+   "id": 6664,
+   "role": "D",
+   "mantraRoles": "B;Dd;E",
+   "name": "Delprato",
+   "team": "Parma"
+  },
+  {
+   "id": 5851,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Doig",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 6642,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Coco",
+   "team": "Torino"
+  },
+  {
+   "id": 4994,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Vojvoda",
+   "team": "Udinese"
+  },
+  {
+   "id": 6821,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Hainaut",
+   "team": "Venezia"
+  },
+  {
+   "id": 6727,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Couto",
+   "team": "Como"
+  },
+  {
+   "id": 7564,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Leysen F.",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 5675,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Theate",
+   "team": "Bologna"
+  },
+  {
+   "id": 4705,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Balerdi",
+   "team": "Roma"
+  },
+  {
+   "id": 4137,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Diego Carlos",
+   "team": "Parma"
+  },
+  {
+   "id": 554,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Zappacosta",
+   "team": "Atalanta"
+  },
+  {
+   "id": 4952,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Monterisi",
+   "team": "Frosinone"
+  },
+  {
+   "id": 5520,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;E",
+   "name": "Cambiaso",
+   "team": "Juventus"
+  },
+  {
+   "id": 6496,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Bartesaghi",
+   "team": "Milan"
+  },
+  {
+   "id": 5838,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;E",
+   "name": "Birindelli",
+   "team": "Monza"
+  },
+  {
+   "id": 7529,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Koulierakis",
+   "team": "Roma"
+  },
+  {
+   "id": 6672,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Idzes",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 6495,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Comuzzo",
+   "team": "Torino"
+  },
+  {
+   "id": 5010,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Ismajli",
+   "team": "Torino"
+  },
+  {
+   "id": 6021,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Abankwah",
+   "team": "Udinese"
+  },
+  {
+   "id": 7580,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Sutalo J.",
+   "team": "Lazio"
+  },
+  {
+   "id": 7220,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Belghali",
+   "team": "Torino"
+  },
+  {
+   "id": 6046,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Hien",
+   "team": "Atalanta"
+  },
+  {
+   "id": 2640,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Kolasinac",
+   "team": "Atalanta"
+  },
+  {
+   "id": 5678,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Holm",
+   "team": "Bologna"
+  },
+  {
+   "id": 4433,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Zortea",
+   "team": "Bologna"
+  },
+  {
+   "id": 7268,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Rodriguez Ju.",
+   "team": "Cagliari"
+  },
+  {
+   "id": 6990,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Veiga D.",
+   "team": "Lecce"
+  },
+  {
+   "id": 4502,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Gallo",
+   "team": "Lecce"
+  },
+  {
+   "id": 4401,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Gabbia",
+   "team": "Milan"
+  },
+  {
+   "id": 5739,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "De Winter",
+   "team": "Milan"
+  },
+  {
+   "id": 7526,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Comert",
+   "team": "Torino"
+  },
+  {
+   "id": 4845,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;E",
+   "name": "Correia T.",
+   "team": "Venezia"
+  },
+  {
+   "id": 7563,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;E",
+   "name": "Favasuli",
+   "team": "Napoli"
+  },
+  {
+   "id": 7069,
+   "role": "D",
+   "mantraRoles": "E",
+   "name": "Fortini",
+   "team": "Torino"
+  },
+  {
+   "id": 4664,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Badiashile",
+   "team": "Napoli"
+  },
+  {
+   "id": 4147,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Caleta-Car",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 7621,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Sugawara",
+   "team": "Cagliari"
+  },
+  {
+   "id": 6319,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Leite",
+   "team": "Lazio"
+  },
+  {
+   "id": 4887,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Bellanova",
+   "team": "Atalanta"
+  },
+  {
+   "id": 7219,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Bernasconi",
+   "team": "Atalanta"
+  },
+  {
+   "id": 7326,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Helland",
+   "team": "Bologna"
+  },
+  {
+   "id": 7212,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Heggem",
+   "team": "Bologna"
+  },
+  {
+   "id": 7532,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Kofler",
+   "team": "Cagliari"
+  },
+  {
+   "id": 6893,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Kempf",
+   "team": "Como"
+  },
+  {
+   "id": 7294,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Valdepenas",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 7410,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Viery",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 6660,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Marcandalli",
+   "team": "Genoa"
+  },
+  {
+   "id": 4177,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Pavard",
+   "team": "Inter"
+  },
+  {
+   "id": 5831,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Gatti",
+   "team": "Juventus"
+  },
+  {
+   "id": 7012,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Provstgaard",
+   "team": "Lazio"
+  },
+  {
+   "id": 4817,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Pedraza",
+   "team": "Lazio"
+  },
+  {
+   "id": 2188,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;E",
+   "name": "Marusic",
+   "team": "Lazio"
+  },
+  {
+   "id": 4751,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Tomori",
+   "team": "Milan"
+  },
+  {
+   "id": 2724,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Buongiorno",
+   "team": "Napoli"
+  },
+  {
+   "id": 6631,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Ghilardi",
+   "team": "Roma"
+  },
+  {
+   "id": 6485,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Kristensen T.",
+   "team": "Atalanta"
+  },
+  {
+   "id": 5527,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Zanoli",
+   "team": "Udinese"
+  },
+  {
+   "id": 5695,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Haps",
+   "team": "Venezia"
+  },
+  {
+   "id": 7329,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Obrador",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 7573,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Cinquegrano",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 5751,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Patterson",
+   "team": "Torino"
+  },
+  {
+   "id": 2169,
+   "role": "D",
+   "mantraRoles": "B;Ds;E",
+   "name": "Rodriguez R.",
+   "team": "Torino"
+  },
+  {
+   "id": 7068,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Vitik",
+   "team": "Bologna"
+  },
+  {
+   "id": 5449,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Parisi",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 5757,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Cittadini",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6766,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Kelly L.",
+   "team": "Juventus"
+  },
+  {
+   "id": 6632,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Gaspar K.",
+   "team": "Lecce"
+  },
+  {
+   "id": 7240,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Siebert",
+   "team": "Lecce"
+  },
+  {
+   "id": 5273,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Estupinan",
+   "team": "Milan"
+  },
+  {
+   "id": 6659,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Lucchesi",
+   "team": "Monza"
+  },
+  {
+   "id": 7238,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Kouadio",
+   "team": "Monza"
+  },
+  {
+   "id": 4925,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Carboni A.",
+   "team": "Monza"
+  },
+  {
+   "id": 7476,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Bakoune",
+   "team": "Monza"
+  },
+  {
+   "id": 6202,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Beukema",
+   "team": "Napoli"
+  },
+  {
+   "id": 5840,
+   "role": "D",
+   "mantraRoles": "B;Ds;E",
+   "name": "Olivera",
+   "team": "Napoli"
+  },
+  {
+   "id": 7235,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Troilo",
+   "team": "Parma"
+  },
+  {
+   "id": 7255,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;E",
+   "name": "Britschgi",
+   "team": "Parma"
+  },
+  {
+   "id": 6986,
+   "role": "D",
+   "mantraRoles": "B;Dd;E",
+   "name": "Rensch",
+   "team": "Roma"
+  },
+  {
+   "id": 5820,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;Dc",
+   "name": "Bertola",
+   "team": "Udinese"
+  },
+  {
+   "id": 7253,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Bella-Kotchap",
+   "team": "Venezia"
+  },
+  {
+   "id": 6890,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Moreno M.",
+   "team": "Venezia"
+  },
+  {
+   "id": 4375,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Terzic",
+   "team": "Frosinone"
+  },
+  {
+   "id": 256,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Juan Jesus",
+   "team": "Venezia"
+  },
+  {
+   "id": 6047,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Ehizibue",
+   "team": "Genoa"
+  },
+  {
+   "id": 5578,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Kossounou",
+   "team": "Atalanta"
+  },
+  {
+   "id": 7014,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Smolcic I.",
+   "team": "Como"
+  },
+  {
+   "id": 5603,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Pongracic",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 4378,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Ranieri L.",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 7537,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Mitaj",
+   "team": "Genoa"
+  },
+  {
+   "id": 7131,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Floriani Mussolini",
+   "team": "Lazio"
+  },
+  {
+   "id": 5307,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Valenti",
+   "team": "Parma"
+  },
+  {
+   "id": 4374,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Walukiewicz",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 4263,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Kabasele",
+   "team": "Udinese"
+  },
+  {
+   "id": 5994,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Ebosse",
+   "team": "Udinese"
+  },
+  {
+   "id": 7312,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Arizala",
+   "team": "Udinese"
+  },
+  {
+   "id": 6681,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Sagrado",
+   "team": "Venezia"
+  },
+  {
+   "id": 7154,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Odenthal",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 7599,
+   "role": "D",
+   "mantraRoles": "E",
+   "name": "Lulli",
+   "team": "Roma"
+  },
+  {
+   "id": 5498,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Casale",
+   "team": "Bologna"
+  },
+  {
+   "id": 487,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "De Silvestri",
+   "team": "Bologna"
+  },
+  {
+   "id": 7483,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Alhassane",
+   "team": "Bologna"
+  },
+  {
+   "id": 7125,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Idrissi R.",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7175,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Joao Mario",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 7540,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Akpoguma",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6977,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Otoa",
+   "team": "Genoa"
+  },
+  {
+   "id": 7413,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Puczka",
+   "team": "Genoa"
+  },
+  {
+   "id": 791,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;E",
+   "name": "Sabelli",
+   "team": "Genoa"
+  },
+  {
+   "id": 6638,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Marin R.",
+   "team": "Napoli"
+  },
+  {
+   "id": 6985,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Candè",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 6925,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Palma",
+   "team": "Udinese"
+  },
+  {
+   "id": 7538,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Halhal",
+   "team": "Venezia"
+  },
+  {
+   "id": 6892,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Schingtienne",
+   "team": "Venezia"
+  },
+  {
+   "id": 6673,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Sverko",
+   "team": "Venezia"
+  },
+  {
+   "id": 7478,
+   "role": "D",
+   "mantraRoles": "B;Ds;E",
+   "name": "Franjic",
+   "team": "Venezia"
+  },
+  {
+   "id": 7605,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Tchato",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6601,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Kambwala",
+   "team": "Como"
+  },
+  {
+   "id": 7615,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Drobnic",
+   "team": "Parma"
+  },
+  {
+   "id": 5742,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;E",
+   "name": "Drameh",
+   "team": "Genoa"
+  },
+  {
+   "id": 418,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Goldaniga",
+   "team": "Como"
+  },
+  {
+   "id": 6896,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Van Der Brempt",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 5424,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Amey",
+   "team": "Frosinone"
+  },
+  {
+   "id": 294,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Rugani",
+   "team": "Juventus"
+  },
+  {
+   "id": 6039,
+   "role": "D",
+   "mantraRoles": "B;Ds;E",
+   "name": "Cabal",
+   "team": "Juventus"
+  },
+  {
+   "id": 2263,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Lazzari",
+   "team": "Lazio"
+  },
+  {
+   "id": 2728,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Pellegrini Lu.",
+   "team": "Lazio"
+  },
+  {
+   "id": 6883,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Jean",
+   "team": "Lecce"
+  },
+  {
+   "id": 7182,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Ndaba",
+   "team": "Lecce"
+  },
+  {
+   "id": 7525,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Diawara S.",
+   "team": "Milan"
+  },
+  {
+   "id": 5399,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Antov",
+   "team": "Monza"
+  },
+  {
+   "id": 6809,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Marianucci",
+   "team": "Napoli"
+  },
+  {
+   "id": 5481,
+   "role": "D",
+   "mantraRoles": "Dd;Ds;E",
+   "name": "Mazzocchi",
+   "team": "Venezia"
+  },
+  {
+   "id": 7202,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Ndiaye",
+   "team": "Parma"
+  },
+  {
+   "id": 6149,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Carboni F.",
+   "team": "Parma"
+  },
+  {
+   "id": 7260,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Ziolkowski",
+   "team": "Monza"
+  },
+  {
+   "id": 7156,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Pieragnolo",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 252,
+   "role": "D",
+   "mantraRoles": "B;Ds;E",
+   "name": "Biraghi",
+   "team": "Torino"
+  },
+  {
+   "id": 7454,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Gomes",
+   "team": "Venezia"
+  },
+  {
+   "id": 7548,
+   "role": "D",
+   "mantraRoles": "Ds;E",
+   "name": "Aurelio",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7553,
+   "role": "D",
+   "mantraRoles": "Dc",
+   "name": "Omar Fayed",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6537,
+   "role": "D",
+   "mantraRoles": "Dd;Dc",
+   "name": "Goglichidze",
+   "team": "Monza"
+  },
+  {
+   "id": 5812,
+   "role": "D",
+   "mantraRoles": "B;Dd;Ds",
+   "name": "Terracciano F.",
+   "team": "Milan"
+  },
+  {
+   "id": 7604,
+   "role": "D",
+   "mantraRoles": "Ds;Dc",
+   "name": "Maye",
+   "team": "Monza"
+  },
+  {
+   "id": 6826,
+   "role": "D",
+   "mantraRoles": "Dd;E",
+   "name": "Dembelè A.",
+   "team": "Lecce"
+  },
+  {
+   "id": 6875,
+   "role": "C",
+   "mantraRoles": "T;A",
+   "name": "Paz N.",
+   "team": "Como"
+  },
+  {
+   "id": 2194,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Calhanoglu",
+   "team": "Inter"
+  },
+  {
+   "id": 2423,
+   "role": "C",
+   "mantraRoles": "T;A",
+   "name": "Pulisic",
+   "team": "Milan"
+  },
+  {
+   "id": 2379,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Rabiot",
+   "team": "Milan"
+  },
+  {
+   "id": 4777,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "McTominay",
+   "team": "Napoli"
+  },
+  {
+   "id": 2167,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Orsolini",
+   "team": "Bologna"
+  },
+  {
+   "id": 7126,
+   "role": "C",
+   "mantraRoles": "T",
+   "name": "Baturina",
+   "team": "Como"
+  },
+  {
+   "id": 7556,
+   "role": "C",
+   "mantraRoles": "T",
+   "name": "Mora",
+   "team": "Roma"
+  },
+  {
+   "id": 1870,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Barella",
+   "team": "Inter"
+  },
+  {
+   "id": 632,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Zaccagni",
+   "team": "Lazio"
+  },
+  {
+   "id": 5559,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Da Cunha",
+   "team": "Como"
+  },
+  {
+   "id": 2517,
+   "role": "C",
+   "mantraRoles": "T",
+   "name": "De Bruyne",
+   "team": "Napoli"
+  },
+  {
+   "id": 2766,
+   "role": "C",
+   "mantraRoles": "T;A",
+   "name": "Zaniolo",
+   "team": "Udinese"
+  },
+  {
+   "id": 4973,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "McKennie",
+   "team": "Juventus"
+  },
+  {
+   "id": 6372,
+   "role": "C",
+   "mantraRoles": "E;W",
+   "name": "Moreira",
+   "team": "Milan"
+  },
+  {
+   "id": 5119,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Samardzic",
+   "team": "Atalanta"
+  },
+  {
+   "id": 6908,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Atta",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 6884,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Conceicao",
+   "team": "Juventus"
+  },
+  {
+   "id": 5589,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Konè M.",
+   "team": "Roma"
+  },
+  {
+   "id": 6684,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Ekkelenkamp",
+   "team": "Udinese"
+  },
+  {
+   "id": 7078,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Mastantuono",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 5792,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Ederson D.S.",
+   "team": "Atalanta"
+  },
+  {
+   "id": 5800,
+   "role": "C",
+   "mantraRoles": "T;A",
+   "name": "Gudmundsson A.",
+   "team": "Lazio"
+  },
+  {
+   "id": 152,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Zielinski",
+   "team": "Inter"
+  },
+  {
+   "id": 7314,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Taylor K.",
+   "team": "Lazio"
+  },
+  {
+   "id": 4179,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Gonzalez N.",
+   "team": "Juventus"
+  },
+  {
+   "id": 184,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Bernardeschi",
+   "team": "Bologna"
+  },
+  {
+   "id": 1933,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Mandragora",
+   "team": "Torino"
+  },
+  {
+   "id": 2848,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Frattesi",
+   "team": "Lazio"
+  },
+  {
+   "id": 2606,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Modric",
+   "team": "Milan"
+  },
+  {
+   "id": 5172,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Jones C.",
+   "team": "Inter"
+  },
+  {
+   "id": 6151,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Perrone",
+   "team": "Como"
+  },
+  {
+   "id": 7129,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Rodriguez Je.",
+   "team": "Como"
+  },
+  {
+   "id": 7472,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Calò",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6274,
+   "role": "C",
+   "mantraRoles": "E;C",
+   "name": "Diouf",
+   "team": "Inter"
+  },
+  {
+   "id": 7436,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Alajbegovic",
+   "team": "Juventus"
+  },
+  {
+   "id": 5500,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Cancellieri",
+   "team": "Lazio"
+  },
+  {
+   "id": 4892,
+   "role": "C",
+   "mantraRoles": "E;W",
+   "name": "Saelemaekers",
+   "team": "Milan"
+  },
+  {
+   "id": 4287,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Lobotka",
+   "team": "Napoli"
+  },
+  {
+   "id": 536,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "Politano",
+   "team": "Napoli"
+  },
+  {
+   "id": 779,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Cristante",
+   "team": "Roma"
+  },
+  {
+   "id": 6677,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Adzic",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 5687,
+   "role": "C",
+   "mantraRoles": "T",
+   "name": "Vlasic",
+   "team": "Torino"
+  },
+  {
+   "id": 7551,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Schmid",
+   "team": "Frosinone"
+  },
+  {
+   "id": 1850,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Kessiè",
+   "team": "Atalanta"
+  },
+  {
+   "id": 7625,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Goncalves P.",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 7311,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Romano",
+   "team": "Cagliari"
+  },
+  {
+   "id": 5823,
+   "role": "C",
+   "mantraRoles": "T",
+   "name": "Baldanzi",
+   "team": "Genoa"
+  },
+  {
+   "id": 5761,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "Zhegrova",
+   "team": "Juventus"
+  },
+  {
+   "id": 5504,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Coulibaly L.",
+   "team": "Lecce"
+  },
+  {
+   "id": 4856,
+   "role": "C",
+   "mantraRoles": "E;W",
+   "name": "Chukwueze",
+   "team": "Milan"
+  },
+  {
+   "id": 6844,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Rowe",
+   "team": "Atalanta"
+  },
+  {
+   "id": 4870,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Adopo",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7070,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Sucic P.",
+   "team": "Inter"
+  },
+  {
+   "id": 4220,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Zambo Anguissa",
+   "team": "Napoli"
+  },
+  {
+   "id": 7223,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Vergara",
+   "team": "Napoli"
+  },
+  {
+   "id": 6190,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Pisilli",
+   "team": "Roma"
+  },
+  {
+   "id": 2528,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Matic",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 5844,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Thorstvedt",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 5735,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Volpato",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 6680,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Karlstrom",
+   "team": "Udinese"
+  },
+  {
+   "id": 5858,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Ferguson",
+   "team": "Bologna"
+  },
+  {
+   "id": 5298,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Pobega",
+   "team": "Bologna"
+  },
+  {
+   "id": 4436,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Cambiaghi",
+   "team": "Bologna"
+  },
+  {
+   "id": 4260,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Winks",
+   "team": "Cagliari"
+  },
+  {
+   "id": 4465,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Fagioli",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 6294,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Ndour",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 827,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Locatelli",
+   "team": "Juventus"
+  },
+  {
+   "id": 5562,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Thuram K.",
+   "team": "Juventus"
+  },
+  {
+   "id": 5685,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Koopmeiners",
+   "team": "Juventus"
+  },
+  {
+   "id": 6398,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Isaksen",
+   "team": "Lazio"
+  },
+  {
+   "id": 6593,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Akinsanmiro",
+   "team": "Monza"
+  },
+  {
+   "id": 5878,
+   "role": "C",
+   "mantraRoles": "T",
+   "name": "Colpani",
+   "team": "Monza"
+  },
+  {
+   "id": 6207,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Almqvist",
+   "team": "Parma"
+  },
+  {
+   "id": 7036,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Bakola",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 7060,
+   "role": "C",
+   "mantraRoles": "E;W",
+   "name": "Cacciamani",
+   "team": "Torino"
+  },
+  {
+   "id": 5888,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Casadei",
+   "team": "Torino"
+  },
+  {
+   "id": 530,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Pellegrini Lo.",
+   "team": "Roma"
+  },
+  {
+   "id": 2077,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Pasalic",
+   "team": "Atalanta"
+  },
+  {
+   "id": 2765,
+   "role": "C",
+   "mantraRoles": "T",
+   "name": "Odgaard",
+   "team": "Bologna"
+  },
+  {
+   "id": 6010,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Fazzini",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7412,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Milla",
+   "team": "Como"
+  },
+  {
+   "id": 5791,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Frendrup",
+   "team": "Genoa"
+  },
+  {
+   "id": 6917,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Masini",
+   "team": "Frosinone"
+  },
+  {
+   "id": 4970,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Messias",
+   "team": "Genoa"
+  },
+  {
+   "id": 6717,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Konè I.",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 6827,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Njie",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 5507,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Busio",
+   "team": "Venezia"
+  },
+  {
+   "id": 5946,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Sow",
+   "team": "Genoa"
+  },
+  {
+   "id": 7618,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Hutchinson",
+   "team": "Milan"
+  },
+  {
+   "id": 5680,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Sarr P.",
+   "team": "Juventus"
+  },
+  {
+   "id": 6833,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Mbangula",
+   "team": "Bologna"
+  },
+  {
+   "id": 7624,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Braganca",
+   "team": "Torino"
+  },
+  {
+   "id": 795,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "El Shaarawy",
+   "team": "Genoa"
+  },
+  {
+   "id": 4364,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Gaetano",
+   "team": "Atalanta"
+  },
+  {
+   "id": 5422,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "Zalewski",
+   "team": "Atalanta"
+  },
+  {
+   "id": 5036,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Caqueret",
+   "team": "Como"
+  },
+  {
+   "id": 4459,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Rovella",
+   "team": "Lazio"
+  },
+  {
+   "id": 6549,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "Pierotti",
+   "team": "Lecce"
+  },
+  {
+   "id": 5131,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Gilmour",
+   "team": "Napoli"
+  },
+  {
+   "id": 6898,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Keita M.",
+   "team": "Parma"
+  },
+  {
+   "id": 6666,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Bernabè",
+   "team": "Parma"
+  },
+  {
+   "id": 7535,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Fitz-Jim",
+   "team": "Torino"
+  },
+  {
+   "id": 6218,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Oristanio",
+   "team": "Torino"
+  },
+  {
+   "id": 7198,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Piotrowski",
+   "team": "Udinese"
+  },
+  {
+   "id": 6783,
+   "role": "C",
+   "mantraRoles": "T",
+   "name": "Unai Gomez",
+   "team": "Udinese"
+  },
+  {
+   "id": 6618,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Cissè A.",
+   "team": "Milan"
+  },
+  {
+   "id": 4479,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Elmas",
+   "team": "Atalanta"
+  },
+  {
+   "id": 7619,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Monteiro J.",
+   "team": "Lecce"
+  },
+  {
+   "id": 6054,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Moro N.",
+   "team": "Bologna"
+  },
+  {
+   "id": 6895,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Dominguez B.",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 1871,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Deiola",
+   "team": "Cagliari"
+  },
+  {
+   "id": 6678,
+   "role": "C",
+   "mantraRoles": "T",
+   "name": "Liberali",
+   "team": "Como"
+  },
+  {
+   "id": 7464,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Oulai",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 6506,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "Fini ",
+   "team": "Frosinone"
+  },
+  {
+   "id": 5998,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "Zerbin",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6020,
+   "role": "C",
+   "mantraRoles": "E;C",
+   "name": "Ellertsson",
+   "team": "Genoa"
+  },
+  {
+   "id": 5301,
+   "role": "C",
+   "mantraRoles": "E;W",
+   "name": "Luis Henrique",
+   "team": "Inter"
+  },
+  {
+   "id": 6191,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Belahyane",
+   "team": "Lazio"
+  },
+  {
+   "id": 2741,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Pessina",
+   "team": "Monza"
+  },
+  {
+   "id": 6170,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Gineitis",
+   "team": "Torino"
+  },
+  {
+   "id": 5674,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Basic",
+   "team": "Venezia"
+  },
+  {
+   "id": 5319,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Sohm",
+   "team": "Venezia"
+  },
+  {
+   "id": 6994,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Perez K.",
+   "team": "Venezia"
+  },
+  {
+   "id": 22,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "De Roon",
+   "team": "Roma"
+  },
+  {
+   "id": 7528,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Amondarain",
+   "team": "Bologna"
+  },
+  {
+   "id": 6640,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "Felici",
+   "team": "Cagliari"
+  },
+  {
+   "id": 6815,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "Fadera",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7127,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Addai",
+   "team": "Como"
+  },
+  {
+   "id": 6206,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Fabbian",
+   "team": "Parma"
+  },
+  {
+   "id": 7473,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Cichella",
+   "team": "Frosinone"
+  },
+  {
+   "id": 7341,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Amorim",
+   "team": "Genoa"
+  },
+  {
+   "id": 7409,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Meichtry",
+   "team": "Genoa"
+  },
+  {
+   "id": 2857,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Traorè Hj.",
+   "team": "Genoa"
+  },
+  {
+   "id": 2529,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Mkhitaryan",
+   "team": "Inter"
+  },
+  {
+   "id": 4911,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Douglas Luiz",
+   "team": "Juventus"
+  },
+  {
+   "id": 6629,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Dele-Bashiru",
+   "team": "Lazio"
+  },
+  {
+   "id": 5457,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Maleh",
+   "team": "Lecce"
+  },
+  {
+   "id": 7322,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Ngom",
+   "team": "Lecce"
+  },
+  {
+   "id": 6015,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Berisha M.",
+   "team": "Lecce"
+  },
+  {
+   "id": 7318,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Gandelman",
+   "team": "Lecce"
+  },
+  {
+   "id": 7203,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Jashari",
+   "team": "Milan"
+  },
+  {
+   "id": 5295,
+   "role": "C",
+   "mantraRoles": "C;W",
+   "name": "Musah",
+   "team": "Milan"
+  },
+  {
+   "id": 4199,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Loftus-Cheek",
+   "team": "Milan"
+  },
+  {
+   "id": 4349,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Nicolussi Caviglia",
+   "team": "Parma"
+  },
+  {
+   "id": 6005,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Ilkhan",
+   "team": "Torino"
+  },
+  {
+   "id": 5007,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Ilic",
+   "team": "Lecce"
+  },
+  {
+   "id": 7208,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Miller L.",
+   "team": "Udinese"
+  },
+  {
+   "id": 7550,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Grillitsch",
+   "team": "Frosinone"
+  },
+  {
+   "id": 7146,
+   "role": "C",
+   "mantraRoles": "E;M",
+   "name": "Tourè I.",
+   "team": "Monza"
+  },
+  {
+   "id": 6024,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Sulemana I.",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 4947,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Brescianini",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 6903,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Hasa",
+   "team": "Frosinone"
+  },
+  {
+   "id": 333,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Cataldi",
+   "team": "Lazio"
+  },
+  {
+   "id": 7248,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Gorter",
+   "team": "Lecce"
+  },
+  {
+   "id": 5453,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Ricci S.",
+   "team": "Como"
+  },
+  {
+   "id": 6252,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Folorunsho",
+   "team": "Monza"
+  },
+  {
+   "id": 7138,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Ordonez C.",
+   "team": "Parma"
+  },
+  {
+   "id": 7536,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Diallo O.",
+   "team": "Parma"
+  },
+  {
+   "id": 6246,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Lipani",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 7418,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Chakvetadze",
+   "team": "Udinese"
+  },
+  {
+   "id": 7579,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Massolin",
+   "team": "Cagliari"
+  },
+  {
+   "id": 801,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Gagliardini",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7232,
+   "role": "C",
+   "mantraRoles": "T;A",
+   "name": "Fernandez T.",
+   "team": "Venezia"
+  },
+  {
+   "id": 6225,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "El Azzouzi O.",
+   "team": "Bologna"
+  },
+  {
+   "id": 6241,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Gelli F.",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6503,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Stankovic A.",
+   "team": "Inter"
+  },
+  {
+   "id": 6410,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Kaba",
+   "team": "Lecce"
+  },
+  {
+   "id": 7477,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Colombo L.",
+   "team": "Monza"
+  },
+  {
+   "id": 7276,
+   "role": "C",
+   "mantraRoles": "E;C",
+   "name": "Cremaschi",
+   "team": "Parma"
+  },
+  {
+   "id": 7183,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Aboukhlal",
+   "team": "Torino"
+  },
+  {
+   "id": 5872,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Helgason",
+   "team": "Venezia"
+  },
+  {
+   "id": 6592,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Forson O.",
+   "team": "Monza"
+  },
+  {
+   "id": 7574,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Foe Ondoa",
+   "team": "Monza"
+  },
+  {
+   "id": 7628,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Sierro",
+   "team": "Parma"
+  },
+  {
+   "id": 7165,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Liteta",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7357,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Lahdo",
+   "team": "Como"
+  },
+  {
+   "id": 7456,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "El Azzouzi A.",
+   "team": "Frosinone"
+  },
+  {
+   "id": 5725,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Kone B.",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6980,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "Venturino",
+   "team": "Genoa"
+  },
+  {
+   "id": 7345,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Przyborek",
+   "team": "Lazio"
+  },
+  {
+   "id": 7319,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Fofana Sa.",
+   "team": "Lecce"
+  },
+  {
+   "id": 5880,
+   "role": "C",
+   "mantraRoles": "E;W",
+   "name": "Ciurria",
+   "team": "Monza"
+  },
+  {
+   "id": 6219,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Boloca",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 6212,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Zarraga",
+   "team": "Udinese"
+  },
+  {
+   "id": 7481,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Dagasso",
+   "team": "Venezia"
+  },
+  {
+   "id": 526,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Duncan",
+   "team": "Venezia"
+  },
+  {
+   "id": 7571,
+   "role": "C",
+   "mantraRoles": "W;A",
+   "name": "Laerke",
+   "team": "Lecce"
+  },
+  {
+   "id": 7572,
+   "role": "C",
+   "mantraRoles": "M;C",
+   "name": "Comotto",
+   "team": "Milan"
+  },
+  {
+   "id": 7575,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Mout",
+   "team": "Monza"
+  },
+  {
+   "id": 5462,
+   "role": "C",
+   "mantraRoles": "W",
+   "name": "Ciervo",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7092,
+   "role": "C",
+   "mantraRoles": "W;T",
+   "name": "Jovanovic",
+   "team": "Udinese"
+  },
+  {
+   "id": 7629,
+   "role": "C",
+   "mantraRoles": "C;T",
+   "name": "Libra",
+   "team": "Bologna"
+  },
+  {
+   "id": 5850,
+   "role": "C",
+   "mantraRoles": "C",
+   "name": "Lovric",
+   "team": "Udinese"
+  },
+  {
+   "id": 5585,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Malen",
+   "team": "Roma"
+  },
+  {
+   "id": 2764,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Martinez L.",
+   "team": "Inter"
+  },
+  {
+   "id": 4871,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Thuram",
+   "team": "Inter"
+  },
+  {
+   "id": 6052,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Hojlund",
+   "team": "Napoli"
+  },
+  {
+   "id": 6397,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Ramos G.",
+   "team": "Milan"
+  },
+  {
+   "id": 2097,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Kean",
+   "team": "Como"
+  },
+  {
+   "id": 5951,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Kolo Muani",
+   "team": "Juventus"
+  },
+  {
+   "id": 7017,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Douvikas",
+   "team": "Como"
+  },
+  {
+   "id": 6752,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Woltemade",
+   "team": "Juventus"
+  },
+  {
+   "id": 6434,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Yildiz",
+   "team": "Juventus"
+  },
+  {
+   "id": 2137,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Scamacca",
+   "team": "Atalanta"
+  },
+  {
+   "id": 5637,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Davis K.",
+   "team": "Udinese"
+  },
+  {
+   "id": 7071,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Esposito F.P.",
+   "team": "Inter"
+  },
+  {
+   "id": 531,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Berardi",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 309,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Dybala",
+   "team": "Roma"
+  },
+  {
+   "id": 6435,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Krstovic",
+   "team": "Atalanta"
+  },
+  {
+   "id": 7023,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Pellegrino M.",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 5734,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Soulè",
+   "team": "Roma"
+  },
+  {
+   "id": 6060,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Laurientè",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 5995,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "De Ketelaere",
+   "team": "Atalanta"
+  },
+  {
+   "id": 6675,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Dovbyk",
+   "team": "Bologna"
+  },
+  {
+   "id": 4371,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Raspadori",
+   "team": "Atalanta"
+  },
+  {
+   "id": 4463,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Esposito Se.",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 6967,
+   "role": "A",
+   "mantraRoles": "W;A",
+   "name": "Diao",
+   "team": "Como"
+  },
+  {
+   "id": 7351,
+   "role": "A",
+   "mantraRoles": "W;A",
+   "name": "Santos A.",
+   "team": "Napoli"
+  },
+  {
+   "id": 6572,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Castro S.",
+   "team": "Roma"
+  },
+  {
+   "id": 2061,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Simeone",
+   "team": "Torino"
+  },
+  {
+   "id": 7554,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Romero D.",
+   "team": "Parma"
+  },
+  {
+   "id": 5694,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Beto",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 5436,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Raimondo",
+   "team": "Frosinone"
+  },
+  {
+   "id": 7347,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Bowie",
+   "team": "Sassuolo"
+  },
+  {
+   "id": 7484,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Adams A.",
+   "team": "Venezia"
+  },
+  {
+   "id": 4896,
+   "role": "A",
+   "mantraRoles": "T;A",
+   "name": "Maldini",
+   "team": "Cagliari"
+  },
+  {
+   "id": 6530,
+   "role": "A",
+   "mantraRoles": "W;A",
+   "name": "Ghedjemis",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6204,
+   "role": "A",
+   "mantraRoles": "W;A",
+   "name": "Kvernadze",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6646,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Adams C.",
+   "team": "Torino"
+  },
+  {
+   "id": 4923,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Colombo",
+   "team": "Genoa"
+  },
+  {
+   "id": 6556,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Noslin",
+   "team": "Lazio"
+  },
+  {
+   "id": 7523,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Varela G.",
+   "team": "Monza"
+  },
+  {
+   "id": 2038,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Pinamonti",
+   "team": "Lazio"
+  },
+  {
+   "id": 6229,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Tourè E.",
+   "team": "Parma"
+  },
+  {
+   "id": 7547,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Kevin Carlos",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7600,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Osmajic",
+   "team": "Genoa"
+  },
+  {
+   "id": 4359,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Piccoli",
+   "team": "Bologna"
+  },
+  {
+   "id": 7374,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Mendy P.",
+   "team": "Cagliari"
+  },
+  {
+   "id": 6669,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Bonny",
+   "team": "Inter"
+  },
+  {
+   "id": 2155,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Cutrone",
+   "team": "Monza"
+  },
+  {
+   "id": 6904,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Yeboah J.",
+   "team": "Venezia"
+  },
+  {
+   "id": 7546,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Robinson J.",
+   "team": "Monza"
+  },
+  {
+   "id": 7612,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Bobcek",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6164,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Vitinha O.",
+   "team": "Genoa"
+  },
+  {
+   "id": 5029,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Geubbels",
+   "team": "Lecce"
+  },
+  {
+   "id": 7272,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Gueye",
+   "team": "Udinese"
+  },
+  {
+   "id": 7620,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Zeballos",
+   "team": "Monza"
+  },
+  {
+   "id": 7623,
+   "role": "A",
+   "mantraRoles": "W;A",
+   "name": "Gnonto",
+   "team": "Fiorentina"
+  },
+  {
+   "id": 2832,
+   "role": "A",
+   "mantraRoles": "W;A",
+   "name": "Boga",
+   "team": "Juventus"
+  },
+  {
+   "id": 7252,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Stulic",
+   "team": "Lecce"
+  },
+  {
+   "id": 5882,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Mota",
+   "team": "Monza"
+  },
+  {
+   "id": 7349,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Kulenovic",
+   "team": "Torino"
+  },
+  {
+   "id": 7449,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Rrahmani Al.",
+   "team": "Venezia"
+  },
+  {
+   "id": 7561,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Lontani",
+   "team": "Parma"
+  },
+  {
+   "id": 6831,
+   "role": "A",
+   "mantraRoles": "W;A",
+   "name": "Neres",
+   "team": "Napoli"
+  },
+  {
+   "id": 7342,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Elphege",
+   "team": "Parma"
+  },
+  {
+   "id": 608,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Zapata D.",
+   "team": "Torino"
+  },
+  {
+   "id": 7602,
+   "role": "A",
+   "mantraRoles": "W;A",
+   "name": "Fatah",
+   "team": "Lecce"
+  },
+  {
+   "id": 5918,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Sulemana K.",
+   "team": "Atalanta"
+  },
+  {
+   "id": 7001,
+   "role": "A",
+   "mantraRoles": "W;A",
+   "name": "N'Dri",
+   "team": "Lecce"
+  },
+  {
+   "id": 6519,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Camarda",
+   "team": "Milan"
+  },
+  {
+   "id": 7120,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Lang",
+   "team": "Napoli"
+  },
+  {
+   "id": 7213,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Frigan",
+   "team": "Parma"
+  },
+  {
+   "id": 4387,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Adorante",
+   "team": "Venezia"
+  },
+  {
+   "id": 2012,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Milik",
+   "team": "Juventus"
+  },
+  {
+   "id": 7610,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Birligea",
+   "team": "Frosinone"
+  },
+  {
+   "id": 6145,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Ngonge",
+   "team": "Monza"
+  },
+  {
+   "id": 7453,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Havel",
+   "team": "Genoa"
+  },
+  {
+   "id": 7162,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Giovane",
+   "team": "Napoli"
+  },
+  {
+   "id": 6215,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Lucca",
+   "team": "Napoli"
+  },
+  {
+   "id": 5336,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Nzola",
+   "team": "Cagliari"
+  },
+  {
+   "id": 6822,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Ekhator",
+   "team": "Juventus"
+  },
+  {
+   "id": 7161,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Bayo V.",
+   "team": "Udinese"
+  },
+  {
+   "id": 7482,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Lauberbach",
+   "team": "Venezia"
+  },
+  {
+   "id": 7647,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Esteban",
+   "team": "Lecce"
+  },
+  {
+   "id": 7317,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Trepy",
+   "team": "Cagliari"
+  },
+  {
+   "id": 7408,
+   "role": "A",
+   "mantraRoles": "W;A",
+   "name": "Lisman",
+   "team": "Venezia"
+  },
+  {
+   "id": 7568,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "De Martis",
+   "team": "Parma"
+  },
+  {
+   "id": 7622,
+   "role": "A",
+   "mantraRoles": "A",
+   "name": "Robinho Junior",
+   "team": "Genoa"
+  },
+  {
+   "id": 7627,
+   "role": "A",
+   "mantraRoles": "Pc",
+   "name": "Enem",
+   "team": "Bologna"
+  }
+ ],
+ "teams": [
+  {
+   "name": "Fc Increduli",
+   "league": "A",
+   "roster": [
+    {
+     "name": "Meret",
+     "cost": 50,
+     "playerId": 572
+    },
+    {
+     "name": "Milinkovic-Savic V.",
+     "cost": 3,
+     "playerId": 2170
+    },
+    {
+     "name": "Contini",
+     "cost": 1,
+     "playerId": 2845
+    },
+    {
+     "name": "Vojvoda",
+     "cost": 2,
+     "playerId": 4994
+    },
+    {
+     "name": "Obert",
+     "cost": 6,
+     "playerId": 5701
+    },
+    {
+     "name": "Rrahmani",
+     "cost": 25,
+     "playerId": 4409
+    },
+    {
+     "name": "Marcandalli",
+     "cost": 9,
+     "playerId": 6660
+    },
+    {
+     "name": "Tiago Gabriel",
+     "cost": 7,
+     "playerId": 6989
+    },
+    {
+     "name": "Bella-Kotchap",
+     "cost": 6,
+     "playerId": 7253
+    },
+    {
+     "name": "Badiashile",
+     "cost": 6,
+     "playerId": 4664
+    },
+    {
+     "name": "Calvani",
+     "cost": 1,
+     "playerId": 7467
+    },
+    {
+     "name": "Dimarco",
+     "cost": 75,
+     "playerId": 254
+    },
+    {
+     "name": "Ellertsson",
+     "cost": 1,
+     "playerId": 6020
+    },
+    {
+     "name": "Fagioli",
+     "cost": 9,
+     "playerId": 4465
+    },
+    {
+     "name": "Oulai",
+     "cost": 1,
+     "playerId": 7464
+    },
+    {
+     "name": "Adopo",
+     "cost": 1,
+     "playerId": 4870
+    },
+    {
+     "name": "Da Cunha",
+     "cost": 51,
+     "playerId": 5559
+    },
+    {
+     "name": "Koopmeiners",
+     "cost": 4,
+     "playerId": 5685
+    },
+    {
+     "name": "Thorstvedt",
+     "cost": 2,
+     "playerId": 5844
+    },
+    {
+     "name": "Caqueret",
+     "cost": 1,
+     "playerId": 5036
+    },
+    {
+     "name": "Santos A.",
+     "cost": 52,
+     "playerId": 7351
+    },
+    {
+     "name": "Rodriguez Je.",
+     "cost": 4,
+     "playerId": 7129
+    },
+    {
+     "name": "Kvernadze",
+     "cost": 3,
+     "playerId": 6204
+    },
+    {
+     "name": "Ramos G.",
+     "cost": 141,
+     "playerId": 6397
+    },
+    {
+     "name": "Krstovic",
+     "cost": 50,
+     "playerId": 6435
+    },
+    {
+     "name": "Geubbels",
+     "cost": 2,
+     "playerId": 5029
+    },
+    {
+     "name": "Romero D.",
+     "cost": 1,
+     "playerId": 7554
+    }
+   ]
+  },
+  {
+   "name": "Pich Saint Germain",
+   "league": "A",
+   "roster": [
+    {
+     "name": "Maignan",
+     "cost": 50,
+     "playerId": 4312
+    },
+    {
+     "name": "Torriani",
+     "cost": 1,
+     "playerId": 6813
+    },
+    {
+     "name": "Terracciano",
+     "cost": 1,
+     "playerId": 2815
+    },
+    {
+     "name": "Carlos Augusto",
+     "cost": 10,
+     "playerId": 5877
+    },
+    {
+     "name": "Bartesaghi",
+     "cost": 3,
+     "playerId": 6496
+    },
+    {
+     "name": "Estupinan",
+     "cost": 1,
+     "playerId": 5273
+    },
+    {
+     "name": "Bremer",
+     "cost": 33,
+     "playerId": 2788
+    },
+    {
+     "name": "Pavlovic",
+     "cost": 24,
+     "playerId": 5022
+    },
+    {
+     "name": "Ramon",
+     "cost": 20,
+     "playerId": 6869
+    },
+    {
+     "name": "Stones",
+     "cost": 20,
+     "playerId": 2514
+    },
+    {
+     "name": "Bisseck",
+     "cost": 17,
+     "playerId": 6217
+    },
+    {
+     "name": "Gabbia",
+     "cost": 4,
+     "playerId": 4401
+    },
+    {
+     "name": "Molina N.",
+     "cost": 34,
+     "playerId": 4998
+    },
+    {
+     "name": "Lulli",
+     "cost": 1,
+     "playerId": 7599
+    },
+    {
+     "name": "Konè M.",
+     "cost": 36,
+     "playerId": 5589
+    },
+    {
+     "name": "Ferguson",
+     "cost": 3,
+     "playerId": 5858
+    },
+    {
+     "name": "Karlstrom",
+     "cost": 2,
+     "playerId": 6680
+    },
+    {
+     "name": "Rabiot",
+     "cost": 63,
+     "playerId": 2379
+    },
+    {
+     "name": "Barella",
+     "cost": 42,
+     "playerId": 1870
+    },
+    {
+     "name": "Sucic P.",
+     "cost": 16,
+     "playerId": 7070
+    },
+    {
+     "name": "Gonzalez N.",
+     "cost": 6,
+     "playerId": 4179
+    },
+    {
+     "name": "Ghedjemis",
+     "cost": 2,
+     "playerId": 6530
+    },
+    {
+     "name": "Gnonto",
+     "cost": 1,
+     "playerId": 7623
+    },
+    {
+     "name": "Njie",
+     "cost": 1,
+     "playerId": 6827
+    },
+    {
+     "name": "Scamacca",
+     "cost": 68,
+     "playerId": 2137
+    },
+    {
+     "name": "Pellegrino M.",
+     "cost": 27,
+     "playerId": 7023
+    },
+    {
+     "name": "Varela G.",
+     "cost": 4,
+     "playerId": 7523
+    }
+   ]
+  },
+  {
+   "name": "Fc Palo",
+   "league": "A",
+   "roster": [
+    {
+     "name": "Carnesecchi",
+     "cost": 48,
+     "playerId": 4431
+    },
+    {
+     "name": "Muric",
+     "cost": 1,
+     "playerId": 4236
+    },
+    {
+     "name": "Sportiello",
+     "cost": 1,
+     "playerId": 4
+    },
+    {
+     "name": "Delprato",
+     "cost": 8,
+     "playerId": 6664
+    },
+    {
+     "name": "Bellanova",
+     "cost": 1,
+     "playerId": 4887
+    },
+    {
+     "name": "Zortea",
+     "cost": 1,
+     "playerId": 4433
+    },
+    {
+     "name": "Valdepenas",
+     "cost": 11,
+     "playerId": 7294
+    },
+    {
+     "name": "Vasquez",
+     "cost": 11,
+     "playerId": 5514
+    },
+    {
+     "name": "Bracaglia",
+     "cost": 1,
+     "playerId": 7469
+    },
+    {
+     "name": "Kaiki",
+     "cost": 1,
+     "playerId": 7414
+    },
+    {
+     "name": "Valle",
+     "cost": 1,
+     "playerId": 6867
+    },
+    {
+     "name": "Pedraza",
+     "cost": 1,
+     "playerId": 4817
+    },
+    {
+     "name": "Hermoso",
+     "cost": 10,
+     "playerId": 4807
+    },
+    {
+     "name": "Calhanoglu",
+     "cost": 70,
+     "playerId": 2194
+    },
+    {
+     "name": "Busio",
+     "cost": 13,
+     "playerId": 5507
+    },
+    {
+     "name": "Perrone",
+     "cost": 9,
+     "playerId": 6151
+    },
+    {
+     "name": "Lobotka",
+     "cost": 5,
+     "playerId": 4287
+    },
+    {
+     "name": "Zambo Anguissa",
+     "cost": 15,
+     "playerId": 4220
+    },
+    {
+     "name": "Vlasic",
+     "cost": 41,
+     "playerId": 5687
+    },
+    {
+     "name": "Alajbegovic",
+     "cost": 40,
+     "playerId": 7436
+    },
+    {
+     "name": "Neres",
+     "cost": 5,
+     "playerId": 6831
+    },
+    {
+     "name": "Politano",
+     "cost": 2,
+     "playerId": 536
+    },
+    {
+     "name": "Yildiz",
+     "cost": 107,
+     "playerId": 6434
+    },
+    {
+     "name": "Soulè",
+     "cost": 26,
+     "playerId": 5734
+    },
+    {
+     "name": "Davis K.",
+     "cost": 52,
+     "playerId": 5637
+    },
+    {
+     "name": "Tourè E.",
+     "cost": 3,
+     "playerId": 6229
+    },
+    {
+     "name": "Osmajic",
+     "cost": 1,
+     "playerId": 7600
+    }
+   ]
+  },
+  {
+   "name": "Hillboyss",
+   "league": "A",
+   "roster": [
+    {
+     "name": "Skorupski",
+     "cost": 11,
+     "playerId": 133
+    },
+    {
+     "name": "Bijlow",
+     "cost": 1,
+     "playerId": 7332
+    },
+    {
+     "name": "Mandas",
+     "cost": 1,
+     "playerId": 6482
+    },
+    {
+     "name": "Chalobah T.",
+     "cost": 21,
+     "playerId": 5641
+    },
+    {
+     "name": "Cambiaso",
+     "cost": 8,
+     "playerId": 5520
+    },
+    {
+     "name": "Oyono A.",
+     "cost": 1,
+     "playerId": 6238
+    },
+    {
+     "name": "Dodò",
+     "cost": 1,
+     "playerId": 5885
+    },
+    {
+     "name": "Bernasconi",
+     "cost": 8,
+     "playerId": 7219
+    },
+    {
+     "name": "Gallo",
+     "cost": 1,
+     "playerId": 4502
+    },
+    {
+     "name": "Kolasinac",
+     "cost": 1,
+     "playerId": 2640
+    },
+    {
+     "name": "Mancini",
+     "cost": 25,
+     "playerId": 2296
+    },
+    {
+     "name": "Kempf",
+     "cost": 1,
+     "playerId": 6893
+    },
+    {
+     "name": "Lucchesi",
+     "cost": 1,
+     "playerId": 6659
+    },
+    {
+     "name": "Romano",
+     "cost": 6,
+     "playerId": 7311
+    },
+    {
+     "name": "Jashari",
+     "cost": 1,
+     "playerId": 7203
+    },
+    {
+     "name": "Winks",
+     "cost": 1,
+     "playerId": 4260
+    },
+    {
+     "name": "Pessina",
+     "cost": 1,
+     "playerId": 2741
+    },
+    {
+     "name": "Jones C.",
+     "cost": 15,
+     "playerId": 5172
+    },
+    {
+     "name": "Pellegrini Lo.",
+     "cost": 1,
+     "playerId": 530
+    },
+    {
+     "name": "Pulisic",
+     "cost": 69,
+     "playerId": 2423
+    },
+    {
+     "name": "Mastantuono",
+     "cost": 40,
+     "playerId": 7078
+    },
+    {
+     "name": "Mora",
+     "cost": 33,
+     "playerId": 7556
+    },
+    {
+     "name": "Cissè A.",
+     "cost": 2,
+     "playerId": 6618
+    },
+    {
+     "name": "Colpani",
+     "cost": 1,
+     "playerId": 5878
+    },
+    {
+     "name": "Martinez L.",
+     "cost": 164,
+     "playerId": 2764
+    },
+    {
+     "name": "Esposito F.P.",
+     "cost": 70,
+     "playerId": 7071
+    },
+    {
+     "name": "Camarda",
+     "cost": 1,
+     "playerId": 6519
+    }
+   ]
+  },
+  {
+   "name": "PEPE SOTTO UN TRENU",
+   "league": "A",
+   "roster": [
+    {
+     "name": "Caprile",
+     "cost": 5,
+     "playerId": 4360
+    },
+    {
+     "name": "Corvi",
+     "cost": 3,
+     "playerId": 6662
+    },
+    {
+     "name": "Falcone",
+     "cost": 3,
+     "playerId": 2134
+    },
+    {
+     "name": "Zappacosta",
+     "cost": 5,
+     "playerId": 554
+    },
+    {
+     "name": "Couto",
+     "cost": 3,
+     "playerId": 6727
+    },
+    {
+     "name": "Spinazzola",
+     "cost": 11,
+     "playerId": 1852
+    },
+    {
+     "name": "Kelly L.",
+     "cost": 8,
+     "playerId": 6766
+    },
+    {
+     "name": "Viery",
+     "cost": 5,
+     "playerId": 7410
+    },
+    {
+     "name": "N'Dicka",
+     "cost": 17,
+     "playerId": 4317
+    },
+    {
+     "name": "Lucumì",
+     "cost": 11,
+     "playerId": 6042
+    },
+    {
+     "name": "Sutalo J.",
+     "cost": 6,
+     "playerId": 7580
+    },
+    {
+     "name": "Idzes",
+     "cost": 6,
+     "playerId": 6672
+    },
+    {
+     "name": "Doekhi",
+     "cost": 3,
+     "playerId": 6320
+    },
+    {
+     "name": "Saelemaekers",
+     "cost": 23,
+     "playerId": 4892
+    },
+    {
+     "name": "Atta",
+     "cost": 52,
+     "playerId": 6908
+    },
+    {
+     "name": "Frattesi",
+     "cost": 23,
+     "playerId": 2848
+    },
+    {
+     "name": "Pisilli",
+     "cost": 5,
+     "playerId": 6190
+    },
+    {
+     "name": "Pasalic",
+     "cost": 3,
+     "playerId": 2077
+    },
+    {
+     "name": "Mandragora",
+     "cost": 1,
+     "playerId": 1933
+    },
+    {
+     "name": "De Bruyne",
+     "cost": 37,
+     "playerId": 2517
+    },
+    {
+     "name": "Maldini",
+     "cost": 4,
+     "playerId": 4896
+    },
+    {
+     "name": "Ekhator",
+     "cost": 1,
+     "playerId": 6822
+    },
+    {
+     "name": "Kolo Muani",
+     "cost": 121,
+     "playerId": 5951
+    },
+    {
+     "name": "Thuram",
+     "cost": 121,
+     "playerId": 4871
+    },
+    {
+     "name": "Bowie",
+     "cost": 14,
+     "playerId": 7347
+    },
+    {
+     "name": "Beto",
+     "cost": 5,
+     "playerId": 5694
+    },
+    {
+     "name": "Bonny",
+     "cost": 3,
+     "playerId": 6669
+    }
+   ]
+  },
+  {
+   "name": "Real ZeLo",
+   "league": "A",
+   "roster": [
+    {
+     "name": "Vicario",
+     "cost": 43,
+     "playerId": 4964
+    },
+    {
+     "name": "Pinsoglio",
+     "cost": 1,
+     "playerId": 1930
+    },
+    {
+     "name": "Neto",
+     "cost": 1,
+     "playerId": 283
+    },
+    {
+     "name": "Di Lorenzo",
+     "cost": 21,
+     "playerId": 2816
+    },
+    {
+     "name": "Kouadio",
+     "cost": 1,
+     "playerId": 7238
+    },
+    {
+     "name": "Marusic",
+     "cost": 1,
+     "playerId": 2188
+    },
+    {
+     "name": "Valeri",
+     "cost": 8,
+     "playerId": 5862
+    },
+    {
+     "name": "Leysen F.",
+     "cost": 1,
+     "playerId": 7564
+    },
+    {
+     "name": "Kamara H.",
+     "cost": 1,
+     "playerId": 5555
+    },
+    {
+     "name": "Bastoni",
+     "cost": 25,
+     "playerId": 2120
+    },
+    {
+     "name": "Kabasele",
+     "cost": 5,
+     "playerId": 4263
+    },
+    {
+     "name": "Koulierakis",
+     "cost": 3,
+     "playerId": 7529
+    },
+    {
+     "name": "Provstgaard",
+     "cost": 1,
+     "playerId": 7012
+    },
+    {
+     "name": "Ederson D.S.",
+     "cost": 33,
+     "playerId": 5792
+    },
+    {
+     "name": "Basic",
+     "cost": 8,
+     "playerId": 5674
+    },
+    {
+     "name": "Fitz-Jim",
+     "cost": 1,
+     "playerId": 7535
+    },
+    {
+     "name": "Zielinski",
+     "cost": 35,
+     "playerId": 152
+    },
+    {
+     "name": "Ekkelenkamp",
+     "cost": 21,
+     "playerId": 6684
+    },
+    {
+     "name": "Baturina",
+     "cost": 54,
+     "playerId": 7126
+    },
+    {
+     "name": "Schmid",
+     "cost": 1,
+     "playerId": 7551
+    },
+    {
+     "name": "Orsolini",
+     "cost": 91,
+     "playerId": 2167
+    },
+    {
+     "name": "El Shaarawy",
+     "cost": 1,
+     "playerId": 795
+    },
+    {
+     "name": "Raspadori",
+     "cost": 42,
+     "playerId": 4371
+    },
+    {
+     "name": "Laurientè",
+     "cost": 30,
+     "playerId": 6060
+    },
+    {
+     "name": "Esposito Se.",
+     "cost": 1,
+     "playerId": 4463
+    },
+    {
+     "name": "Simeone",
+     "cost": 69,
+     "playerId": 2061
+    },
+    {
+     "name": "Piccoli",
+     "cost": 1,
+     "playerId": 4359
+    }
+   ]
+  },
+  {
+   "name": "SFC MANCO M'ANNAVA",
+   "league": "A",
+   "roster": [
+    {
+     "name": "Martinez Jo.",
+     "cost": 59,
+     "playerId": 5116
+    },
+    {
+     "name": "Provedel",
+     "cost": 3,
+     "playerId": 2814
+    },
+    {
+     "name": "Di Gennaro",
+     "cost": 1,
+     "playerId": 1926
+    },
+    {
+     "name": "Jimenez A.",
+     "cost": 6,
+     "playerId": 6531
+    },
+    {
+     "name": "Birindelli",
+     "cost": 3,
+     "playerId": 5838
+    },
+    {
+     "name": "Belghali",
+     "cost": 1,
+     "playerId": 7220
+    },
+    {
+     "name": "Tavares N.",
+     "cost": 6,
+     "playerId": 5620
+    },
+    {
+     "name": "Akanji",
+     "cost": 30,
+     "playerId": 4159
+    },
+    {
+     "name": "Solet",
+     "cost": 20,
+     "playerId": 6956
+    },
+    {
+     "name": "Ostigard",
+     "cost": 19,
+     "playerId": 5750
+    },
+    {
+     "name": "Scalvini",
+     "cost": 8,
+     "playerId": 5526
+    },
+    {
+     "name": "Gaspar K.",
+     "cost": 3,
+     "playerId": 6632
+    },
+    {
+     "name": "Hien",
+     "cost": 1,
+     "playerId": 6046
+    },
+    {
+     "name": "Cristante",
+     "cost": 11,
+     "playerId": 779
+    },
+    {
+     "name": "Milla",
+     "cost": 1,
+     "playerId": 7412
+    },
+    {
+     "name": "Frendrup",
+     "cost": 1,
+     "playerId": 5791
+    },
+    {
+     "name": "Kessiè",
+     "cost": 6,
+     "playerId": 1850
+    },
+    {
+     "name": "Bernabè",
+     "cost": 3,
+     "playerId": 6666
+    },
+    {
+     "name": "Douglas Luiz",
+     "cost": 1,
+     "playerId": 4911
+    },
+    {
+     "name": "Bernardeschi",
+     "cost": 20,
+     "playerId": 184
+    },
+    {
+     "name": "Gudmundsson A.",
+     "cost": 9,
+     "playerId": 5800
+    },
+    {
+     "name": "Goncalves P.",
+     "cost": 7,
+     "playerId": 7625
+    },
+    {
+     "name": "Conceicao",
+     "cost": 41,
+     "playerId": 6884
+    },
+    {
+     "name": "Dybala",
+     "cost": 64,
+     "playerId": 309
+    },
+    {
+     "name": "Woltemade",
+     "cost": 6,
+     "playerId": 6752
+    },
+    {
+     "name": "Kean",
+     "cost": 110,
+     "playerId": 2097
+    },
+    {
+     "name": "Adams A.",
+     "cost": 16,
+     "playerId": 7484
+    }
+   ]
+  },
+  {
+   "name": "Schalke 104",
+   "league": "A",
+   "roster": [
+    {
+     "name": "Butez",
+     "cost": 43,
+     "playerId": 6966
+    },
+    {
+     "name": "Tornqvist",
+     "cost": 1,
+     "playerId": 7301
+    },
+    {
+     "name": "Sanchez Ro.",
+     "cost": 1,
+     "playerId": 6344
+    },
+    {
+     "name": "Zè Pedro",
+     "cost": 1,
+     "playerId": 7274
+    },
+    {
+     "name": "Floriani Mussolini",
+     "cost": 1,
+     "playerId": 7131
+    },
+    {
+     "name": "Pavard",
+     "cost": 1,
+     "playerId": 4177
+    },
+    {
+     "name": "Mangas",
+     "cost": 6,
+     "playerId": 7485
+    },
+    {
+     "name": "Dragusin",
+     "cost": 10,
+     "playerId": 5365
+    },
+    {
+     "name": "Ismajli",
+     "cost": 6,
+     "playerId": 5010
+    },
+    {
+     "name": "Monterisi",
+     "cost": 3,
+     "playerId": 4952
+    },
+    {
+     "name": "Coco",
+     "cost": 2,
+     "playerId": 6642
+    },
+    {
+     "name": "Palma",
+     "cost": 1,
+     "playerId": 6925
+    },
+    {
+     "name": "Diouf",
+     "cost": 34,
+     "playerId": 6274
+    },
+    {
+     "name": "Spence",
+     "cost": 26,
+     "playerId": 5982
+    },
+    {
+     "name": "Moreira",
+     "cost": 16,
+     "playerId": 6372
+    },
+    {
+     "name": "Luis Henrique",
+     "cost": 2,
+     "playerId": 5301
+    },
+    {
+     "name": "Gaetano",
+     "cost": 26,
+     "playerId": 4364
+    },
+    {
+     "name": "Coulibaly L.",
+     "cost": 3,
+     "playerId": 5504
+    },
+    {
+     "name": "Sow",
+     "cost": 2,
+     "playerId": 5946
+    },
+    {
+     "name": "McTominay",
+     "cost": 101,
+     "playerId": 4777
+    },
+    {
+     "name": "Casadei",
+     "cost": 17,
+     "playerId": 5888
+    },
+    {
+     "name": "Adzic",
+     "cost": 5,
+     "playerId": 6677
+    },
+    {
+     "name": "Boga",
+     "cost": 1,
+     "playerId": 2832
+    },
+    {
+     "name": "Hojlund",
+     "cost": 128,
+     "playerId": 6052
+    },
+    {
+     "name": "Dovbyk",
+     "cost": 32,
+     "playerId": 6675
+    },
+    {
+     "name": "Pinamonti",
+     "cost": 15,
+     "playerId": 2038
+    },
+    {
+     "name": "Colombo",
+     "cost": 13,
+     "playerId": 4923
+    }
+   ]
+  },
+  {
+   "name": "I Morici",
+   "league": "A",
+   "roster": [
+    {
+     "name": "De Gea",
+     "cost": 23,
+     "playerId": 2521
+    },
+    {
+     "name": "Okoye",
+     "cost": 9,
+     "playerId": 6462
+    },
+    {
+     "name": "Christensen O.",
+     "cost": 1,
+     "playerId": 6403
+    },
+    {
+     "name": "Kalulu",
+     "cost": 30,
+     "playerId": 4976
+    },
+    {
+     "name": "Kristensen T.",
+     "cost": 13,
+     "playerId": 6485
+    },
+    {
+     "name": "Celik",
+     "cost": 10,
+     "playerId": 4657
+    },
+    {
+     "name": "De Winter",
+     "cost": 5,
+     "playerId": 5739
+    },
+    {
+     "name": "Heggem",
+     "cost": 8,
+     "playerId": 7212
+    },
+    {
+     "name": "Rodriguez Ju.",
+     "cost": 1,
+     "playerId": 7268
+    },
+    {
+     "name": "Troilo",
+     "cost": 3,
+     "playerId": 7235
+    },
+    {
+     "name": "Balerdi",
+     "cost": 3,
+     "playerId": 4705
+    },
+    {
+     "name": "Wesley",
+     "cost": 40,
+     "playerId": 7181
+    },
+    {
+     "name": "Fortini",
+     "cost": 1,
+     "playerId": 7069
+    },
+    {
+     "name": "Modric",
+     "cost": 19,
+     "playerId": 2606
+    },
+    {
+     "name": "Sarr P.",
+     "cost": 3,
+     "playerId": 5680
+    },
+    {
+     "name": "Gineitis",
+     "cost": 1,
+     "playerId": 6170
+    },
+    {
+     "name": "McKennie",
+     "cost": 48,
+     "playerId": 4973
+    },
+    {
+     "name": "Fazzini",
+     "cost": 5,
+     "playerId": 6010
+    },
+    {
+     "name": "Ndour",
+     "cost": 4,
+     "playerId": 6294
+    },
+    {
+     "name": "Zaniolo",
+     "cost": 37,
+     "playerId": 2766
+    },
+    {
+     "name": "Vergara",
+     "cost": 7,
+     "playerId": 7223
+    },
+    {
+     "name": "Liberali",
+     "cost": 1,
+     "playerId": 6678
+    },
+    {
+     "name": "Zaccagni",
+     "cost": 51,
+     "playerId": 632
+    },
+    {
+     "name": "Diao",
+     "cost": 20,
+     "playerId": 6967
+    },
+    {
+     "name": "De Ketelaere",
+     "cost": 45,
+     "playerId": 5995
+    },
+    {
+     "name": "Douvikas",
+     "cost": 71,
+     "playerId": 7017
+    },
+    {
+     "name": "Castro S.",
+     "cost": 40,
+     "playerId": 6572
+    }
+   ]
+  },
+  {
+   "name": "Forche di Roso",
+   "league": "A",
+   "roster": [
+    {
+     "name": "Svilar",
+     "cost": 62,
+     "playerId": 5841
+    },
+    {
+     "name": "De Marzi",
+     "cost": 1,
+     "playerId": 7048
+    },
+    {
+     "name": "Gollini",
+     "cost": 1,
+     "playerId": 610
+    },
+    {
+     "name": "Miranda J.",
+     "cost": 8,
+     "playerId": 4734
+    },
+    {
+     "name": "Theate",
+     "cost": 2,
+     "playerId": 5675
+    },
+    {
+     "name": "Gila",
+     "cost": 15,
+     "playerId": 5833
+    },
+    {
+     "name": "Mina",
+     "cost": 6,
+     "playerId": 4210
+    },
+    {
+     "name": "Comuzzo",
+     "cost": 4,
+     "playerId": 6495
+    },
+    {
+     "name": "Schingtienne",
+     "cost": 2,
+     "playerId": 6892
+    },
+    {
+     "name": "Buongiorno",
+     "cost": 2,
+     "playerId": 2724
+    },
+    {
+     "name": "Marin R.",
+     "cost": 1,
+     "playerId": 6638
+    },
+    {
+     "name": "Diego Carlos",
+     "cost": 1,
+     "playerId": 4137
+    },
+    {
+     "name": "Cacciamani",
+     "cost": 10,
+     "playerId": 7060
+    },
+    {
+     "name": "Chukwueze",
+     "cost": 1,
+     "playerId": 4856
+    },
+    {
+     "name": "Calò",
+     "cost": 11,
+     "playerId": 7472
+    },
+    {
+     "name": "Keita M.",
+     "cost": 1,
+     "playerId": 6898
+    },
+    {
+     "name": "Samardzic",
+     "cost": 20,
+     "playerId": 5119
+    },
+    {
+     "name": "Taylor K.",
+     "cost": 18,
+     "playerId": 7314
+    },
+    {
+     "name": "Paz N.",
+     "cost": 91,
+     "playerId": 6875
+    },
+    {
+     "name": "Rowe",
+     "cost": 27,
+     "playerId": 6844
+    },
+    {
+     "name": "Baldanzi",
+     "cost": 3,
+     "playerId": 5823
+    },
+    {
+     "name": "Volpato",
+     "cost": 1,
+     "playerId": 5735
+    },
+    {
+     "name": "Berardi",
+     "cost": 31,
+     "playerId": 531
+    },
+    {
+     "name": "Adams C.",
+     "cost": 5,
+     "playerId": 6646
+    },
+    {
+     "name": "Yeboah J.",
+     "cost": 4,
+     "playerId": 6904
+    },
+    {
+     "name": "Malen",
+     "cost": 160,
+     "playerId": 5585
+    },
+    {
+     "name": "Raimondo",
+     "cost": 1,
+     "playerId": 5436
+    }
+   ]
+  },
+  {
+   "name": "Equitalia SpA",
+   "league": "C",
+   "roster": [
+    {
+     "name": "De Gea",
+     "cost": 15,
+     "playerId": 2521
+    },
+    {
+     "name": "Christensen O.",
+     "cost": 1,
+     "playerId": 6403
+    },
+    {
+     "name": "Lezzerini",
+     "cost": 1,
+     "playerId": 158
+    },
+    {
+     "name": "Birindelli",
+     "cost": 4,
+     "playerId": 5838
+    },
+    {
+     "name": "Veiga D.",
+     "cost": 3,
+     "playerId": 6990
+    },
+    {
+     "name": "Kelly L.",
+     "cost": 9,
+     "playerId": 6766
+    },
+    {
+     "name": "Heggem",
+     "cost": 8,
+     "playerId": 7212
+    },
+    {
+     "name": "Obert",
+     "cost": 3,
+     "playerId": 5701
+    },
+    {
+     "name": "Theate",
+     "cost": 3,
+     "playerId": 5675
+    },
+    {
+     "name": "Miranda J.",
+     "cost": 3,
+     "playerId": 4734
+    },
+    {
+     "name": "Mina",
+     "cost": 9,
+     "playerId": 4210
+    },
+    {
+     "name": "Lucumì",
+     "cost": 7,
+     "playerId": 6042
+    },
+    {
+     "name": "Konè M.",
+     "cost": 26,
+     "playerId": 5589
+    },
+    {
+     "name": "Locatelli",
+     "cost": 4,
+     "playerId": 827
+    },
+    {
+     "name": "Sarr P.",
+     "cost": 1,
+     "playerId": 5680
+    },
+    {
+     "name": "Ilic",
+     "cost": 1,
+     "playerId": 5007
+    },
+    {
+     "name": "Frattesi",
+     "cost": 44,
+     "playerId": 2848
+    },
+    {
+     "name": "Atta",
+     "cost": 36,
+     "playerId": 6908
+    },
+    {
+     "name": "Folorunsho",
+     "cost": 2,
+     "playerId": 6252
+    },
+    {
+     "name": "Gudmundsson A.",
+     "cost": 25,
+     "playerId": 5800
+    },
+    {
+     "name": "Maldini",
+     "cost": 3,
+     "playerId": 4896
+    },
+    {
+     "name": "Unai Gomez",
+     "cost": 1,
+     "playerId": 6783
+    },
+    {
+     "name": "Isaksen",
+     "cost": 6,
+     "playerId": 6398
+    },
+    {
+     "name": "Malen",
+     "cost": 226,
+     "playerId": 5585
+    },
+    {
+     "name": "Pellegrino M.",
+     "cost": 41,
+     "playerId": 7023
+    },
+    {
+     "name": "Piccoli",
+     "cost": 12,
+     "playerId": 4359
+    },
+    {
+     "name": "Adams A.",
+     "cost": 1,
+     "playerId": 7484
+    }
+   ]
+  },
+  {
+   "name": "Batu - Rino",
+   "league": "C",
+   "roster": [
+    {
+     "name": "Martinez Jo.",
+     "cost": 50,
+     "playerId": 5116
+    },
+    {
+     "name": "Skorupski",
+     "cost": 5,
+     "playerId": 133
+    },
+    {
+     "name": "Pessina Mas.",
+     "cost": 1,
+     "playerId": 7172
+    },
+    {
+     "name": "Celik",
+     "cost": 10,
+     "playerId": 4657
+    },
+    {
+     "name": "Leysen F.",
+     "cost": 1,
+     "playerId": 7564
+    },
+    {
+     "name": "Ostigard",
+     "cost": 15,
+     "playerId": 5750
+    },
+    {
+     "name": "Scalvini",
+     "cost": 12,
+     "playerId": 5526
+    },
+    {
+     "name": "Doekhi",
+     "cost": 10,
+     "playerId": 6320
+    },
+    {
+     "name": "Marcandalli",
+     "cost": 4,
+     "playerId": 6660
+    },
+    {
+     "name": "Sutalo J.",
+     "cost": 1,
+     "playerId": 7580
+    },
+    {
+     "name": "Troilo",
+     "cost": 1,
+     "playerId": 7235
+    },
+    {
+     "name": "Molina N.",
+     "cost": 16,
+     "playerId": 4998
+    },
+    {
+     "name": "Moreira",
+     "cost": 1,
+     "playerId": 6372
+    },
+    {
+     "name": "Gaetano",
+     "cost": 16,
+     "playerId": 4364
+    },
+    {
+     "name": "Fitz-Jim",
+     "cost": 3,
+     "playerId": 7535
+    },
+    {
+     "name": "Piotrowski",
+     "cost": 1,
+     "playerId": 7198
+    },
+    {
+     "name": "Zambo Anguissa",
+     "cost": 20,
+     "playerId": 4220
+    },
+    {
+     "name": "Pisilli",
+     "cost": 2,
+     "playerId": 6190
+    },
+    {
+     "name": "Adzic",
+     "cost": 1,
+     "playerId": 6677
+    },
+    {
+     "name": "Baturina",
+     "cost": 39,
+     "playerId": 7126
+    },
+    {
+     "name": "Odgaard",
+     "cost": 2,
+     "playerId": 2765
+    },
+    {
+     "name": "Orsolini",
+     "cost": 64,
+     "playerId": 2167
+    },
+    {
+     "name": "Boga",
+     "cost": 1,
+     "playerId": 2832
+    },
+    {
+     "name": "Soulè",
+     "cost": 36,
+     "playerId": 5734
+    },
+    {
+     "name": "Yildiz",
+     "cost": 30,
+     "playerId": 6434
+    },
+    {
+     "name": "Hojlund",
+     "cost": 155,
+     "playerId": 6052
+    },
+    {
+     "name": "Lucca",
+     "cost": 1,
+     "playerId": 6215
+    }
+   ]
+  },
+  {
+   "name": "20centimetriNGULO",
+   "league": "C",
+   "roster": [
+    {
+     "name": "Butez",
+     "cost": 53,
+     "playerId": 6966
+    },
+    {
+     "name": "Sanchez Ro.",
+     "cost": 6,
+     "playerId": 6344
+    },
+    {
+     "name": "Vigorito",
+     "cost": 1,
+     "playerId": 2809
+    },
+    {
+     "name": "Bellanova",
+     "cost": 4,
+     "playerId": 4887
+    },
+    {
+     "name": "Marusic",
+     "cost": 1,
+     "playerId": 2188
+    },
+    {
+     "name": "Spinazzola",
+     "cost": 18,
+     "playerId": 1852
+    },
+    {
+     "name": "Olivera",
+     "cost": 1,
+     "playerId": 5840
+    },
+    {
+     "name": "Ranieri L.",
+     "cost": 1,
+     "playerId": 4378
+    },
+    {
+     "name": "Juan Jesus",
+     "cost": 1,
+     "playerId": 256
+    },
+    {
+     "name": "Pavlovic",
+     "cost": 35,
+     "playerId": 5022
+    },
+    {
+     "name": "Dragusin",
+     "cost": 9,
+     "playerId": 5365
+    },
+    {
+     "name": "Bella-Kotchap",
+     "cost": 1,
+     "playerId": 7253
+    },
+    {
+     "name": "Frendrup",
+     "cost": 1,
+     "playerId": 5791
+    },
+    {
+     "name": "Coulibaly L.",
+     "cost": 1,
+     "playerId": 5504
+    },
+    {
+     "name": "Fagioli",
+     "cost": 1,
+     "playerId": 4465
+    },
+    {
+     "name": "Rovella",
+     "cost": 1,
+     "playerId": 4459
+    },
+    {
+     "name": "McTominay",
+     "cost": 60,
+     "playerId": 4777
+    },
+    {
+     "name": "Ndour",
+     "cost": 1,
+     "playerId": 6294
+    },
+    {
+     "name": "Fabbian",
+     "cost": 1,
+     "playerId": 6206
+    },
+    {
+     "name": "Brescianini",
+     "cost": 1,
+     "playerId": 4947
+    },
+    {
+     "name": "Pulisic",
+     "cost": 100,
+     "playerId": 2423
+    },
+    {
+     "name": "Elmas",
+     "cost": 1,
+     "playerId": 4479
+    },
+    {
+     "name": "Hutchinson",
+     "cost": 1,
+     "playerId": 7618
+    },
+    {
+     "name": "Douvikas",
+     "cost": 75,
+     "playerId": 7017
+    },
+    {
+     "name": "Kean",
+     "cost": 75,
+     "playerId": 2097
+    },
+    {
+     "name": "Krstovic",
+     "cost": 50,
+     "playerId": 6435
+    },
+    {
+     "name": "Osmajic",
+     "cost": 1,
+     "playerId": 7600
+    }
+   ]
+  },
+  {
+   "name": "Atletico Viperetta",
+   "league": "C",
+   "roster": [
+    {
+     "name": "Meret",
+     "cost": 40,
+     "playerId": 572
+    },
+    {
+     "name": "Caprile",
+     "cost": 5,
+     "playerId": 4360
+    },
+    {
+     "name": "Corvi",
+     "cost": 2,
+     "playerId": 6662
+    },
+    {
+     "name": "Couto",
+     "cost": 23,
+     "playerId": 6727
+    },
+    {
+     "name": "Kristensen T.",
+     "cost": 3,
+     "playerId": 6485
+    },
+    {
+     "name": "Smolcic I.",
+     "cost": 1,
+     "playerId": 7014
+    },
+    {
+     "name": "Valle",
+     "cost": 11,
+     "playerId": 6867
+    },
+    {
+     "name": "Rodriguez Ju.",
+     "cost": 3,
+     "playerId": 7268
+    },
+    {
+     "name": "Kaiki",
+     "cost": 1,
+     "playerId": 7414
+    },
+    {
+     "name": "Bisseck",
+     "cost": 16,
+     "playerId": 6217
+    },
+    {
+     "name": "Gila",
+     "cost": 15,
+     "playerId": 5833
+    },
+    {
+     "name": "Kabasele",
+     "cost": 3,
+     "playerId": 4263
+    },
+    {
+     "name": "Calhanoglu",
+     "cost": 85,
+     "playerId": 2194
+    },
+    {
+     "name": "Ferguson",
+     "cost": 1,
+     "playerId": 5858
+    },
+    {
+     "name": "Lobotka",
+     "cost": 1,
+     "playerId": 4287
+    },
+    {
+     "name": "Ekkelenkamp",
+     "cost": 28,
+     "playerId": 6684
+    },
+    {
+     "name": "Bakola",
+     "cost": 1,
+     "playerId": 7036
+    },
+    {
+     "name": "Mora",
+     "cost": 60,
+     "playerId": 7556
+    },
+    {
+     "name": "Mastantuono",
+     "cost": 29,
+     "playerId": 7078
+    },
+    {
+     "name": "Vlasic",
+     "cost": 18,
+     "playerId": 5687
+    },
+    {
+     "name": "Vergara",
+     "cost": 11,
+     "playerId": 7223
+    },
+    {
+     "name": "Cissè A.",
+     "cost": 3,
+     "playerId": 6618
+    },
+    {
+     "name": "Njie",
+     "cost": 1,
+     "playerId": 6827
+    },
+    {
+     "name": "Ghedjemis",
+     "cost": 1,
+     "playerId": 6530
+    },
+    {
+     "name": "Woltemade",
+     "cost": 96,
+     "playerId": 6752
+    },
+    {
+     "name": "Esposito F.P.",
+     "cost": 40,
+     "playerId": 7071
+    },
+    {
+     "name": "Romero D.",
+     "cost": 2,
+     "playerId": 7554
+    }
+   ]
+  },
+  {
+   "name": "Ahh poesse",
+   "league": "C",
+   "roster": [
+    {
+     "name": "Okoye",
+     "cost": 8,
+     "playerId": 6462
+    },
+    {
+     "name": "Perri",
+     "cost": 6,
+     "playerId": 6534
+    },
+    {
+     "name": "Muric",
+     "cost": 3,
+     "playerId": 4236
+    },
+    {
+     "name": "De Winter",
+     "cost": 8,
+     "playerId": 5739
+    },
+    {
+     "name": "Dodò",
+     "cost": 1,
+     "playerId": 5885
+    },
+    {
+     "name": "Correia T.",
+     "cost": 1,
+     "playerId": 4845
+    },
+    {
+     "name": "Vasquez",
+     "cost": 9,
+     "playerId": 5514
+    },
+    {
+     "name": "Bernasconi",
+     "cost": 6,
+     "playerId": 7219
+    },
+    {
+     "name": "Kolasinac",
+     "cost": 1,
+     "playerId": 2640
+    },
+    {
+     "name": "Tiago Gabriel",
+     "cost": 9,
+     "playerId": 6989
+    },
+    {
+     "name": "Gabbia",
+     "cost": 2,
+     "playerId": 4401
+    },
+    {
+     "name": "Coco",
+     "cost": 1,
+     "playerId": 6642
+    },
+    {
+     "name": "Diego Carlos",
+     "cost": 1,
+     "playerId": 4137
+    },
+    {
+     "name": "Cristante",
+     "cost": 23,
+     "playerId": 779
+    },
+    {
+     "name": "Milla",
+     "cost": 8,
+     "playerId": 7412
+    },
+    {
+     "name": "McKennie",
+     "cost": 26,
+     "playerId": 4973
+    },
+    {
+     "name": "Thorstvedt",
+     "cost": 6,
+     "playerId": 5844
+    },
+    {
+     "name": "Douglas Luiz",
+     "cost": 3,
+     "playerId": 4911
+    },
+    {
+     "name": "Paz N.",
+     "cost": 124,
+     "playerId": 6875
+    },
+    {
+     "name": "Alajbegovic",
+     "cost": 20,
+     "playerId": 7436
+    },
+    {
+     "name": "Conceicao",
+     "cost": 26,
+     "playerId": 6884
+    },
+    {
+     "name": "Gonzalez N.",
+     "cost": 2,
+     "playerId": 4179
+    },
+    {
+     "name": "De Ketelaere",
+     "cost": 38,
+     "playerId": 5995
+    },
+    {
+     "name": "Raspadori",
+     "cost": 13,
+     "playerId": 4371
+    },
+    {
+     "name": "Esposito Se.",
+     "cost": 6,
+     "playerId": 4463
+    },
+    {
+     "name": "Kolo Muani",
+     "cost": 134,
+     "playerId": 5951
+    },
+    {
+     "name": "Raimondo",
+     "cost": 1,
+     "playerId": 5436
+    }
+   ]
+  },
+  {
+   "name": "FC Demepoli",
+   "league": "C",
+   "roster": [
+    {
+     "name": "Vicario",
+     "cost": 57,
+     "playerId": 4964
+    },
+    {
+     "name": "Grabara",
+     "cost": 1,
+     "playerId": 7603
+    },
+    {
+     "name": "Pinsoglio",
+     "cost": 1,
+     "playerId": 1930
+    },
+    {
+     "name": "Kossounou",
+     "cost": 1,
+     "playerId": 5578
+    },
+    {
+     "name": "Tavares N.",
+     "cost": 3,
+     "playerId": 5620
+    },
+    {
+     "name": "Pedraza",
+     "cost": 1,
+     "playerId": 4817
+    },
+    {
+     "name": "Mancini",
+     "cost": 35,
+     "playerId": 2296
+    },
+    {
+     "name": "Solet",
+     "cost": 20,
+     "playerId": 6956
+    },
+    {
+     "name": "Ramon",
+     "cost": 12,
+     "playerId": 6869
+    },
+    {
+     "name": "Monterisi",
+     "cost": 1,
+     "playerId": 4952
+    },
+    {
+     "name": "Spence",
+     "cost": 38,
+     "playerId": 5982
+    },
+    {
+     "name": "Lulli",
+     "cost": 1,
+     "playerId": 7599
+    },
+    {
+     "name": "Modric",
+     "cost": 16,
+     "playerId": 2606
+    },
+    {
+     "name": "Karlstrom",
+     "cost": 1,
+     "playerId": 6680
+    },
+    {
+     "name": "Matic",
+     "cost": 1,
+     "playerId": 2528
+    },
+    {
+     "name": "Barella",
+     "cost": 37,
+     "playerId": 1870
+    },
+    {
+     "name": "Pasalic",
+     "cost": 1,
+     "playerId": 2077
+    },
+    {
+     "name": "Rowe",
+     "cost": 19,
+     "playerId": 6844
+    },
+    {
+     "name": "Baldanzi",
+     "cost": 5,
+     "playerId": 5823
+    },
+    {
+     "name": "Volpato",
+     "cost": 4,
+     "playerId": 5735
+    },
+    {
+     "name": "Santos A.",
+     "cost": 21,
+     "playerId": 7351
+    },
+    {
+     "name": "Mbangula",
+     "cost": 1,
+     "playerId": 6833
+    },
+    {
+     "name": "Cambiaghi",
+     "cost": 1,
+     "playerId": 4436
+    },
+    {
+     "name": "Berardi",
+     "cost": 45,
+     "playerId": 531
+    },
+    {
+     "name": "Lang",
+     "cost": 1,
+     "playerId": 7120
+    },
+    {
+     "name": "Ramos G.",
+     "cost": 175,
+     "playerId": 6397
+    },
+    {
+     "name": "Camarda",
+     "cost": 1,
+     "playerId": 6519
+    }
+   ]
+  },
+  {
+   "name": "Mestieranti alla Better",
+   "league": "C",
+   "roster": [
+    {
+     "name": "Maignan",
+     "cost": 46,
+     "playerId": 4312
+    },
+    {
+     "name": "Bijlow",
+     "cost": 3,
+     "playerId": 7332
+    },
+    {
+     "name": "Torriani",
+     "cost": 1,
+     "playerId": 6813
+    },
+    {
+     "name": "Di Lorenzo",
+     "cost": 13,
+     "playerId": 2816
+    },
+    {
+     "name": "Floriani Mussolini",
+     "cost": 2,
+     "playerId": 7131
+    },
+    {
+     "name": "Britschgi",
+     "cost": 1,
+     "playerId": 7255
+    },
+    {
+     "name": "Bartesaghi",
+     "cost": 1,
+     "playerId": 6496
+    },
+    {
+     "name": "Estupinan",
+     "cost": 1,
+     "playerId": 5273
+    },
+    {
+     "name": "Bastoni",
+     "cost": 29,
+     "playerId": 2120
+    },
+    {
+     "name": "N'Dicka",
+     "cost": 21,
+     "playerId": 4317
+    },
+    {
+     "name": "Comuzzo",
+     "cost": 10,
+     "playerId": 6495
+    },
+    {
+     "name": "Idzes",
+     "cost": 2,
+     "playerId": 6672
+    },
+    {
+     "name": "Kempf",
+     "cost": 1,
+     "playerId": 6893
+    },
+    {
+     "name": "Dimarco",
+     "cost": 77,
+     "playerId": 254
+    },
+    {
+     "name": "Keita M.",
+     "cost": 1,
+     "playerId": 6898
+    },
+    {
+     "name": "Rabiot",
+     "cost": 59,
+     "playerId": 2379
+    },
+    {
+     "name": "Kessiè",
+     "cost": 17,
+     "playerId": 1850
+    },
+    {
+     "name": "Bernabè",
+     "cost": 1,
+     "playerId": 6666
+    },
+    {
+     "name": "Koopmeiners",
+     "cost": 1,
+     "playerId": 5685
+    },
+    {
+     "name": "Zaniolo",
+     "cost": 30,
+     "playerId": 2766
+    },
+    {
+     "name": "Diao",
+     "cost": 51,
+     "playerId": 6967
+    },
+    {
+     "name": "Rodriguez Je.",
+     "cost": 12,
+     "playerId": 7129
+    },
+    {
+     "name": "Politano",
+     "cost": 1,
+     "playerId": 536
+    },
+    {
+     "name": "Davis K.",
+     "cost": 73,
+     "playerId": 5637
+    },
+    {
+     "name": "Beto",
+     "cost": 44,
+     "playerId": 5694
+    },
+    {
+     "name": "Bowie",
+     "cost": 1,
+     "playerId": 7347
+    },
+    {
+     "name": "Nzola",
+     "cost": 1,
+     "playerId": 5336
+    }
+   ]
+  },
+  {
+   "name": "Yves Saint Lauriente",
+   "league": "C",
+   "roster": [
+    {
+     "name": "Svilar",
+     "cost": 61,
+     "playerId": 5841
+    },
+    {
+     "name": "Provedel",
+     "cost": 7,
+     "playerId": 2814
+    },
+    {
+     "name": "Gollini",
+     "cost": 1,
+     "playerId": 610
+    },
+    {
+     "name": "Chalobah T.",
+     "cost": 22,
+     "playerId": 5641
+    },
+    {
+     "name": "Jimenez A.",
+     "cost": 3,
+     "playerId": 6531
+    },
+    {
+     "name": "Hainaut",
+     "cost": 1,
+     "playerId": 6821
+    },
+    {
+     "name": "Valdepenas",
+     "cost": 10,
+     "playerId": 7294
+    },
+    {
+     "name": "Valeri",
+     "cost": 9,
+     "playerId": 5862
+    },
+    {
+     "name": "Kamara H.",
+     "cost": 7,
+     "playerId": 5555
+    },
+    {
+     "name": "Bremer",
+     "cost": 25,
+     "playerId": 2788
+    },
+    {
+     "name": "Rrahmani",
+     "cost": 19,
+     "playerId": 4409
+    },
+    {
+     "name": "Stones",
+     "cost": 14,
+     "playerId": 2514
+    },
+    {
+     "name": "Wesley",
+     "cost": 40,
+     "playerId": 7181
+    },
+    {
+     "name": "Saelemaekers",
+     "cost": 10,
+     "playerId": 4892
+    },
+    {
+     "name": "Ederson D.S.",
+     "cost": 27,
+     "playerId": 5792
+    },
+    {
+     "name": "Sow",
+     "cost": 1,
+     "playerId": 5946
+    },
+    {
+     "name": "Taylor K.",
+     "cost": 14,
+     "playerId": 7314
+    },
+    {
+     "name": "Mandragora",
+     "cost": 9,
+     "playerId": 1933
+    },
+    {
+     "name": "Samardzic",
+     "cost": 8,
+     "playerId": 5119
+    },
+    {
+     "name": "De Bruyne",
+     "cost": 33,
+     "playerId": 2517
+    },
+    {
+     "name": "Goncalves P.",
+     "cost": 23,
+     "playerId": 7625
+    },
+    {
+     "name": "Bernardeschi",
+     "cost": 10,
+     "playerId": 184
+    },
+    {
+     "name": "Laurientè",
+     "cost": 39,
+     "playerId": 6060
+    },
+    {
+     "name": "Yeboah J.",
+     "cost": 5,
+     "playerId": 6904
+    },
+    {
+     "name": "Scamacca",
+     "cost": 41,
+     "playerId": 2137
+    },
+    {
+     "name": "Dovbyk",
+     "cost": 29,
+     "playerId": 6675
+    },
+    {
+     "name": "Simeone",
+     "cost": 23,
+     "playerId": 2061
+    }
+   ]
+  },
+  {
+   "name": "Sto Castro",
+   "league": "C",
+   "roster": [
+    {
+     "name": "Carnesecchi",
+     "cost": 55,
+     "playerId": 4431
+    },
+    {
+     "name": "Stankovic F.",
+     "cost": 1,
+     "playerId": 6248
+    },
+    {
+     "name": "Sportiello",
+     "cost": 1,
+     "playerId": 4
+    },
+    {
+     "name": "Zappacosta",
+     "cost": 5,
+     "playerId": 554
+    },
+    {
+     "name": "Bertola",
+     "cost": 1,
+     "playerId": 5820
+    },
+    {
+     "name": "Drameh",
+     "cost": 1,
+     "playerId": 5742
+    },
+    {
+     "name": "Pavard",
+     "cost": 1,
+     "playerId": 4177
+    },
+    {
+     "name": "Mangas",
+     "cost": 9,
+     "playerId": 7485
+    },
+    {
+     "name": "Bracaglia",
+     "cost": 6,
+     "playerId": 7469
+    },
+    {
+     "name": "Hermoso",
+     "cost": 16,
+     "playerId": 4807
+    },
+    {
+     "name": "Palma",
+     "cost": 1,
+     "playerId": 6925
+    },
+    {
+     "name": "Ghilardi",
+     "cost": 1,
+     "playerId": 6631
+    },
+    {
+     "name": "Cacciamani",
+     "cost": 6,
+     "playerId": 7060
+    },
+    {
+     "name": "Chukwueze",
+     "cost": 3,
+     "playerId": 4856
+    },
+    {
+     "name": "Busio",
+     "cost": 6,
+     "playerId": 5507
+    },
+    {
+     "name": "Romano",
+     "cost": 5,
+     "playerId": 7311
+    },
+    {
+     "name": "Da Cunha",
+     "cost": 60,
+     "playerId": 5559
+    },
+    {
+     "name": "Jones C.",
+     "cost": 16,
+     "playerId": 5172
+    },
+    {
+     "name": "Sucic P.",
+     "cost": 8,
+     "playerId": 7070
+    },
+    {
+     "name": "Casadei",
+     "cost": 2,
+     "playerId": 5888
+    },
+    {
+     "name": "Colpani",
+     "cost": 4,
+     "playerId": 5878
+    },
+    {
+     "name": "Kvernadze",
+     "cost": 2,
+     "playerId": 6204
+    },
+    {
+     "name": "Adams C.",
+     "cost": 4,
+     "playerId": 6646
+    },
+    {
+     "name": "Martinez L.",
+     "cost": 191,
+     "playerId": 2764
+    },
+    {
+     "name": "Pinamonti",
+     "cost": 48,
+     "playerId": 2038
+    },
+    {
+     "name": "Castro S.",
+     "cost": 25,
+     "playerId": 6572
+    },
+    {
+     "name": "Varela G.",
+     "cost": 2,
+     "playerId": 7523
+    }
+   ]
+  },
+  {
+   "name": "Real Madrink",
+   "league": "C",
+   "roster": [
+    {
+     "name": "Mandas",
+     "cost": 20,
+     "playerId": 6482
+    },
+    {
+     "name": "Milinkovic-Savic V.",
+     "cost": 5,
+     "playerId": 2170
+    },
+    {
+     "name": "Falcone",
+     "cost": 5,
+     "playerId": 2134
+    },
+    {
+     "name": "Kalulu",
+     "cost": 22,
+     "playerId": 4976
+    },
+    {
+     "name": "Delprato",
+     "cost": 20,
+     "playerId": 6664
+    },
+    {
+     "name": "Belghali",
+     "cost": 11,
+     "playerId": 7220
+    },
+    {
+     "name": "Cambiaso",
+     "cost": 8,
+     "playerId": 5520
+    },
+    {
+     "name": "Vojvoda",
+     "cost": 7,
+     "playerId": 4994
+    },
+    {
+     "name": "Kouadio",
+     "cost": 1,
+     "playerId": 7238
+    },
+    {
+     "name": "Carlos Augusto",
+     "cost": 1,
+     "playerId": 5877
+    },
+    {
+     "name": "Biraghi",
+     "cost": 1,
+     "playerId": 252
+    },
+    {
+     "name": "Akanji",
+     "cost": 25,
+     "playerId": 4159
+    },
+    {
+     "name": "Provstgaard",
+     "cost": 1,
+     "playerId": 7012
+    },
+    {
+     "name": "Diouf",
+     "cost": 25,
+     "playerId": 6274
+    },
+    {
+     "name": "Luis Henrique",
+     "cost": 1,
+     "playerId": 5301
+    },
+    {
+     "name": "Calò",
+     "cost": 10,
+     "playerId": 7472
+    },
+    {
+     "name": "Perrone",
+     "cost": 7,
+     "playerId": 6151
+    },
+    {
+     "name": "Adopo",
+     "cost": 1,
+     "playerId": 4870
+    },
+    {
+     "name": "Pessina",
+     "cost": 1,
+     "playerId": 2741
+    },
+    {
+     "name": "Zielinski",
+     "cost": 37,
+     "playerId": 152
+    },
+    {
+     "name": "Fazzini",
+     "cost": 1,
+     "playerId": 6010
+    },
+    {
+     "name": "Zaccagni",
+     "cost": 65,
+     "playerId": 632
+    },
+    {
+     "name": "Dybala",
+     "cost": 65,
+     "playerId": 309
+    },
+    {
+     "name": "Vitinha O.",
+     "cost": 1,
+     "playerId": 6164
+    },
+    {
+     "name": "Thuram",
+     "cost": 151,
+     "playerId": 4871
+    },
+    {
+     "name": "Colombo",
+     "cost": 2,
+     "playerId": 4923
+    },
+    {
+     "name": "Bonny",
+     "cost": 1,
+     "playerId": 6669
+    }
+   ]
+  },
+  {
+   "name": "Pepinho City",
+   "league": "B",
+   "roster": [
+    {
+     "name": "Meret",
+     "cost": 50,
+     "playerId": 572
+    },
+    {
+     "name": "Milinkovic-Savic V.",
+     "cost": 3,
+     "playerId": 2170
+    },
+    {
+     "name": "Perri",
+     "cost": 1,
+     "playerId": 6534
+    },
+    {
+     "name": "Kristensen T.",
+     "cost": 10,
+     "playerId": 6485
+    },
+    {
+     "name": "Couto",
+     "cost": 7,
+     "playerId": 6727
+    },
+    {
+     "name": "Smolcic I.",
+     "cost": 1,
+     "playerId": 7014
+    },
+    {
+     "name": "Valdepenas",
+     "cost": 8,
+     "playerId": 7294
+    },
+    {
+     "name": "Mangas",
+     "cost": 1,
+     "playerId": 7485
+    },
+    {
+     "name": "Rodriguez Ju.",
+     "cost": 1,
+     "playerId": 7268
+    },
+    {
+     "name": "Doig",
+     "cost": 1,
+     "playerId": 5851
+    },
+    {
+     "name": "Mancini",
+     "cost": 26,
+     "playerId": 2296
+    },
+    {
+     "name": "Coco",
+     "cost": 4,
+     "playerId": 6642
+    },
+    {
+     "name": "Calvani",
+     "cost": 1,
+     "playerId": 7467
+    },
+    {
+     "name": "Calhanoglu",
+     "cost": 74,
+     "playerId": 2194
+    },
+    {
+     "name": "Adopo",
+     "cost": 2,
+     "playerId": 4870
+    },
+    {
+     "name": "Matic",
+     "cost": 1,
+     "playerId": 2528
+    },
+    {
+     "name": "Frattesi",
+     "cost": 35,
+     "playerId": 2848
+    },
+    {
+     "name": "Ekkelenkamp",
+     "cost": 29,
+     "playerId": 6684
+    },
+    {
+     "name": "Zambo Anguissa",
+     "cost": 11,
+     "playerId": 4220
+    },
+    {
+     "name": "Musah",
+     "cost": 1,
+     "playerId": 5295
+    },
+    {
+     "name": "Mastantuono",
+     "cost": 27,
+     "playerId": 7078
+    },
+    {
+     "name": "Conceicao",
+     "cost": 21,
+     "playerId": 6884
+    },
+    {
+     "name": "Esposito Se.",
+     "cost": 15,
+     "playerId": 4463
+    },
+    {
+     "name": "Yeboah J.",
+     "cost": 1,
+     "playerId": 6904
+    },
+    {
+     "name": "Thuram",
+     "cost": 122,
+     "playerId": 4871
+    },
+    {
+     "name": "Castro S.",
+     "cost": 16,
+     "playerId": 6572
+    },
+    {
+     "name": "Varela G.",
+     "cost": 5,
+     "playerId": 7523
+    }
+   ]
+  },
+  {
+   "name": "Real Lekkoba",
+   "league": "B",
+   "roster": [
+    {
+     "name": "Svilar",
+     "cost": 58,
+     "playerId": 5841
+    },
+    {
+     "name": "De Marzi",
+     "cost": 1,
+     "playerId": 7048
+    },
+    {
+     "name": "Gollini",
+     "cost": 1,
+     "playerId": 610
+    },
+    {
+     "name": "Chalobah T.",
+     "cost": 20,
+     "playerId": 5641
+    },
+    {
+     "name": "Abankwah",
+     "cost": 1,
+     "playerId": 6021
+    },
+    {
+     "name": "Kamara H.",
+     "cost": 6,
+     "playerId": 5555
+    },
+    {
+     "name": "Carlos Augusto",
+     "cost": 3,
+     "playerId": 5877
+    },
+    {
+     "name": "Kolasinac",
+     "cost": 1,
+     "playerId": 2640
+    },
+    {
+     "name": "Gila",
+     "cost": 22,
+     "playerId": 5833
+    },
+    {
+     "name": "Kempf",
+     "cost": 2,
+     "playerId": 6893
+    },
+    {
+     "name": "Hien",
+     "cost": 1,
+     "playerId": 6046
+    },
+    {
+     "name": "Kabasele",
+     "cost": 1,
+     "playerId": 4263
+    },
+    {
+     "name": "Mina",
+     "cost": 1,
+     "playerId": 4210
+    },
+    {
+     "name": "Moreira",
+     "cost": 19,
+     "playerId": 6372
+    },
+    {
+     "name": "Chukwueze",
+     "cost": 13,
+     "playerId": 4856
+    },
+    {
+     "name": "Modric",
+     "cost": 31,
+     "playerId": 2606
+    },
+    {
+     "name": "Calò",
+     "cost": 17,
+     "playerId": 7472
+    },
+    {
+     "name": "Ilic",
+     "cost": 2,
+     "playerId": 5007
+    },
+    {
+     "name": "Pasalic",
+     "cost": 28,
+     "playerId": 2077
+    },
+    {
+     "name": "Thorstvedt",
+     "cost": 5,
+     "playerId": 5844
+    },
+    {
+     "name": "Bakola",
+     "cost": 3,
+     "playerId": 7036
+    },
+    {
+     "name": "Thuram K.",
+     "cost": 3,
+     "playerId": 5562
+    },
+    {
+     "name": "Baldanzi",
+     "cost": 1,
+     "playerId": 5823
+    },
+    {
+     "name": "Santos A.",
+     "cost": 36,
+     "playerId": 7351
+    },
+    {
+     "name": "Hojlund",
+     "cost": 121,
+     "playerId": 6052
+    },
+    {
+     "name": "Davis K.",
+     "cost": 101,
+     "playerId": 5637
+    },
+    {
+     "name": "Lucca",
+     "cost": 1,
+     "playerId": 6215
+    }
+   ]
+  },
+  {
+   "name": "Lollo Causto",
+   "league": "B",
+   "roster": [
+    {
+     "name": "Mandas",
+     "cost": 18,
+     "playerId": 6482
+    },
+    {
+     "name": "Okoye",
+     "cost": 13,
+     "playerId": 6462
+    },
+    {
+     "name": "Bijlow",
+     "cost": 3,
+     "playerId": 7332
+    },
+    {
+     "name": "Floriani Mussolini",
+     "cost": 1,
+     "playerId": 7131
+    },
+    {
+     "name": "Hainaut",
+     "cost": 1,
+     "playerId": 6821
+    },
+    {
+     "name": "Marusic",
+     "cost": 1,
+     "playerId": 2188
+    },
+    {
+     "name": "Vasquez",
+     "cost": 17,
+     "playerId": 5514
+    },
+    {
+     "name": "Miranda J.",
+     "cost": 6,
+     "playerId": 4734
+    },
+    {
+     "name": "Kaiki",
+     "cost": 1,
+     "playerId": 7414
+    },
+    {
+     "name": "Bremer",
+     "cost": 29,
+     "playerId": 2788
+    },
+    {
+     "name": "Tiago Gabriel",
+     "cost": 9,
+     "playerId": 6989
+    },
+    {
+     "name": "Bella-Kotchap",
+     "cost": 2,
+     "playerId": 7253
+    },
+    {
+     "name": "Buongiorno",
+     "cost": 2,
+     "playerId": 2724
+    },
+    {
+     "name": "Milla",
+     "cost": 11,
+     "playerId": 7412
+    },
+    {
+     "name": "Ferguson",
+     "cost": 5,
+     "playerId": 5858
+    },
+    {
+     "name": "Sow",
+     "cost": 2,
+     "playerId": 5946
+    },
+    {
+     "name": "Samardzic",
+     "cost": 14,
+     "playerId": 5119
+    },
+    {
+     "name": "Adzic",
+     "cost": 11,
+     "playerId": 6677
+    },
+    {
+     "name": "Fazzini",
+     "cost": 7,
+     "playerId": 6010
+    },
+    {
+     "name": "Casadei",
+     "cost": 3,
+     "playerId": 5888
+    },
+    {
+     "name": "Goncalves P.",
+     "cost": 22,
+     "playerId": 7625
+    },
+    {
+     "name": "Schmid",
+     "cost": 3,
+     "playerId": 7551
+    },
+    {
+     "name": "Lontani",
+     "cost": 1,
+     "playerId": 7561
+    },
+    {
+     "name": "Malen",
+     "cost": 185,
+     "playerId": 5585
+    },
+    {
+     "name": "Kean",
+     "cost": 130,
+     "playerId": 2097
+    },
+    {
+     "name": "Bonny",
+     "cost": 5,
+     "playerId": 6669
+    },
+    {
+     "name": "Adams A.",
+     "cost": 1,
+     "playerId": 7484
+    }
+   ]
+  },
+  {
+   "name": "Montedago FC",
+   "league": "B",
+   "roster": [
+    {
+     "name": "Skorupski",
+     "cost": 17,
+     "playerId": 133
+    },
+    {
+     "name": "De Gea",
+     "cost": 13,
+     "playerId": 2521
+    },
+    {
+     "name": "Muric",
+     "cost": 2,
+     "playerId": 4236
+    },
+    {
+     "name": "Vojvoda",
+     "cost": 6,
+     "playerId": 4994
+    },
+    {
+     "name": "Cambiaso",
+     "cost": 2,
+     "playerId": 5520
+    },
+    {
+     "name": "Zè Pedro",
+     "cost": 1,
+     "playerId": 7274
+    },
+    {
+     "name": "Bernasconi",
+     "cost": 3,
+     "playerId": 7219
+    },
+    {
+     "name": "Bracaglia",
+     "cost": 1,
+     "playerId": 7469
+    },
+    {
+     "name": "Gallo",
+     "cost": 1,
+     "playerId": 4502
+    },
+    {
+     "name": "Bastoni",
+     "cost": 30,
+     "playerId": 2120
+    },
+    {
+     "name": "Idzes",
+     "cost": 7,
+     "playerId": 6672
+    },
+    {
+     "name": "Comuzzo",
+     "cost": 6,
+     "playerId": 6495
+    },
+    {
+     "name": "Konè M.",
+     "cost": 30,
+     "playerId": 5589
+    },
+    {
+     "name": "Basic",
+     "cost": 4,
+     "playerId": 5674
+    },
+    {
+     "name": "Piotrowski",
+     "cost": 1,
+     "playerId": 7198
+    },
+    {
+     "name": "Da Cunha",
+     "cost": 36,
+     "playerId": 5559
+    },
+    {
+     "name": "Douglas Luiz",
+     "cost": 7,
+     "playerId": 4911
+    },
+    {
+     "name": "Fabbian",
+     "cost": 1,
+     "playerId": 6206
+    },
+    {
+     "name": "De Bruyne",
+     "cost": 44,
+     "playerId": 2517
+    },
+    {
+     "name": "Vlasic",
+     "cost": 18,
+     "playerId": 5687
+    },
+    {
+     "name": "Diao",
+     "cost": 51,
+     "playerId": 6967
+    },
+    {
+     "name": "Rodriguez Je.",
+     "cost": 11,
+     "playerId": 7129
+    },
+    {
+     "name": "Cambiaghi",
+     "cost": 11,
+     "playerId": 4436
+    },
+    {
+     "name": "De Ketelaere",
+     "cost": 40,
+     "playerId": 5995
+    },
+    {
+     "name": "Yildiz",
+     "cost": 37,
+     "playerId": 6434
+    },
+    {
+     "name": "Ramos G.",
+     "cost": 124,
+     "playerId": 6397
+    },
+    {
+     "name": "Camarda",
+     "cost": 1,
+     "playerId": 6519
+    }
+   ]
+  },
+  {
+   "name": "Vojvodka liscia",
+   "league": "B",
+   "roster": [
+    {
+     "name": "Martinez Jo.",
+     "cost": 52,
+     "playerId": 5116
+    },
+    {
+     "name": "Provedel",
+     "cost": 7,
+     "playerId": 2814
+    },
+    {
+     "name": "Di Gennaro",
+     "cost": 1,
+     "playerId": 1926
+    },
+    {
+     "name": "Theate",
+     "cost": 6,
+     "playerId": 5675
+    },
+    {
+     "name": "Valeri",
+     "cost": 4,
+     "playerId": 5862
+    },
+    {
+     "name": "Valle",
+     "cost": 1,
+     "playerId": 6867
+    },
+    {
+     "name": "Juan Jesus",
+     "cost": 1,
+     "playerId": 256
+    },
+    {
+     "name": "Stones",
+     "cost": 23,
+     "playerId": 2514
+    },
+    {
+     "name": "Rrahmani",
+     "cost": 16,
+     "playerId": 4409
+    },
+    {
+     "name": "Balerdi",
+     "cost": 15,
+     "playerId": 4705
+    },
+    {
+     "name": "Marcandalli",
+     "cost": 5,
+     "playerId": 6660
+    },
+    {
+     "name": "Sutalo J.",
+     "cost": 3,
+     "playerId": 7580
+    },
+    {
+     "name": "Monterisi",
+     "cost": 3,
+     "playerId": 4952
+    },
+    {
+     "name": "Wesley",
+     "cost": 40,
+     "playerId": 7181
+    },
+    {
+     "name": "Cacciamani",
+     "cost": 6,
+     "playerId": 7060
+    },
+    {
+     "name": "Frendrup",
+     "cost": 7,
+     "playerId": 5791
+    },
+    {
+     "name": "Fitz-Jim",
+     "cost": 5,
+     "playerId": 7535
+    },
+    {
+     "name": "Coulibaly L.",
+     "cost": 3,
+     "playerId": 5504
+    },
+    {
+     "name": "Ndour",
+     "cost": 1,
+     "playerId": 6294
+    },
+    {
+     "name": "Loftus-Cheek",
+     "cost": 1,
+     "playerId": 4199
+    },
+    {
+     "name": "Baturina",
+     "cost": 87,
+     "playerId": 7126
+    },
+    {
+     "name": "Gudmundsson A.",
+     "cost": 7,
+     "playerId": 5800
+    },
+    {
+     "name": "Colpani",
+     "cost": 3,
+     "playerId": 5878
+    },
+    {
+     "name": "Martinez L.",
+     "cost": 161,
+     "playerId": 2764
+    },
+    {
+     "name": "Simeone",
+     "cost": 40,
+     "playerId": 2061
+    },
+    {
+     "name": "Tourè E.",
+     "cost": 1,
+     "playerId": 6229
+    },
+    {
+     "name": "Piccoli",
+     "cost": 1,
+     "playerId": 4359
+    }
+   ]
+  },
+  {
+   "name": "Poltrone e Nzola",
+   "league": "B",
+   "roster": [
+    {
+     "name": "Butez",
+     "cost": 34,
+     "playerId": 6966
+    },
+    {
+     "name": "Corvi",
+     "cost": 7,
+     "playerId": 6662
+    },
+    {
+     "name": "Sanchez Ro.",
+     "cost": 4,
+     "playerId": 6344
+    },
+    {
+     "name": "Birindelli",
+     "cost": 1,
+     "playerId": 5838
+    },
+    {
+     "name": "De Winter",
+     "cost": 1,
+     "playerId": 5739
+    },
+    {
+     "name": "Obert",
+     "cost": 6,
+     "playerId": 5701
+    },
+    {
+     "name": "Spinazzola",
+     "cost": 3,
+     "playerId": 1852
+    },
+    {
+     "name": "Leysen F.",
+     "cost": 1,
+     "playerId": 7564
+    },
+    {
+     "name": "Franjic",
+     "cost": 1,
+     "playerId": 7478
+    },
+    {
+     "name": "Solet",
+     "cost": 27,
+     "playerId": 6956
+    },
+    {
+     "name": "Provstgaard",
+     "cost": 1,
+     "playerId": 7012
+    },
+    {
+     "name": "Dimarco",
+     "cost": 73,
+     "playerId": 254
+    },
+    {
+     "name": "Gaetano",
+     "cost": 34,
+     "playerId": 4364
+    },
+    {
+     "name": "Perrone",
+     "cost": 13,
+     "playerId": 6151
+    },
+    {
+     "name": "Rabiot",
+     "cost": 65,
+     "playerId": 2379
+    },
+    {
+     "name": "Caqueret",
+     "cost": 1,
+     "playerId": 5036
+    },
+    {
+     "name": "Mandragora",
+     "cost": 1,
+     "playerId": 1933
+    },
+    {
+     "name": "Paz N.",
+     "cost": 100,
+     "playerId": 6875
+    },
+    {
+     "name": "Volpato",
+     "cost": 4,
+     "playerId": 5735
+    },
+    {
+     "name": "Hutchinson",
+     "cost": 1,
+     "playerId": 7618
+    },
+    {
+     "name": "Ghedjemis",
+     "cost": 1,
+     "playerId": 6530
+    },
+    {
+     "name": "Isaksen",
+     "cost": 1,
+     "playerId": 6398
+    },
+    {
+     "name": "Cancellieri",
+     "cost": 1,
+     "playerId": 5500
+    },
+    {
+     "name": "Raspadori",
+     "cost": 47,
+     "playerId": 4371
+    },
+    {
+     "name": "Adams C.",
+     "cost": 1,
+     "playerId": 6646
+    },
+    {
+     "name": "Pinamonti",
+     "cost": 66,
+     "playerId": 2038
+    },
+    {
+     "name": "Bowie",
+     "cost": 1,
+     "playerId": 7347
+    }
+   ]
+  },
+  {
+   "name": "bomberini",
+   "league": "B",
+   "roster": [
+    {
+     "name": "Maignan",
+     "cost": 40,
+     "playerId": 4312
+    },
+    {
+     "name": "Torriani",
+     "cost": 1,
+     "playerId": 6813
+    },
+    {
+     "name": "Terracciano",
+     "cost": 1,
+     "playerId": 2815
+    },
+    {
+     "name": "Celik",
+     "cost": 13,
+     "playerId": 4657
+    },
+    {
+     "name": "Viery",
+     "cost": 1,
+     "playerId": 7410
+    },
+    {
+     "name": "Akanji",
+     "cost": 26,
+     "playerId": 4159
+    },
+    {
+     "name": "Hermoso",
+     "cost": 10,
+     "playerId": 4807
+    },
+    {
+     "name": "Scalvini",
+     "cost": 9,
+     "playerId": 5526
+    },
+    {
+     "name": "Koulierakis",
+     "cost": 3,
+     "playerId": 7529
+    },
+    {
+     "name": "Troilo",
+     "cost": 1,
+     "playerId": 7235
+    },
+    {
+     "name": "Molina N.",
+     "cost": 22,
+     "playerId": 4998
+    },
+    {
+     "name": "Ellertsson",
+     "cost": 5,
+     "playerId": 6020
+    },
+    {
+     "name": "Lulli",
+     "cost": 1,
+     "playerId": 7599
+    },
+    {
+     "name": "Lobotka",
+     "cost": 5,
+     "playerId": 4287
+    },
+    {
+     "name": "Karlstrom",
+     "cost": 1,
+     "playerId": 6680
+    },
+    {
+     "name": "Fagioli",
+     "cost": 1,
+     "playerId": 4465
+    },
+    {
+     "name": "Barella",
+     "cost": 27,
+     "playerId": 1870
+    },
+    {
+     "name": "Pisilli",
+     "cost": 5,
+     "playerId": 6190
+    },
+    {
+     "name": "Pulisic",
+     "cost": 67,
+     "playerId": 2423
+    },
+    {
+     "name": "Rowe",
+     "cost": 33,
+     "playerId": 6844
+    },
+    {
+     "name": "Maldini",
+     "cost": 2,
+     "playerId": 4896
+    },
+    {
+     "name": "Neres",
+     "cost": 2,
+     "playerId": 6831
+    },
+    {
+     "name": "Politano",
+     "cost": 1,
+     "playerId": 536
+    },
+    {
+     "name": "Woltemade",
+     "cost": 47,
+     "playerId": 6752
+    },
+    {
+     "name": "Berardi",
+     "cost": 47,
+     "playerId": 531
+    },
+    {
+     "name": "Kolo Muani",
+     "cost": 93,
+     "playerId": 5951
+    },
+    {
+     "name": "Colombo",
+     "cost": 10,
+     "playerId": 4923
+    }
+   ]
+  },
+  {
+   "name": "F.C. SirMich-Internazionale 1995",
+   "league": "B",
+   "roster": [
+    {
+     "name": "Carnesecchi",
+     "cost": 53,
+     "playerId": 4431
+    },
+    {
+     "name": "Pompei",
+     "cost": 1,
+     "playerId": 7626
+    },
+    {
+     "name": "Sportiello",
+     "cost": 1,
+     "playerId": 4
+    },
+    {
+     "name": "Bertola",
+     "cost": 1,
+     "playerId": 5820
+    },
+    {
+     "name": "Bellanova",
+     "cost": 1,
+     "playerId": 4887
+    },
+    {
+     "name": "Zappacosta",
+     "cost": 1,
+     "playerId": 554
+    },
+    {
+     "name": "Kelly L.",
+     "cost": 1,
+     "playerId": 6766
+    },
+    {
+     "name": "Doekhi",
+     "cost": 9,
+     "playerId": 6320
+    },
+    {
+     "name": "Lucumì",
+     "cost": 9,
+     "playerId": 6042
+    },
+    {
+     "name": "Dragusin",
+     "cost": 5,
+     "playerId": 5365
+    },
+    {
+     "name": "Beukema",
+     "cost": 1,
+     "playerId": 6202
+    },
+    {
+     "name": "Diouf",
+     "cost": 31,
+     "playerId": 6274
+    },
+    {
+     "name": "Luis Henrique",
+     "cost": 1,
+     "playerId": 5301
+    },
+    {
+     "name": "Ederson D.S.",
+     "cost": 51,
+     "playerId": 5792
+    },
+    {
+     "name": "Romano",
+     "cost": 6,
+     "playerId": 7311
+    },
+    {
+     "name": "Pessina",
+     "cost": 1,
+     "playerId": 2741
+    },
+    {
+     "name": "Bernabè",
+     "cost": 7,
+     "playerId": 6666
+    },
+    {
+     "name": "Berisha M.",
+     "cost": 1,
+     "playerId": 6015
+    },
+    {
+     "name": "Pellegrini Lo.",
+     "cost": 1,
+     "playerId": 530
+    },
+    {
+     "name": "Alajbegovic",
+     "cost": 22,
+     "playerId": 7436
+    },
+    {
+     "name": "Bernardeschi",
+     "cost": 21,
+     "playerId": 184
+    },
+    {
+     "name": "Cissè A.",
+     "cost": 7,
+     "playerId": 6618
+    },
+    {
+     "name": "Orsolini",
+     "cost": 99,
+     "playerId": 2167
+    },
+    {
+     "name": "Dybala",
+     "cost": 75,
+     "playerId": 309
+    },
+    {
+     "name": "Douvikas",
+     "cost": 57,
+     "playerId": 7017
+    },
+    {
+     "name": "Beto",
+     "cost": 11,
+     "playerId": 5694
+    },
+    {
+     "name": "Raimondo",
+     "cost": 6,
+     "playerId": 5436
+    }
+   ]
+  },
+  {
+   "name": "ROONEY TUNES",
+   "league": "B",
+   "roster": [
+    {
+     "name": "Falcone",
+     "cost": 9,
+     "playerId": 2134
+    },
+    {
+     "name": "Stankovic F.",
+     "cost": 3,
+     "playerId": 6248
+    },
+    {
+     "name": "Caprile",
+     "cost": 3,
+     "playerId": 4360
+    },
+    {
+     "name": "Kalulu",
+     "cost": 34,
+     "playerId": 4976
+    },
+    {
+     "name": "Di Lorenzo",
+     "cost": 25,
+     "playerId": 2816
+    },
+    {
+     "name": "Jimenez A.",
+     "cost": 10,
+     "playerId": 6531
+    },
+    {
+     "name": "Kossounou",
+     "cost": 4,
+     "playerId": 5578
+    },
+    {
+     "name": "Tavares N.",
+     "cost": 7,
+     "playerId": 5620
+    },
+    {
+     "name": "Pedraza",
+     "cost": 1,
+     "playerId": 4817
+    },
+    {
+     "name": "Ramon",
+     "cost": 23,
+     "playerId": 6869
+    },
+    {
+     "name": "Pavlovic",
+     "cost": 19,
+     "playerId": 5022
+    },
+    {
+     "name": "N'Dicka",
+     "cost": 10,
+     "playerId": 4317
+    },
+    {
+     "name": "Oulai",
+     "cost": 5,
+     "playerId": 7464
+    },
+    {
+     "name": "Cristante",
+     "cost": 4,
+     "playerId": 779
+    },
+    {
+     "name": "De Roon",
+     "cost": 1,
+     "playerId": 22
+    },
+    {
+     "name": "McTominay",
+     "cost": 52,
+     "playerId": 4777
+    },
+    {
+     "name": "McKennie",
+     "cost": 34,
+     "playerId": 4973
+    },
+    {
+     "name": "Zielinski",
+     "cost": 28,
+     "playerId": 152
+    },
+    {
+     "name": "Sucic P.",
+     "cost": 22,
+     "playerId": 7070
+    },
+    {
+     "name": "Zaniolo",
+     "cost": 36,
+     "playerId": 2766
+    },
+    {
+     "name": "Mora",
+     "cost": 33,
+     "playerId": 7556
+    },
+    {
+     "name": "Vergara",
+     "cost": 13,
+     "playerId": 7223
+    },
+    {
+     "name": "Laurientè",
+     "cost": 20,
+     "playerId": 6060
+    },
+    {
+     "name": "Soulè",
+     "cost": 15,
+     "playerId": 5734
+    },
+    {
+     "name": "Scamacca",
+     "cost": 40,
+     "playerId": 2137
+    },
+    {
+     "name": "Pellegrino M.",
+     "cost": 20,
+     "playerId": 7023
+    },
+    {
+     "name": "Dovbyk",
+     "cost": 12,
+     "playerId": 6675
+    }
+   ]
+  },
+  {
+   "name": "Ac Denti",
+   "league": "B",
+   "roster": [
+    {
+     "name": "Vicario",
+     "cost": 50,
+     "playerId": 4964
+    },
+    {
+     "name": "Pinsoglio",
+     "cost": 1,
+     "playerId": 1930
+    },
+    {
+     "name": "Neto",
+     "cost": 1,
+     "playerId": 283
+    },
+    {
+     "name": "Delprato",
+     "cost": 9,
+     "playerId": 6664
+    },
+    {
+     "name": "Pavard",
+     "cost": 4,
+     "playerId": 4177
+    },
+    {
+     "name": "Helland",
+     "cost": 1,
+     "playerId": 7326
+    },
+    {
+     "name": "Heggem",
+     "cost": 4,
+     "playerId": 7212
+    },
+    {
+     "name": "Bartesaghi",
+     "cost": 1,
+     "playerId": 6496
+    },
+    {
+     "name": "Bisseck",
+     "cost": 24,
+     "playerId": 6217
+    },
+    {
+     "name": "Ostigard",
+     "cost": 17,
+     "playerId": 5750
+    },
+    {
+     "name": "Marin R.",
+     "cost": 1,
+     "playerId": 6638
+    },
+    {
+     "name": "Saelemaekers",
+     "cost": 25,
+     "playerId": 4892
+    },
+    {
+     "name": "Spence",
+     "cost": 18,
+     "playerId": 5982
+    },
+    {
+     "name": "Busio",
+     "cost": 10,
+     "playerId": 5507
+    },
+    {
+     "name": "Keita M.",
+     "cost": 3,
+     "playerId": 6898
+    },
+    {
+     "name": "Winks",
+     "cost": 1,
+     "playerId": 4260
+    },
+    {
+     "name": "Atta",
+     "cost": 43,
+     "playerId": 6908
+    },
+    {
+     "name": "Kessiè",
+     "cost": 29,
+     "playerId": 1850
+    },
+    {
+     "name": "Taylor K.",
+     "cost": 21,
+     "playerId": 7314
+    },
+    {
+     "name": "Jones C.",
+     "cost": 20,
+     "playerId": 5172
+    },
+    {
+     "name": "Zaccagni",
+     "cost": 41,
+     "playerId": 632
+    },
+    {
+     "name": "Kvernadze",
+     "cost": 6,
+     "playerId": 6204
+    },
+    {
+     "name": "Njie",
+     "cost": 5,
+     "playerId": 6827
+    },
+    {
+     "name": "Gonzalez N.",
+     "cost": 5,
+     "playerId": 4179
+    },
+    {
+     "name": "Esposito F.P.",
+     "cost": 120,
+     "playerId": 7071
+    },
+    {
+     "name": "Krstovic",
+     "cost": 40,
+     "playerId": 6435
+    },
+    {
+     "name": "Romero D.",
+     "cost": 17,
+     "playerId": 7554
+    }
+   ]
+  }
+ ]
+}
