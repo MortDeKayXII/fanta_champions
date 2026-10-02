@@ -11,3 +11,6 @@ new_version_settings/matchday_*.xlsx
 **/matchday_*.xlsx
 **/Voti_Fantacalcio_*.xlsx
 *.tsbuildinfo
+
+# Local script credentials
+.env.scripts

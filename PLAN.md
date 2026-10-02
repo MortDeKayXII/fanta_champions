@@ -67,10 +67,9 @@ Nessun server da gestire. Tutte le chiavi nel client sono pubbliche per design (
 | `roster_history` | log di ogni modifica (chi, quando, cosa) |
 | `matchdays` | numero, fase (gironi/playoff/quarti/semi/finale), leg (andata/ritorno) |
 | `fixtures` | matchday, home_team, away_team, slot bracket |
-| `votes` | matchday, player_id, voto, Gf, Gs, Rp, Rs, Rf, Au, Amm, Esp, Ass (righe grezze dal file) |
-| `lineups` | matchday, team_id, slot 1–11, player_id, nome (snapshot), out_of_position (−1) |
+| `votes` | matchday, player_id, voto, Gf, Gs, Rp, Rs, Rf, Au, Amm, Esp, Ass (righe grezze dal file; leggibili solo dall'admin) |
+| `lineups` | matchday, team_id, slot 1–11, player_id, nome (snapshot), out_of_position (−1); dopo il calcolo anche voto, fantavoto, counted e statistiche (gol, assist, …) |
 | `results` | fixture, punti casa/ospite, gol casa/ospite |
-| `player_scores` | matchday, team, player, voto, fantavoto (per il dettaglio partita) |
 | `tie_decisions` | tie bracket, team vincitore scelto dall'admin |
 | `error_reports` | team, matchday, fixture, player opzionale, testo, stato (aperta/risolta/rifiutata) |
 
