@@ -1,0 +1,26 @@
+name: Supabase keep-alive
+
+# Free Supabase projects are paused after about 7 days without activity.
+# This makes a small read on the database every 3 days to prevent it.
+on:
+  schedule:
+    - cron: '17 6 */3 * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query the database
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          # The table is created in phase 2; until then a 404 on it still reaches the API,
+          # so only connection/auth failures fail this job.
+          code=$(curl -s -o /dev/null -w '%{http_code}' \
+            "$SUPABASE_URL/rest/v1/players?select=id&limit=1" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY")
+          echo "HTTP $code"
+          case "$code" in 2*|404) exit 0 ;; *) exit 1 ;; esac

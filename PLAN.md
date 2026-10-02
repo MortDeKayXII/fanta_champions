@@ -14,7 +14,7 @@ Legenda: 🧑 = azione che devi fare tu · 🤖 = lo faccio io · 🤝 = insieme
 (da `conversion_table.txt`).
 
 - Voto con `*` (senza voto, "s.v.") → il giocatore non conta (0 nel totale).
-- Nel codice vecchio, un giocatore marcato `*` in formazione ha −1 sul fantavoto (da confermare in fase di sviluppo, vedi §9).
+- **Malus "fuori ruolo"**: in formazione l'admin può marcare un giocatore come fuori posizione (`*` nel vecchio sistema): −1 sul fantavoto. È l'admin a decidere quando applicarlo, l'app non valida i ruoli. Il campo è salvato nella formazione (`lineups.out_of_position`), quindi resta valido nei ricalcoli.
 - Gli allenatori (ruolo `ALL`) nel file voti vengono ignorati.
 - I voti si collegano ai giocatori per **ID** (`Cod.` del file voti = `Id` della lista giocatori; verificato).
 
@@ -30,11 +30,13 @@ Legenda: 🧑 = azione che devi fare tu · 🤖 = lo faccio io · 🤝 = insieme
 ### 1.4 Fase a eliminazione
 - Posizioni 1–8: saltano i playoff. 9–24: giocano i playoff. 25–30: eliminate.
 - Playoff (andata/ritorno): 9–24, 10–23, 11–22, 12–21, 13–20, 14–19, 15–18, 16–17.
-- Quarti (andata/ritorno): 1 vs v(16–17), 8 vs v(9–24), 5 vs v(12–21), 4 vs v(13–20), 3 vs v(14–19), 6 vs v(11–22), 7 vs v(10–23), 2 vs v(15–18).
-- Semifinali (andata/ritorno): [1/8] vs [4/5] e [3/6] vs [2/7]. Finale: gara singola.
+- Ottavi (andata/ritorno): 1 vs v(16–17), 8 vs v(9–24), 5 vs v(12–21), 4 vs v(13–20), 3 vs v(14–19), 6 vs v(11–22), 7 vs v(10–23), 2 vs v(15–18).
+- Quarti (andata/ritorno): tra i vincitori degli ottavi delle teste di serie 1–8, 4–5, 3–6, 2–7 (la 1 e la 2 restano in metà tabellone opposte).
+- Semifinali (andata/ritorno): vincente (1–8) vs vincente (4–5) e vincente (3–6) vs vincente (2–7). Finale: gara singola.
+- In totale: playoff → ottavi → quarti → semifinali → finale, cioè 4 turni a doppia gara + la finale (9 giornate Champions di eliminazione). Nel vecchio foglio la numerazione dei turni era sfalsata di uno; ho usato lo schema standard a 16 squadre dopo i playoff.
 - Ogni turno (tranne la finale) è a doppia gara. Passa chi ha più **gol totali**, poi più **punti totali**.
 - Se ancora pari: l'admin sceglie il vincitore con un pulsante "Decidi vincitore".
-- Le giornate di eliminazione proseguono la numerazione (`matchday_9` ultima dei gironi → `matchday_10` e `_11` = playoff, ecc.).
+- Le giornate di eliminazione proseguono la numerazione dei gironi (8 giornate): playoff = `matchday_9` e `_10`, ottavi `_11` e `_12`, quarti `_13` e `_14`, semifinali `_15` e `_16`, finale `_17`. Da confermare (vedi §9).
 
 ---
 
@@ -66,7 +68,7 @@ Nessun server da gestire. Tutte le chiavi nel client sono pubbliche per design (
 | `matchdays` | numero, fase (gironi/playoff/quarti/semi/finale), leg (andata/ritorno) |
 | `fixtures` | matchday, home_team, away_team, slot bracket |
 | `votes` | matchday, player_id, voto, Gf, Gs, Rp, Rs, Rf, Au, Amm, Esp, Ass (righe grezze dal file) |
-| `lineups` | matchday, team_id, slot 1–11, player_id, nome (snapshot), flag `*` |
+| `lineups` | matchday, team_id, slot 1–11, player_id, nome (snapshot), out_of_position (−1) |
 | `results` | fixture, punti casa/ospite, gol casa/ospite |
 | `player_scores` | matchday, team, player, voto, fantavoto (per il dettaglio partita) |
 | `tie_decisions` | tie bracket, team vincitore scelto dall'admin |
@@ -163,11 +165,10 @@ fanta_champions/
 - **Repository pubblico**: le rose sono visibili a tutti; nessun dato personale è presente.
 - **Nessun recupero password via email**: il reset passa dall'admin.
 - **Nomi giocatori** nelle rose sono stati collegati per nome alla lista completa: tutti e 810 i collegamenti riusciti. Se la lista cambia, rilanciare `scripts/join_rosters.mjs`.
-- **Il file voti** è di uso personale (nota di copyright nel file): il repo non deve contenere file voti ufficiali. Vanno nel `.gitignore`; sono caricati solo tramite la pagina admin.
+- **Il file voti** è di uso personale (nota di copyright nel file): il repo non deve contenere file voti ufficiali. Sono nel `.gitignore` (già fatto) e vengono caricati solo tramite la pagina admin: il motore legge i voti dalla tabella `votes` su Supabase, non dal repo. I test usano un piccolo file voti sintetico scritto da me.
 
 ## 9. Punti da confermare durante lo sviluppo
 
-- Significato esatto del `*` in formazione (−1 come nel codice vecchio?).
 - Trattamento di un giocatore in formazione senza voto (0, in attesa di tua gestione a mano, come oggi).
 - Numerazione definitiva delle giornate di eliminazione (`matchday_10 … matchday_17` o altro schema).
 - Corrispondenza giornate Serie A ↔ Champions (link che mi invierai).

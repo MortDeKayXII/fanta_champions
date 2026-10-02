@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.local
+
+# Official Fantacalcio vote files: personal use only, never publish
+new_version_settings/Voti_Fantacalcio_*.xlsx
+new_version_settings/matchday_*.xlsx
+**/matchday_*.xlsx
+**/Voti_Fantacalcio_*.xlsx
+*.tsbuildinfo
