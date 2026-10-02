@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
-import { MANTRA_NAME, ROLE_ORDER, splitMantraRoles } from '../lib/labels'
+import { MANTRA_NAME, mantraLabel, splitMantraRoles } from '../lib/labels'
 import { normalizeName } from '../lib/lineupText'
-import type { Player, Role } from '../lib/types'
+import type { Player } from '../lib/types'
 import { MantraRoles, inputClass } from './ui'
 
 /**
@@ -18,7 +18,6 @@ export default function PlayerPicker({
   onPick: (player: Player) => void
 }) {
   const [text, setText] = useState('')
-  const [role, setRole] = useState<Role | ''>('')
   const [mantra, setMantra] = useState('')
   const [rosterOnly, setRosterOnly] = useState(false)
 
@@ -27,7 +26,6 @@ export default function PlayerPicker({
     return players
       .filter(
         (p) =>
-          (!role || p.role === role) &&
           (!mantra || splitMantraRoles(p.mantra_roles).includes(mantra)) &&
           (!rosterOnly || rosterIds.has(p.id)) &&
           (!q || normalizeName(p.name).includes(q)),
@@ -37,7 +35,7 @@ export default function PlayerPicker({
           Number(rosterIds.has(b.id)) - Number(rosterIds.has(a.id)) || a.name.localeCompare(b.name),
       )
       .slice(0, 25)
-  }, [players, rosterIds, text, role, mantra, rosterOnly])
+  }, [players, rosterIds, text, mantra, rosterOnly])
 
   return (
     <div className="rounded-lg border border-blue-200 bg-blue-50/50 p-2">
@@ -51,19 +49,6 @@ export default function PlayerPicker({
           autoFocus
         />
         <select
-          className={`${inputClass} !w-24`}
-          value={role}
-          onChange={(e) => setRole(e.target.value as Role | '')}
-          aria-label="Ruolo"
-        >
-          <option value="">Ruolo</option>
-          {ROLE_ORDER.map((r) => (
-            <option key={r} value={r}>
-              {r}
-            </option>
-          ))}
-        </select>
-        <select
           className={`${inputClass} !w-32`}
           value={mantra}
           onChange={(e) => setMantra(e.target.value)}
@@ -72,7 +57,7 @@ export default function PlayerPicker({
           <option value="">Ruolo Mantra</option>
           {Object.entries(MANTRA_NAME).map(([k, name]) => (
             <option key={k} value={k}>
-              {k} · {name}
+              {mantraLabel(k)} · {name}
             </option>
           ))}
         </select>
@@ -93,7 +78,6 @@ export default function PlayerPicker({
               onClick={() => onPick(p)}
               className="flex w-full items-center gap-2 rounded px-2 py-1 text-left text-sm hover:bg-blue-100"
             >
-              <span className="w-4 text-xs text-slate-500">{p.role}</span>
               <span className="flex-1">
                 {p.name}{' '}
                 {rosterIds.has(p.id) && (

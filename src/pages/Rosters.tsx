@@ -9,7 +9,8 @@ import {
   TeamName,
 } from '../components/ui'
 import { useAuth } from '../lib/auth'
-import { LEAGUE_NAME, ROLE_NAME, ROLE_ORDER } from '../lib/labels'
+import { LEAGUE_NAME } from '../lib/labels'
+import { groupRoster } from '../lib/roster'
 import { usePlayers, useRosterEntries, useTeams } from '../lib/queries'
 import type { League } from '../lib/types'
 
@@ -74,12 +75,12 @@ export default function Rosters() {
             </span>
           }
         >
-          {ROLE_ORDER.map((role) => {
-            const list = roster.filter((e) => e.player.role === role)
+          {groupRoster(roster).map((group) => {
+            const list = group.items
             return (
-              <div key={role} className="mb-4 last:mb-0">
+              <div key={group.key} className="mb-4 last:mb-0">
                 <h3 className="mb-1 text-sm font-semibold text-blue-900">
-                  {ROLE_NAME[role]} ({list.length})
+                  {group.title} ({list.length})
                 </h3>
                 <table className="w-full text-sm">
                   <tbody>

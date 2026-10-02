@@ -11,7 +11,7 @@ import {
   inputClass,
   secondaryButtonClass,
 } from './ui'
-import { ROLE_NAME, ROLE_ORDER } from '../lib/labels'
+import { groupRoster } from '../lib/roster'
 import { usePlayers, useRosterEntries, useRosterHistory, useTeams } from '../lib/queries'
 import { supabase } from '../lib/supabase'
 
@@ -138,14 +138,12 @@ export default function RosterEditor({
 
       <div className="mt-4 grid gap-4 md:grid-cols-[1fr_20rem]">
         <Card title={`Giocatori (${mine.length}) · costo ${total}`}>
-          {ROLE_ORDER.map((role) => {
-            const list = mine
-              .filter((e) => e.player.role === role)
-              .sort((a, b) => a.player.name.localeCompare(b.player.name))
+          {groupRoster(mine).map((group) => {
+            const list = group.items
             return (
-              <div key={role} className="mb-4 last:mb-0">
+              <div key={group.key} className="mb-4 last:mb-0">
                 <h3 className="mb-1 text-sm font-semibold text-blue-900">
-                  {ROLE_NAME[role]} ({list.length})
+                  {group.title} ({list.length})
                 </h3>
                 <ul>
                   {list.map((e) => (
@@ -210,10 +208,7 @@ export default function RosterEditor({
                 return (
                   <li key={p.id} className="flex items-center justify-between gap-2 py-1 text-sm">
                     <span>
-                      {p.name}{' '}
-                      <span className="text-xs text-slate-500">
-                        {p.role} · {p.serie_a_team}
-                      </span>
+                      {p.name} <span className="text-xs text-slate-500">{p.serie_a_team}</span>
                       <span className="ml-1">
                         <MantraRoles roles={p.mantra_roles} />
                       </span>

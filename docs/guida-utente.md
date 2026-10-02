@@ -37,7 +37,7 @@ I colori dei nomi indicano la lega: **verde** = Fanta Montelparo, **arancione** 
 La tua posizione, i punti, le partite giocate e il totale dei punti fanta. Sotto trovi la **tua** prossima partita e l'ultima giocata, più la classifica (prime 10, la tua riga è evidenziata).
 
 ### Calendario
-Tutte le giornate. Scegli il numero in alto. Le partite già giocate mostrano i gol e, sotto, i punti fanta di ciascuna squadra. Tocca il **risultato** per aprire il dettaglio della partita. Tocca il **nome di una squadra** per vedere la sua rosa.
+Tutte le giornate. Scegli il numero in alto. Le partite già giocate mostrano i gol e, sotto, i punti fanta di ciascuna squadra. Tocca il **risultato** per aprire il dettaglio della partita. Quando l'amministratore ha inserito le formazioni di una giornata, puoi aprirle **prima delle partite** toccando la scritta *formazioni* sotto il "vs": così vedi contro chi giochi. Tocca il **nome di una squadra** per vedere la sua rosa.
 
 ### Classifica
 Punti (3 per la vittoria, 1 per il pareggio). A parità di punti conta il **totale dei punti fanta**. La barra colorata a sinistra indica dove finirai:
@@ -46,7 +46,7 @@ Punti (3 per la vittoria, 1 per il pareggio). A parità di punti conta il **tota
 - **25°–30°**: sei eliminato.
 
 ### Rose
-Le rose di tutte le squadre. Scegli una squadra dall'elenco. Le rose sono indicative: la formazione di ogni giornata la inserisce l'amministratore.
+Le rose di tutte le squadre. Scegli una squadra dall'elenco. I giocatori sono divisi in **Portieri** e **Giocatori di movimento**, questi ultimi nell'ordine della legenda dei ruoli Mantra (DS, DC, DD, B, E, M, C, W, T, A, PC); i ruoli sono le etichette colorate accanto al nome (passandoci sopra vedi il nome esteso). Le rose sono indicative: la formazione di ogni giornata la inserisce l'amministratore.
 
 ### La mia rosa
 Qui aggiorni la tua rosa dopo uno scambio:
@@ -58,7 +58,7 @@ Qui aggiorni la tua rosa dopo uno scambio:
 Attenzione: cambiare la rosa **non modifica le giornate già calcolate**. In uno scambio, chi cede il giocatore lo rimuove e chi lo riceve lo aggiunge.
 
 ### Dettaglio partita
-Per le partite giocate mostra le due formazioni, con il voto e il fantavoto di ogni giocatore. Le icone indicano gol ⚽, assist 🅰️, rigore parato 🧤, rigore segnato 🎯, gol subito 🥅, rigore sbagliato ❌, autogol ↩️, ammonizione 🟨, espulsione 🟥. Un giocatore in grigio non ha preso voto e vale 0. "fuori ruolo" indica il malus di −1.
+Mostra le due formazioni e, per le partite giocate, il voto e il fantavoto di ogni giocatore. Prima della partita vedi lo schieramento inserito finora, che può cambiare fino al calcolo finale (sostituzioni comprese). Le icone indicano gol ⚽, assist 🅰️, rigore parato 🧤, rigore segnato 🎯, gol subito 🥅, rigore sbagliato ❌, autogol ↩️, ammonizione 🟨, espulsione 🟥. Un giocatore in grigio non ha preso voto e vale 0. "fuori ruolo" indica il malus di −1.
 
 ### Tabellone
 L'eliminazione diretta: playoff, ottavi, quarti, semifinali e finale. Ogni turno è di andata e ritorno; la finale è una gara secca. Passa chi segna più gol in totale; se sono pari passa chi ha più punti fanta in totale; se è ancora parità decide l'amministratore.

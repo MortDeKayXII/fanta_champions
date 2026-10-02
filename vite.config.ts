@@ -6,5 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: '/fanta_champions/',
   plugins: [react(), tailwindcss()],
-  test: { include: ['src/**/*.test.ts'], testTimeout: 30000 },
+  test: { include: ['src/**/*.test.ts'], testTimeout: 30000, hookTimeout: 120000, fileParallelism: false },
 })

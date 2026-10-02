@@ -54,7 +54,7 @@ function LineupTable({ rows }: { rows: LineupRow[] }) {
               <Stats row={r} />
             </td>
             <td className="w-10 text-right text-slate-500">
-              {r.vote === null ? (r.player_id ? 's.v.' : '') : formatPoints(r.vote)}
+              {r.vote !== null ? formatPoints(r.vote) : r.counted === false ? 's.v.' : ''}
             </td>
             <td className="w-14 text-right font-semibold text-blue-900">
               {r.fantavoto === null ? '' : formatPoints(r.fantavoto)}
@@ -99,7 +99,10 @@ export default function Match() {
           </p>
         </Card>
       ) : (
-        <Notice>Questa partita non è ancora stata giocata.</Notice>
+        <Notice>
+          Questa partita non è ancora stata giocata: queste sono le formazioni schierate finora,
+          voti e punteggi arriveranno dopo il calcolo.
+        </Notice>
       )}
       <div className="grid gap-4 md:grid-cols-2">
         {[home, away].map((team) => (

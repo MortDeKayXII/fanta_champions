@@ -17,3 +17,6 @@ new_version_settings/matchday_*.xlsx
 
 # Backups downloaded from the admin page (contain votes)
 fanta-champions-backup-*.json
+
+# League lineup exports (contain Fantacalcio votes)
+**/*formazioni*.xlsx

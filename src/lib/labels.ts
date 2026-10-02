@@ -1,4 +1,4 @@
-import type { League, Matchday, Phase, Role } from './types'
+import type { League, Matchday, Phase } from './types'
 
 const PHASE_NAME: Record<Phase, string> = {
   group: 'Fase a gironi',
@@ -8,15 +8,6 @@ const PHASE_NAME: Record<Phase, string> = {
   semi: 'Semifinali',
   final: 'Finale',
 }
-
-export const ROLE_NAME: Record<Role, string> = {
-  P: 'Portieri',
-  D: 'Difensori',
-  C: 'Centrocampisti',
-  A: 'Attaccanti',
-}
-
-export const ROLE_ORDER: Role[] = ['P', 'D', 'C', 'A']
 
 export const LEAGUE_NAME: Record<League, string> = {
   A: 'Fanta Montelparo',
@@ -53,20 +44,51 @@ export const ITALIAN_NUMBER = new Intl.NumberFormat('it-IT', {
 
 export const formatPoints = (n: number) => ITALIAN_NUMBER.format(n)
 
-/** Mantra position abbreviations, as used in the Fantacalcio player list. */
+/** Mantra positions (Fantacalcio legend), with the colour group used for their chips. */
 export const MANTRA_NAME: Record<string, string> = {
   Por: 'Portiere',
-  Dd: 'Difensore destro',
-  Ds: 'Difensore sinistro',
+  Ds: 'Terzino sinistro',
   Dc: 'Difensore centrale',
-  B: 'Braccetto',
-  E: 'Esterno',
-  M: 'Mediano',
-  C: 'Centrocampista',
+  Dd: 'Terzino destro',
+  B: 'Braccetto difensivo',
+  E: 'Esterno basso',
+  M: 'Centrocampista difensivo',
+  C: 'Centrocampista centrale',
   W: 'Ala',
   T: 'Trequartista',
-  A: 'Attaccante',
+  A: 'Attaccante di raccordo',
   Pc: 'Punta centrale',
 }
+
+/** Chip colours sampled from the Fantacalcio role legend (one colour per family). */
+const ORANGE = '#EBA216' // goalkeeper
+const GREEN = '#4A9B13' // defenders
+const BLUE = '#286DDB' // midfielders
+const MAGENTA = '#D01CC0' // wingers, playmakers
+const RED = '#B9161F' // forwards
+
+const MANTRA_COLOR: Record<string, string> = {
+  Por: ORANGE,
+  Ds: GREEN,
+  Dc: GREEN,
+  Dd: GREEN,
+  B: GREEN,
+  E: BLUE,
+  M: BLUE,
+  C: BLUE,
+  W: MAGENTA,
+  T: MAGENTA,
+  A: RED,
+  Pc: RED,
+}
+
+/** Background colour (hex) of a Mantra role chip. */
+export const mantraColor = (role: string): string => MANTRA_COLOR[role] ?? '#64748B'
+
+/** Role order of the legend: goalkeeper, defenders, midfielders, wingers, forwards. */
+export const MANTRA_ORDER: string[] = Object.keys(MANTRA_NAME)
+
+/** Short label as drawn in the legend (P, DS, DC, DD, B, E, M, C, W, T, A, PC). */
+export const mantraLabel = (role: string): string => (role === 'Por' ? 'P' : role.toUpperCase())
 
 export const splitMantraRoles = (roles: string): string[] => roles.split(';').filter(Boolean)

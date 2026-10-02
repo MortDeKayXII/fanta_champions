@@ -1,5 +1,7 @@
 import { useSearchParams } from 'react-router-dom'
+import { useState } from 'react'
 import LineupEditor from '../../components/LineupEditor'
+import LineupImport from '../../components/LineupImport'
 import { Card, ErrorBox, Loading, Notice } from '../../components/ui'
 import { matchdayTitle } from '../../lib/labels'
 import { findProgress } from '../../lib/progress'
@@ -10,6 +12,8 @@ export default function AdminLineups() {
   const players = usePlayers()
   const entries = useRosterEntries()
   const [params, setParams] = useSearchParams()
+  // Bumped after a file import so the editors below reload the imported lineups.
+  const [importVersion, setImportVersion] = useState(0)
 
   const withFixtures = [...new Set(comp.fixtures.map((f) => f.matchday))].sort((a, b) => a - b)
   const { next, last } = findProgress(comp.fixtures, comp.results)
@@ -59,6 +63,17 @@ export default function AdminLineups() {
         «Incolla elenco» inserisci i nomi tutti insieme (un * dopo il nome = fuori ruolo, −1).
       </Notice>
 
+      <Card title="Importa da file">
+        <LineupImport
+          matchday={matchday}
+          matchdayLabel={md ? matchdayTitle(md) : `Giornata ${matchday}`}
+          teams={comp.teams}
+          players={players.data!}
+          saved={lineups.data ?? []}
+          onImported={() => setImportVersion((v) => v + 1)}
+        />
+      </Card>
+
       {fixtures.map((f) => {
         const home = comp.teamById.get(f.home_team)!
         const away = comp.teamById.get(f.away_team)!
@@ -80,7 +95,7 @@ export default function AdminLineups() {
               <div className="grid gap-6 md:grid-cols-2">
                 {[home, away].map((team) => (
                   <LineupEditor
-                    key={`${matchday}-${team.id}-${savedOf(team.id).length}`}
+                    key={`${matchday}-${team.id}-${importVersion}-${savedOf(team.id).length}`}
                     matchday={matchday}
                     team={team}
                     saved={savedOf(team.id)}

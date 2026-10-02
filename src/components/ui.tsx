@@ -1,7 +1,15 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../lib/auth'
-import { LEAGUE_DOT, LEAGUE_NAME, LEAGUE_TEXT, MANTRA_NAME, splitMantraRoles } from '../lib/labels'
+import {
+  LEAGUE_DOT,
+  LEAGUE_NAME,
+  LEAGUE_TEXT,
+  MANTRA_NAME,
+  mantraColor,
+  mantraLabel,
+  splitMantraRoles,
+} from '../lib/labels'
 import type { League, Team } from '../lib/types'
 
 export function Card({
@@ -105,9 +113,10 @@ export function MantraRoles({ roles }: { roles: string }) {
         <abbr
           key={r}
           title={MANTRA_NAME[r] ?? r}
-          className="rounded bg-blue-100 px-1 text-[10px] font-semibold text-blue-800 no-underline"
+          style={{ backgroundColor: mantraColor(r) }}
+          className="rounded px-1 text-[10px] font-bold leading-4 text-white no-underline"
         >
-          {r}
+          {mantraLabel(r)}
         </abbr>
       ))}
     </span>

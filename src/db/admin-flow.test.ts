@@ -1,6 +1,7 @@
 import { beforeAll, describe, expect, it } from 'vitest'
 import { computeMatchday } from '../lib/computeMatchday'
-import type { Fixture, LineupRow } from '../lib/types'
+import { importRows, type BuiltLineup } from '../lib/formazioni'
+import type { Fixture, LineupRow, Player } from '../lib/types'
 import { parseVotes } from '../lib/votesFile'
 import { ADMIN, USER1, createTestDb } from './testdb'
 
@@ -189,5 +190,48 @@ describe('admin workflow', () => {
     )
     expect(Number(left[0].n)).toBe(22)
     expect(Number(left[0].scored)).toBe(0)
+  })
+})
+
+describe('importing lineups twice for the same matchday', () => {
+  it('the second import (final lineup) overwrites the first (initial), keeping 11 rows per team', async () => {
+    const pool = await as<Player>(ADMIN, 'select * from players order by id limit 12')
+    const slotsOf = (ps: typeof pool) => ps.map((p) => ({ fileName: p.name, player: p }))
+    const build = (ps: typeof pool): BuiltLineup => ({
+      teamName: 'X',
+      slots: slotsOf(ps),
+      substitutions: [],
+      ignored: [],
+      warnings: [],
+    })
+    const upsert = (rows: unknown[]) => upsertLineups(rows).then((r) => r.length)
+    const read = () =>
+      as<{ slot: number; player_id: number; out_of_position: boolean }>(
+        ADMIN,
+        'select slot, player_id, out_of_position from lineups where matchday = 2 and team_id = 5 order by slot',
+      )
+
+    // 1st upload: the eleven starters as fielded
+    const initial = pool.slice(0, 11)
+    expect(await upsert(importRows(2, 5, build(initial), []))).toBe(11)
+    expect((await read()).map((r) => r.player_id)).toEqual(initial.map((p) => p.id))
+
+    // the admin flags one player out of position
+    await as(
+      ADMIN,
+      'update lineups set out_of_position = true where matchday = 2 and team_id = 5 and slot = 9',
+    )
+    const saved = await as<{ team_id: number; player_id: number; out_of_position: boolean }>(
+      ADMIN,
+      'select team_id, player_id, out_of_position from lineups where matchday = 2 and team_id = 5',
+    )
+
+    // 2nd upload: slot 6 replaced by the substitute; nothing else changes
+    const final = [...initial.slice(0, 5), pool[11], ...initial.slice(6)]
+    expect(await upsert(importRows(2, 5, build(final), saved))).toBe(11)
+    const after = await read()
+    expect(after).toHaveLength(11) // overwritten, not duplicated
+    expect(after[5].player_id).toBe(pool[11].id)
+    expect(after.find((r) => r.out_of_position)?.slot).toBe(9) // flag survived the re-import
   })
 })

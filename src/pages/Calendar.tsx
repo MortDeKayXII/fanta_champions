@@ -3,29 +3,33 @@ import FixtureRow from '../components/FixtureRow'
 import { Card, ErrorBox, LeagueLegend, Loading, PageTitle } from '../components/ui'
 import { useAuth } from '../lib/auth'
 import { matchdayTitle } from '../lib/labels'
-import { findProgress } from '../lib/progress'
-import { useCompetition } from '../lib/queries'
+import { findProgress, fixturesWithLineups } from '../lib/progress'
+import { useCompetition, useLineups } from '../lib/queries'
 
 export default function Calendar() {
   const { profile } = useAuth()
   const comp = useCompetition()
   const [params, setParams] = useSearchParams()
 
-  if (comp.isLoading) return <Loading />
-  if (comp.error) return <ErrorBox>Impossibile caricare il calendario.</ErrorBox>
-
   // Matchdays that have fixtures (knockout ones appear once the admin generates them).
   const withFixtures = new Set(comp.fixtures.map((f) => f.matchday))
-  const matchdays = comp.matchdays.filter((m) => withFixtures.has(m.number))
   const { last, next } = findProgress(comp.fixtures, comp.results)
   const requested = Number(params.get('g'))
   const selected = withFixtures.has(requested) ? requested : (next ?? last ?? 1)
+  // Logged users can open the lineups as soon as both are entered, before the match is played.
+  const lineups = useLineups(comp.isLoading ? undefined : selected)
+
+  if (comp.isLoading) return <Loading />
+  if (comp.error) return <ErrorBox>Impossibile caricare il calendario.</ErrorBox>
+
+  const matchdays = comp.matchdays.filter((m) => withFixtures.has(m.number))
   const md = comp.matchdayByNumber.get(selected)
   const fixtures = comp.fixtures.filter((f) => f.matchday === selected)
+  const ready = fixturesWithLineups(fixtures, lineups.data ?? [])
 
   return (
     <div>
-      <PageTitle sub="Scegli una giornata. Il dettaglio con formazioni e voti è riservato agli utenti registrati.">
+      <PageTitle sub="Scegli una giornata. Formazioni e voti sono riservati agli utenti registrati.">
         Calendario
       </PageTitle>
       <div className="mb-4 flex flex-wrap gap-1.5" role="tablist" aria-label="Giornate">
@@ -55,6 +59,7 @@ export default function Calendar() {
               result={comp.resultByFixture.get(f.id)}
               teamById={comp.teamById}
               myTeamId={profile?.team_id}
+              lineupsReady={ready.has(f.id)}
             />
           ))}
         </div>

@@ -13,8 +13,8 @@ import {
 } from '../components/ui'
 import { useAuth } from '../lib/auth'
 import { formatPoints, matchdayTitle } from '../lib/labels'
-import { findProgress } from '../lib/progress'
-import { useCompetition, useStandings } from '../lib/queries'
+import { findProgress, fixturesWithLineups } from '../lib/progress'
+import { useCompetition, useLineups, useStandings } from '../lib/queries'
 
 export default function Home() {
   const { session, profile, passwordChanged } = useAuth()
@@ -23,12 +23,13 @@ export default function Home() {
   )
   const comp = useCompetition()
   const { rows } = useStandings()
+  const { last, next } = findProgress(comp.fixtures, comp.results)
+  const nextLineups = useLineups(next)
 
   if (comp.isLoading) return <Loading />
   if (comp.error) return <ErrorBox>Impossibile caricare i dati. Riprova più tardi.</ErrorBox>
 
   const teamByName = new Map(comp.teams.map((t) => [t.name, t]))
-  const { last, next } = findProgress(comp.fixtures, comp.results)
   const myTeam = profile ? comp.teamById.get(profile.team_id) : undefined
   const myPos = myTeam ? rows.findIndex((r) => r.team === myTeam.name) : -1
   const myRow = myPos >= 0 ? rows[myPos] : undefined
@@ -62,6 +63,9 @@ export default function Home() {
             result={comp.resultByFixture.get(f.id)}
             teamById={comp.teamById}
             myTeamId={profile?.team_id}
+            lineupsReady={
+              number === next && fixturesWithLineups([f], nextLineups.data ?? []).has(f.id)
+            }
           />
         ))}
       </Card>

@@ -13,11 +13,14 @@ export default function FixtureRow({
   result,
   teamById,
   myTeamId,
+  lineupsReady = false,
 }: {
   fixture: Fixture
   result?: ResultRow
   teamById: Map<number, Team>
   myTeamId?: number
+  /** Both lineups are entered: logged users can open them even before the match is played. */
+  lineupsReady?: boolean
 }) {
   const { session } = useAuth()
   const home = teamById.get(fixture.home_team)
@@ -46,15 +49,20 @@ export default function FixtureRow({
         <TeamLink team={home} bold={fixture.home_team === myTeamId} />
       </div>
       <div className="min-w-16 text-center">
-        {!result ? (
+        {!result && !(session && lineupsReady) ? (
           <span className="text-slate-400">vs</span>
         ) : session ? (
           <Link
             to={`/partita/${fixture.id}`}
             className="block rounded px-1 hover:bg-blue-100"
-            title="Vedi formazioni e voti"
+            title="Vedi le formazioni"
           >
-            {score}
+            {score ?? (
+              <>
+                <span className="text-slate-400">vs</span>
+                <span className="block text-[10px] font-medium text-blue-700">formazioni</span>
+              </>
+            )}
           </Link>
         ) : (
           score

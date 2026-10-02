@@ -37,8 +37,28 @@ I numeri delle giornate sono quelli della competizione, non della Serie A:
 1. Scegli la **giornata** in alto. Vedi le 15 partite; quelle con entrambe le formazioni salvate sono segnate con ✓.
 2. Apri una partita: a sinistra e a destra ci sono le due squadre con 11 slot ciascuna.
 
+### Importare le formazioni da file (consigliato)
+In cima alla pagina, nel riquadro **Importa da file**, carichi l'export delle formazioni di una lega dell'app originale (per esempio `fanta-pepe_formazioni_m1.xlsx`). Un file contiene le 10 squadre di quella lega, quindi per una giornata ne importi tre (una per lega). Il file non viene salvato: viene solo letto nel tuo browser.
+
+1. Scegli in alto la **giornata della competizione** di destinazione (il numero "Giornata N" scritto nel file è quello della lega originale e non conta).
+2. Scegli il file. Le squadre vengono riconosciute dal **nome**; quelle non riconosciute vengono elencate e saltate.
+3. Scegli cosa importare:
+   - **Schieramento iniziale**: i 11 titolari come schierati, prima delle partite. Serve per far vedere agli utenti contro chi giocano.
+   - **Formazione finale**: applica le sostituzioni fatte dall'app originale. Nel file i giocatori in **grigio** sono quelli che non sono entrati nel punteggio; chi era SV viene sostituito dal panchinaro entrato.
+4. Controlla l'anteprima (apri una squadra per vedere i 11, le sostituzioni e gli avvisi) e premi **Importa**.
+
+**Sostituzioni massime.** In questa competizione sono **3**; alcune leghe originali ne ammettono fino a 5. Con "Formazione finale" vengono applicate solo le prime N sostituzioni (nell'ordine della panchina) e le altre vengono ignorate: l'anteprima le elenca come "Non applicate", e il titolare che le avrebbe lasciate resta in campo. Il numero N si può cambiare prima di importare.
+
+**Sovrascrittura.** Importare di nuovo la stessa giornata **sostituisce** la formazione delle squadre presenti nel file: puoi quindi caricare gli schieramenti iniziali prima delle partite e, a partite finite, il file con le formazioni finali. Il malus **−1 fuori ruolo** che avevi già impostato a mano resta se quel giocatore è ancora in formazione. I punteggi già calcolati vengono azzerati: dopo l'importazione finale premi **Calcola giornata**.
+
+Avvertenze:
+- Il file non segna i giocatori fuori ruolo: il −1 lo imposti tu dopo l'importazione.
+- Il "Totale" che vedi nel file originale può includere un **modificatore** (es. "Modificatore difesa") che qui non viene applicato: i punteggi calcolati dal sito possono quindi differire dal totale dell'app originale.
+- Un giocatore con un nome diverso da quello della lista giocatori viene lasciato vuoto e segnalato: sceglilo a mano nello slot.
+- Il file contiene anche voti ufficiali: non va messo nel repository (è escluso da `.gitignore`).
+
 ### Inserire un giocatore
-Clicca su uno slot: si apre la ricerca. Scrivi parte del nome, oppure filtra per **ruolo**, per **ruolo Mantra** (ad esempio solo `Dc`) o con **Solo rosa**. I giocatori della rosa vengono prima e sono marcati "in rosa".
+Clicca su uno slot: si apre la ricerca. Scrivi parte del nome, oppure filtra per **ruolo Mantra** (ad esempio solo `DC`; l'elenco segue l'ordine della legenda: P, DS, DC, DD, B, E, M, C, W, T, A, PC) o con **Solo rosa**. I giocatori della rosa vengono prima e sono marcati "in rosa".
 
 **Le formazioni non sono legate alla rosa**: puoi scegliere qualsiasi giocatore (lo slot segnala "non in rosa" come promemoria). Così una giornata passata si può ricalcolare anche se nel frattempo la rosa è cambiata.
 

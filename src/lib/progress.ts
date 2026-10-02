@@ -17,3 +17,14 @@ export function findProgress(fixtures: readonly Fixture[], results: readonly Res
   }
   return { last, next }
 }
+
+/** Fixtures whose two teams both have a lineup entered. */
+export function fixturesWithLineups(
+  fixtures: readonly Fixture[],
+  lineups: ReadonlyArray<{ team_id: number }>,
+): Set<number> {
+  const teams = new Set(lineups.map((l) => l.team_id))
+  return new Set(
+    fixtures.filter((f) => teams.has(f.home_team) && teams.has(f.away_team)).map((f) => f.id),
+  )
+}
