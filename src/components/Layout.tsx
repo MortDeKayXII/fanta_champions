@@ -90,7 +90,7 @@ export default function Layout() {
           target="_blank"
           rel="noreferrer"
         >
-          Guida
+          Regolamento
         </a>
       </footer>
     </div>
