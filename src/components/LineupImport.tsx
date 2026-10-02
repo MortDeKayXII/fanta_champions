@@ -10,6 +10,7 @@ import {
   type ImportMode,
 } from '../lib/formazioni'
 import { normalizeName } from '../lib/lineupText'
+import { MODULE_NAMES, isChartModule } from '../lib/modules'
 import { supabase } from '../lib/supabase'
 import type { LineupRow, Player, Team } from '../lib/types'
 import { readGrid } from '../lib/xlsxCells'
@@ -75,18 +76,20 @@ export default function LineupImport({
     [fileTeams, teamByName, byName, mode, maxSubs],
   )
   const matched = preview.filter((p) => p.team)
+  // The module is mandatory and must be one of the 11 of the chart: others are not imported.
+  const importable = matched.filter((p) => isChartModule(p.built.module))
   const unknownTeams = preview.filter((p) => !p.team).map((p) => p.file.teamName)
 
   const apply = useMutation({
     mutationFn: async () => {
-      const rows = matched.flatMap(({ team, built }) =>
+      const rows = importable.flatMap(({ team, built }) =>
         importRows(matchday, team!.id, built, saved),
       )
       const { error } = await supabase.from('lineups').upsert(rows, {
         onConflict: 'matchday,team_id,slot',
       })
       if (error) throw error
-      return matched.length
+      return importable.length
     },
     onSuccess: (n) => {
       setDone(
@@ -181,9 +184,23 @@ export default function LineupImport({
               const missing = built.slots.filter((s) => !s.player).length
               return (
                 <li key={team!.id} className="rounded-lg border border-blue-100 p-2 text-sm">
+                  {!isChartModule(built.module) && (
+                    <p className="mb-1 text-xs font-medium text-red-700">
+                      {built.module
+                        ? `Modulo ${built.module} non previsto`
+                        : 'Modulo mancante nel file'}
+                      : la squadra non viene importata. I moduli ammessi sono{' '}
+                      {MODULE_NAMES.join(', ')}. Inserisci questa formazione a mano scegliendo il
+                      modulo.
+                    </p>
+                  )}
                   <details>
                     <summary className="cursor-pointer">
-                      <strong>{team!.name}</strong> — {11 - missing}/{built.slots.length} giocatori
+                      <strong>{team!.name}</strong>
+                      {built.module && (
+                        <span className="ml-1 text-slate-500">({built.module})</span>
+                      )}{' '}
+                      — {11 - missing}/{built.slots.length} giocatori
                       {built.substitutions.length > 0 &&
                         `, ${built.substitutions.length} sostituzioni`}
                       {exists && (
@@ -234,12 +251,12 @@ export default function LineupImport({
 
           <button
             className={buttonClass}
-            disabled={apply.isPending || matched.length === 0}
+            disabled={apply.isPending || importable.length === 0}
             onClick={() => apply.mutate()}
           >
             {apply.isPending
               ? 'Importo…'
-              : `Importa ${matched.length} formazioni (${matchdayLabel})`}
+              : `Importa ${importable.length} formazioni (${matchdayLabel})`}
           </button>
           {apply.error && <ErrorBox>Importazione non riuscita: {apply.error.message}</ErrorBox>}
         </div>

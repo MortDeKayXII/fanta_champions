@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
-import { parseModule } from '../lib/formazioni'
 import { matchPlayerNames } from '../lib/lineupText'
+import { MODULE_NAMES, isChartModule } from '../lib/modules'
 import { supabase } from '../lib/supabase'
 import type { LineupRow, Player, Team } from '../lib/types'
 import PlayerPicker from './PlayerPicker'
@@ -54,10 +54,11 @@ export default function LineupEditor({
   const [pasteText, setPasteText] = useState('')
   const [problems, setProblems] = useState<string[]>([])
   const [dirty, setDirty] = useState(false)
-  const [moduleText, setModuleText] = useState(saved[0]?.module ?? '')
-  const moduleValue = parseModule(moduleText)
-  const moduleInvalid = moduleText.trim() !== '' && moduleValue === null
-  const hadModule = Boolean(saved[0]?.module)
+  // The module is mandatory and must be one of the 11 of the chart.
+  const [moduleChoice, setModuleChoice] = useState<string>(
+    isChartModule(saved[0]?.module) ? saved[0].module : '',
+  )
+  const moduleMissing = moduleChoice === ''
 
   const update = (i: number, patch: Partial<Slot>) => {
     setSlots((s) => s.map((slot, j) => (j === i ? { ...slot, ...patch } : slot)))
@@ -93,8 +94,7 @@ export default function LineupEditor({
         fantavoto: null,
         counted: null,
         stats: null,
-        // Sent only when there is something to say, so lineups work even without a module.
-        ...(moduleValue ? { module: moduleValue } : hadModule ? { module: null } : {}),
+        module: moduleChoice,
       }))
       const { error } = await supabase
         .from('lineups')
@@ -119,19 +119,27 @@ export default function LineupEditor({
         </span>
       </div>
 
-      <label className="flex items-center gap-2 text-xs text-slate-600">
-        Modulo
-        <input
-          className={`w-24 rounded border px-1.5 py-0.5 text-sm ${moduleInvalid ? 'border-red-400' : 'border-slate-300'}`}
-          placeholder="es. 4-3-1-2"
-          value={moduleText}
-          maxLength={9}
+      <label className="flex flex-wrap items-center gap-2 text-xs text-slate-600">
+        Modulo <span className="text-red-700">*</span>
+        <select
+          className={`rounded border bg-white px-1.5 py-0.5 text-sm ${
+            moduleMissing ? 'border-red-400' : 'border-slate-300'
+          }`}
+          value={moduleChoice}
+          required
           onChange={(e) => {
-            setModuleText(e.target.value)
+            setModuleChoice(e.target.value)
             setDirty(true)
           }}
-        />
-        {moduleInvalid && <span className="text-red-700">formato non valido (es. 4-3-1-2)</span>}
+        >
+          <option value="">— scegli il modulo —</option>
+          {MODULE_NAMES.map((m) => (
+            <option key={m} value={m}>
+              {m}
+            </option>
+          ))}
+        </select>
+        {moduleMissing && <span className="text-red-700">obbligatorio per salvare</span>}
       </label>
 
       <ol className="space-y-1">
@@ -218,7 +226,7 @@ export default function LineupEditor({
           <button
             type="button"
             className={buttonClass}
-            disabled={save.isPending || !dirty || moduleInvalid}
+            disabled={save.isPending || !dirty || moduleMissing}
             onClick={() => save.mutate()}
           >
             {save.isPending ? 'Salvo…' : 'Salva formazione'}

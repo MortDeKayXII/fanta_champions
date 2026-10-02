@@ -52,6 +52,7 @@ In cima alla pagina, nel riquadro **Importa da file**, carichi l'export delle fo
 **Sovrascrittura.** Importare di nuovo la stessa giornata **sostituisce** la formazione delle squadre presenti nel file: puoi quindi caricare gli schieramenti iniziali prima delle partite e, a partite finite, il file con le formazioni finali. Il malus **−1 fuori ruolo** che avevi già impostato a mano resta se quel giocatore è ancora in formazione. I punteggi già calcolati vengono azzerati: dopo l'importazione finale premi **Calcola giornata**.
 
 Avvertenze:
+- Se nel file il modulo di una squadra manca o non è tra gli 11 ammessi, la squadra viene saltata (vedi «Modulo (obbligatorio)»).
 - Il file non segna i giocatori fuori ruolo: il −1 lo imposti tu dopo l'importazione.
 - Il "Totale" che vedi nel file originale può includere un **modificatore** (es. "Modificatore difesa") che qui non viene applicato: i punteggi calcolati dal sito possono quindi differire dal totale dell'app originale.
 - Un giocatore con un nome diverso da quello della lista giocatori viene lasciato vuoto e segnalato: sceglilo a mano nello slot.
@@ -68,8 +69,10 @@ Premi **Incolla elenco**, incolla i nomi uno per riga (o separati da virgola) e 
 - Se un nome ha più corrispondenze vince il giocatore della rosa; se resta ambiguo o non si trova, lo slot resta vuoto e sotto compare l'elenco **Da controllare** da sistemare a mano.
 - Un **`*` dopo il nome** mette il giocatore "fuori ruolo" (−1), come nel vecchio foglio.
 
-### Modulo
-Sopra gli slot c'è il campo **Modulo** (es. `4-3-1-2`): facoltativo, compare tra parentesi grigie accanto al nome della squadra nel dettaglio partita. Con l'importazione da file viene letto in automatico dal file; se la formazione è inserita a mano lo scrivi tu. Il formato è numeri separati da trattini (`3-5-2`, `4-3-1-2`, `3-4-2-1`).
+### Modulo (obbligatorio)
+Sopra gli slot c'è il menu **Modulo**: per salvare una formazione devi scegliere uno degli **11 moduli** del regolamento Mantra: 3-4-3, 3-4-1-2, 3-4-2-1, 3-5-2, 3-5-1-1, 4-3-3, 4-3-1-2, 4-4-2, 4-1-4-1, 4-4-1-1, 4-2-3-1. Altri moduli non sono ammessi.
+
+Il modulo serve a disegnare le squadre sul campo nel dettaglio partita (ogni giocatore va nella posizione del modulo adatta ai suoi ruoli) e compare tra parentesi grigie accanto al nome della squadra. Con l'importazione da file viene letto dal file: se manca, o non è uno degli 11, quella squadra **non viene importata** (lo vedi in rosso nell'anteprima) e devi inserirne la formazione a mano scegliendo il modulo.
 
 ### Fuori ruolo e buchi
 - La casella **−1** accanto al giocatore applica il malus di fuori ruolo: la decidi tu.

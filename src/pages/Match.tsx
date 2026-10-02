@@ -9,21 +9,11 @@ import {
   TeamLink,
   secondaryButtonClass,
 } from '../components/ui'
+import FormationPitch from '../components/FormationPitch'
 import { formatPoints, matchdayTitle } from '../lib/labels'
+import { STAT_ICONS } from '../lib/statIcons'
 import { useCompetition, useLineups, usePlayers } from '../lib/queries'
 import type { LineupRow, Player, Team } from '../lib/types'
-
-const STAT_ICONS: Array<[keyof NonNullable<LineupRow['stats']>, string, string]> = [
-  ['gf', '⚽', 'Gol'],
-  ['ass', '🅰️', 'Assist'],
-  ['rp', '🧤', 'Rigore parato'],
-  ['rf', '🎯', 'Rigore segnato'],
-  ['gs', '🥅', 'Gol subito'],
-  ['rs', '❌', 'Rigore sbagliato'],
-  ['au', '↩️', 'Autogol'],
-  ['amm', '🟨', 'Ammonizione'],
-  ['esp', '🟥', 'Espulsione'],
-]
 
 function Stats({ row }: { row: LineupRow }) {
   if (!row.stats) return null
@@ -146,6 +136,26 @@ export default function Match() {
           </Card>
         ))}
       </div>
+      <Card title="Formazioni in campo" className="mt-4">
+        <FormationPitch
+          home={{
+            team: home,
+            rows: rowsOf(fixture.home_team),
+            points: result?.home_points,
+          }}
+          away={{
+            team: away,
+            rows: rowsOf(fixture.away_team),
+            points: result?.away_points,
+          }}
+          playerById={playerById}
+        />
+        <p className="mt-2 text-xs text-slate-500">
+          {home?.name} gioca a sinistra, {away?.name} a destra (su telefono: in alto e in basso).
+          Ogni giocatore è nella posizione del modulo adatta ai suoi ruoli; un cerchio tratteggiato
+          indica un giocatore fuori posizione.
+        </p>
+      </Card>
       <div className="mt-4 flex gap-2">
         <Link to={`/segnala?partita=${fixture.id}`} className={secondaryButtonClass}>
           Segnala un errore in questa partita
